@@ -389,23 +389,30 @@ src/
 - `vite.config.js` — Vite configuration present.
 - `tailwind.config.js` — Tailwind configuration present.
 - `postcss.config.js` — PostCSS configuration present.
-- `src/App.jsx` — app shell and routing present; home and gallery routes are wired.
-- `src/main.jsx` — React entry point present.
+- `.env` — `VITE_PEXELS_API_KEY` set locally (gitignored).
+- `src/App.jsx` — app shell and routing wired; renders Hero, sticky Header, web-only ViewControlsBar sub-bar, CardGrid, BottomTabBar, FAB, FiltersPanel, DetailModal.
+- `src/main.jsx` — React entry point present (StrictMode on — expect doubled effect invocations in dev only).
 - `src/index.css` — global styles and design-token setup present.
-- `src/components/home/HeroSection.jsx` — home hero implemented with the festive image query and search/filter controls.
+- `src/components/home/HeroSection.jsx` — hero with hardcoded Pexels fallback image (+ `onError` guard so it never shows grey), left-aligned title/tagline/search, mobile bottom padding fixed.
 - `src/components/home/CardGrid.jsx` — grouped card grid implemented.
-- `src/components/home/FestivalCard.jsx` — event card component present.
-- `src/components/layout/Header.jsx` — compact sticky header implemented.
+- `src/components/home/FestivalCard.jsx` — card uses `large2x` images, 4:3 `object-cover object-center`, 2-line title clamp, grey placeholder (no image) when fetch fails.
+- `src/components/layout/Header.jsx` — sticky bar now title + search only (Filters/toggle removed).
+- `src/components/layout/ViewControlsBar.jsx` — new: Filters pill + Card/Calendar/Map toggle, non-sticky sub-bar below header, web only (`md:`).
 - `src/components/layout/BottomTabBar.jsx` — mobile tab bar implemented.
 - `src/components/layout/FAB.jsx` — floating action button stub present.
-- `src/components/filters/FiltersPanel.jsx` — filters panel present.
-- `src/components/detail/DetailModal.jsx` — detail modal present.
-- `src/hooks/usePexels.js` — Pexels image fetching and cache hook present.
-- `src/data/india-cultural-calendar.json` — event dataset present.
-- `src/cache/pexels-cache.json` — local image cache file present.
-- `scripts/enrich-images.js` — image enrichment script present.
-- `scripts/enrich-wikipedia.js` — Wikipedia enrichment script present.
+- `src/components/filters/FiltersPanel.jsx` — responsive: full-page slide-up on mobile, side-sheet on web.
+- `src/components/detail/DetailModal.jsx` — full-viewport modal (mobile slides up, web fades in); web shows inline header + sticky title/X bar on scroll, mobile shows always-visible X on the hero carousel.
+- `src/components/detail/ImageMosaic.jsx` — new: web 60/40 mosaic + "View all X photos" pill.
+- `src/components/detail/ImageCarousel.jsx` — new: mobile swipeable hero (first 3 images), dot indicators, "View all X photos" pill.
+- `src/components/detail/AccordionSection.jsx` — new: generic accordion item, About expanded by default.
+- `src/components/detail/RelatedFestivals.jsx` — new: related-by-type-or-month, excludes self, shuffled, max 8; reuses `FestivalCard`.
+- `src/hooks/usePexels.js` — fetch + (best-effort) cache hook; throttles concurrent Pexels requests (max 15 in flight) to avoid 429s when ~155 cards mount at once; image objects carry `large2x` and `original` sizes. Note: cache read/write hits `/src/cache/pexels-cache.json` but nothing in `vite.config.js` persists the PUT yet, so caching is currently a no-op across reloads — only the in-session throttle prevents repeat-load rate-limiting.
+- `src/data/india-cultural-calendar.json` — all 155 entries now have `aboutLong` via `enrich-wikipedia.js`. `whyCelebratedLong`/`howCelebratedLong` and `images[]` (via `enrich-images.js`) not yet populated.
+- `src/cache/pexels-cache.json` — present but effectively unused (see usePexels note above).
+- `scripts/enrich-images.js`, `scripts/enrich-wikipedia.js` — present; Wikipedia script has been run (see data note).
 - `references/` — reference screenshots present for home/detail states.
 - `dist/` — build output present from the latest successful build.
 
-Last updated: Home screen partial state before detail batch.
+**Known gaps for a future batch:** Pexels cache doesn't persist (needs a small Vite dev-middleware to handle the PUT), Gallery screen (`/gallery/:id`) and web Lightbox are still placeholders, Calendar/Map views are unbuilt.
+
+Last updated: Batch 4 (Detail modal) complete — web mosaic, mobile carousel, accordions, related row, header restructure, and the Pexels rate-limit fix all verified live via headless-browser screenshots.
