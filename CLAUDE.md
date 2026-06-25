@@ -390,22 +390,24 @@ src/
 - `tailwind.config.js` — Tailwind configuration present.
 - `postcss.config.js` — PostCSS configuration present.
 - `.env` — `VITE_PEXELS_API_KEY` set locally (gitignored).
-- `src/App.jsx` — app shell and routing wired; renders Hero, sticky Header, web-only ViewControlsBar sub-bar, CardGrid, BottomTabBar, FAB, FiltersPanel, DetailModal.
+- `src/App.jsx` — app shell and routing wired; renders Hero, sticky Header (now containing ViewControlsBar as its second row), CardGrid, BottomTabBar, FAB, FiltersPanel, DetailModal; `/gallery/:id` routes to the real `GalleryScreen`.
 - `src/main.jsx` — React entry point present (StrictMode on — expect doubled effect invocations in dev only).
 - `src/index.css` — global styles and design-token setup present.
-- `src/components/home/HeroSection.jsx` — hero with hardcoded Pexels fallback image (+ `onError` guard so it never shows grey), left-aligned title/tagline/search, mobile bottom padding fixed.
+- `src/components/home/HeroSection.jsx` — 420px hero, 48px/bold title, 16px tagline, flat `bg-black/35` overlay (no gradient/pink tint), hardcoded Pexels fallback (+ `onError` guard), search input has a conditional clear (X) icon instead of mic.
 - `src/components/home/CardGrid.jsx` — grouped card grid implemented.
 - `src/components/home/FestivalCard.jsx` — card uses `large2x` images, 4:3 `object-cover object-center`, 2-line title clamp, grey placeholder (no image) when fetch fails.
-- `src/components/layout/Header.jsx` — sticky bar now title + search only (Filters/toggle removed).
-- `src/components/layout/ViewControlsBar.jsx` — new: Filters pill + Card/Calendar/Map toggle, non-sticky sub-bar below header, web only (`md:`).
+- `src/components/layout/Header.jsx` — single fixed/animated wrapper containing two stacked rows: row 1 (title + search, bordered, clear-icon search), row 2 (renders `ViewControlsBar`, unbordered). Both rows animate in/out together on scroll.
+- `src/components/layout/ViewControlsBar.jsx` — Filters pill + Card/Calendar/Map toggle; now rendered *inside* `Header` (not standalone in `App.jsx`), `pb-6` bottom padding, no border.
 - `src/components/layout/BottomTabBar.jsx` — mobile tab bar implemented.
 - `src/components/layout/FAB.jsx` — floating action button stub present.
-- `src/components/filters/FiltersPanel.jsx` — responsive: full-page slide-up on mobile, side-sheet on web.
-- `src/components/detail/DetailModal.jsx` — full-viewport modal (mobile slides up, web fades in); web shows inline header + sticky title/X bar on scroll, mobile shows always-visible X on the hero carousel.
-- `src/components/detail/ImageMosaic.jsx` — new: web 60/40 mosaic + "View all X photos" pill.
-- `src/components/detail/ImageCarousel.jsx` — new: mobile swipeable hero (first 3 images), dot indicators, "View all X photos" pill.
-- `src/components/detail/AccordionSection.jsx` — new: generic accordion item, About expanded by default.
-- `src/components/detail/RelatedFestivals.jsx` — new: related-by-type-or-month, excludes self, shuffled, max 8; reuses `FestivalCard`.
+- `src/components/filters/FiltersPanel.jsx` — responsive: full-page slide-up on mobile, side-sheet on web; heading "Filter by", no icons on section labels.
+- `src/components/detail/DetailModal.jsx` — mobile: full-viewport slide-up (unchanged). Web: centered `max-w-[1140px]` rounded panel with backdrop, sized via flexbox centering on the backdrop (not CSS transform — Framer Motion's `scale` animate prop overrides inline `transform`, so transform-based centering silently breaks; flexbox avoids the conflict). Traditions/Food accordions only render when `event.type === 'Festival'`. Wires `ImageMosaic`'s "View all" to a new in-modal `Lightbox`, passes `eventId` to `ImageCarousel` for its gallery-route navigation.
+- `src/components/detail/ImageMosaic.jsx` — web 60/40 mosaic + "View all X photos" pill (opens `Lightbox`).
+- `src/components/detail/ImageCarousel.jsx` — mobile swipeable hero (first 3 images), dot indicators, "View all X photos" pill now navigates to `/gallery/:eventId`.
+- `src/components/detail/AccordionSection.jsx` — generic accordion item, About expanded by default.
+- `src/components/detail/RelatedFestivals.jsx` — smarter matching: primary pool (same type, or same month for Festival entries) is shuffled and always included first; secondary pool only fills remaining slots if primary < 4. Capped at 4 (was 8). Reuses `FestivalCard`.
+- `src/components/gallery/Lightbox.jsx` — new: web fullscreen overlay, prev/next arrows, counter, vertical thumbnail filmstrip, ←/→/Escape keyboard support.
+- `src/components/gallery/GalleryScreen.jsx` — new: real `/gallery/:id` route (was a placeholder stub). Black fullscreen, back arrow + counter pill, swipeable main image, caption, horizontal filmstrip. **Known gap:** back arrow uses `navigate(-1)`; since `selectedEvent` lives in `HomePage` local state, returning to `/` does not reopen the detail modal (no state lifted to URL yet).
 - `src/hooks/usePexels.js` — fetch + (best-effort) cache hook; throttles concurrent Pexels requests (max 15 in flight) to avoid 429s when ~155 cards mount at once; image objects carry `large2x` and `original` sizes. Note: cache read/write hits `/src/cache/pexels-cache.json` but nothing in `vite.config.js` persists the PUT yet, so caching is currently a no-op across reloads — only the in-session throttle prevents repeat-load rate-limiting.
 - `src/data/india-cultural-calendar.json` — all 155 entries now have `aboutLong` via `enrich-wikipedia.js`. `whyCelebratedLong`/`howCelebratedLong` and `images[]` (via `enrich-images.js`) not yet populated.
 - `src/cache/pexels-cache.json` — present but effectively unused (see usePexels note above).
@@ -413,6 +415,6 @@ src/
 - `references/` — reference screenshots present for home/detail states.
 - `dist/` — build output present from the latest successful build.
 
-**Known gaps for a future batch:** Pexels cache doesn't persist (needs a small Vite dev-middleware to handle the PUT), Gallery screen (`/gallery/:id`) and web Lightbox are still placeholders, Calendar/Map views are unbuilt.
+**Known gaps for a future batch:** Pexels cache doesn't persist (needs a small Vite dev-middleware to handle the PUT); Gallery-screen back navigation doesn't restore the detail modal (state not lifted to URL); Calendar/Map views are unbuilt.
 
-Last updated: Batch 4 (Detail modal) complete — web mosaic, mobile carousel, accordions, related row, header restructure, and the Pexels rate-limit fix all verified live via headless-browser screenshots.
+Last updated: Web home (hero sizing/overlay, two-row sticky header), web detail modal (centered 1140px panel), conditional accordions by type, smarter related-festivals matching, search clear icon, and a minimal Lightbox + Gallery screen all implemented and verified live via headless-browser screenshots.
