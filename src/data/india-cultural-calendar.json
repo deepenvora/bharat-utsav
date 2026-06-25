@@ -22,7 +22,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Republic Day India parade Kartavya Path",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Republic Day is the name of a holiday in several countries to commemorate the day when they became republics."
   },
   {
     "id": "independence-day-india",
@@ -48,7 +49,8 @@
     "religion": "Secular",
     "season": "Monsoon",
     "imageQuery": "Independence Day India Red Fort flag hoisting",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "An Independence Day is an annual event commemorating the anniversary of a nation's independence or statehood, usually after ceasing to be a group or part of another nation or state, or after the end of a military occupation, or after a major change in government. Many countries commemorate their independence from a colonial empire."
   },
   {
     "id": "gandhi-jayanti",
@@ -74,7 +76,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Gandhi Jayanti Raj Ghat tribute",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Gandhi Jayanti is a national holiday in India, celebrated annually on 2nd October to honour the birth of Mahatma Gandhi, one of the key leaders of the Indian independence movement and a pioneer of the philosophy and strategy of nonviolence. It is one of the three national holidays in India. In 2007, the United Nations General Assembly declared this day as the International Day of Non-Violence. Referred to as the \"National Father\" by Subhas Chandra Bose, Gandhi's principles of nonviolent resistance played a crucial role in India's successful struggle for independence from British colonial rule."
   },
   {
     "id": "national-youth-day",
@@ -98,7 +101,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Swami Vivekananda National Youth Day",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Youth Day or National Youth Day is a commemorative holiday in honour of young people, celebrated in different parts of the world on various dates throughout the year."
   },
   {
     "id": "army-day-india",
@@ -123,7 +127,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Indian Army Day parade",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "An Armed Forces Day, alongside its branch-specific variants often referred to as Army or Soldier's Day, Navy or Sailor's Day, and Air Force or Aviator's Day, is a holiday dedicated to honoring the armed forces, or one of their branches, of a sovereign state, including their personnel, history, achievements, and sacrifices. It's often patriotic or nationalistic in nature, carrying information value outside of the conventional boundaries of a military's subculture and into the wider civilian society. Many nations around the world observe this day. It is usually distinct from a Veterans or Memorial Day, as the former is dedicated to those who previously served and the latter is dedicated to those who perished in the fulfillment of their duties."
   },
   {
     "id": "national-voters-day",
@@ -147,7 +152,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "National Voters Day India",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "National Voters' Day is celebrated annually in India on 25 January to mark the foundation day of Election Commission of India. It established by the Government of India in order to encourage more young voters to take part in the political process, and first celebrated 25 January 2011."
   },
   {
     "id": "national-science-day",
@@ -172,7 +178,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "National Science Day India exhibition",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "National Science Day is celebrated in India on February 28 each year to mark the discovery of the Raman effect by Indian physicist Sir C. V. Raman on 28 February 1928."
   },
   {
     "id": "ambedkar-jayanti",
@@ -197,7 +204,8 @@
     "religion": "Secular",
     "season": "Spring",
     "imageQuery": "Ambedkar Jayanti procession tribute",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Ambedkar Jayanti, also known as Bhim Jayanti, is observed on 14 April to commemorate the memory of B. R. Ambedkar, Indian politician and social reformer. It marks Ambedkar's birthday who was born on 14 April 1891. His birthday is also referred to as Equality Day by some in India."
   },
   {
     "id": "labour-day-india",
@@ -222,7 +230,8 @@
     "religion": "Secular",
     "season": "Summer",
     "imageQuery": "Labour Day India workers rally",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Labour Day is an official public holiday in many countries. In most countries, Labour Day is synonymous with, or linked with, International Workers' Day, which happens on 1 May. It was originally chosen to commemorate the 1886 general strike which culminated in the Haymarket affair. In the United States and Canada, it is a public holiday on the first Monday in September."
   },
   {
     "id": "international-yoga-day",
@@ -247,7 +256,8 @@
     "religion": "Secular",
     "season": "Summer",
     "imageQuery": "International Yoga Day mass session",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The International Day of Yoga is a day in recognition of Yoga that is celebrated around the world annually on 21 June following its adoption by the United Nations in 2014. As Yoga exercises have shown significant benefits for physical and mental well-being, it was considered important by the UN to globally promote this wellness practice, which originated in ancient India."
   },
   {
     "id": "national-doctors-day",
@@ -272,7 +282,8 @@
     "religion": "Secular",
     "season": "Monsoon",
     "imageQuery": "National Doctors Day India",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Honours the birth and death anniversary of Dr B. C. Roy, eminent physician and former Chief Minister of West Bengal, recognising the contribution of doctors."
   },
   {
     "id": "kargil-vijay-diwas",
@@ -296,7 +307,8 @@
     "religion": "Secular",
     "season": "Monsoon",
     "imageQuery": "Kargil Vijay Diwas war memorial Dras",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Kargil Vijay Diwas is celebrated every year on 26 of July in India, to observe India's victory over Pakistan in the Kargil War for ousting Pakistani Forces from their occupied positions on the mountain tops of Northern Kargil District in Ladakh in 1999. Initially, the Pakistani army denied their involvement in the war, claiming that it was caused by the Kashmiri militants. However documents left behind by casualties, testimony of POWs and later statements by the Prime Minister of Pakistan Nawaz Sharif and Pakistan Army Chief of Army Staff Pervez Musharraf pointed to the involvement of the Pakistani paramilitary forces, led by General Ashraf Rashid."
   },
   {
     "id": "national-sports-day",
@@ -321,7 +333,8 @@
     "religion": "Secular",
     "season": "Monsoon",
     "imageQuery": "National Sports Day Dhyan Chand",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the birth anniversary of hockey legend Major Dhyan Chand, celebrating sportsmanship and promoting fitness."
   },
   {
     "id": "teachers-day-india",
@@ -345,7 +358,8 @@
     "religion": "Secular",
     "season": "Monsoon",
     "imageQuery": "Teachers Day India celebration",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "\n Teachers' Day is a special day for the appreciation of teachers. It may include celebrations to honor them for their special contributions in a particular field area, or the community tone in education. This is one of the most celebrated days and the primary reason why countries celebrate this day on different dates, unlike many other International Days. For example, Argentina has commemorated Domingo Faustino Sarmiento's death on 11 September as Teachers' Day since 1915. In India, the birthday of the second president Sarvepalli Radhakrishnan, 5 September, is celebrated as Teachers' Day since 1962."
   },
   {
     "id": "hindi-diwas",
@@ -369,7 +383,8 @@
     "religion": "Secular",
     "season": "Monsoon",
     "imageQuery": "Hindi Diwas India",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the day in 1949 when Hindi in the Devanagari script was adopted as an official language of the Union of India."
   },
   {
     "id": "engineers-day-india",
@@ -393,7 +408,8 @@
     "religion": "Secular",
     "season": "Monsoon",
     "imageQuery": "Engineers Day Visvesvaraya",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Engineer's Day is observed in several countries on various dates of the year."
   },
   {
     "id": "air-force-day-india",
@@ -418,7 +434,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Indian Air Force Day flypast",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Commemorates the official establishment of the Indian Air Force in 1932."
   },
   {
     "id": "national-unity-day",
@@ -442,7 +459,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Statue of Unity Sardar Patel Rashtriya Ekta Diwas",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "National Unity Day is celebrated in India on 31 October. It was introduced by the Government of India in 2014. The day is celebrated to mark the birth anniversary of Vallabhbhai Patel who had a major role in the political integration of India."
   },
   {
     "id": "national-education-day",
@@ -466,7 +484,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "National Education Day Maulana Azad",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the birth anniversary of Maulana Abul Kalam Azad, independent India's first Education Minister, celebrating his contribution to education."
   },
   {
     "id": "childrens-day-india",
@@ -490,7 +509,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Children's Day India Nehru",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Children's Day is a commemorative date celebrated annually in honour of children, whose date of observance varies by country. \nIn 1925, International Children's Day was first proclaimed in Geneva during the World Conference on Child Welfare. Since 1950, it is celebrated on 1 June in many countries that were part of the Eastern Bloc and Non-Aligned Movement, which follow the suggestion from Women's International Democratic Federation. World Children's Day is celebrated on 20 November to commemorate the issuance of the Declaration of the Rights of the Child by the UN General Assembly on 20 November 1959, along with the adoption of the Convention on the Rights of the Child on that date in 1989. In some countries, it is Children's Week and not Children's Day."
   },
   {
     "id": "constitution-day-india",
@@ -515,7 +535,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Constitution Day India Preamble reading",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Constitution Day is a holiday to honour the constitution of a country. Constitution Day is often celebrated on the anniversary of the signing, promulgation or adoption of the constitution, or in some cases, to commemorate the change to constitutional monarchy."
   },
   {
     "id": "navy-day-india",
@@ -540,7 +561,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Indian Navy Day operational demonstration",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Commemorates Operation Trident, a naval strike on Karachi harbour during the 1971 Indo-Pak war."
   },
   {
     "id": "up-foundation-day",
@@ -560,7 +582,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Uttar Pradesh Diwas cultural programme",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Commemorates the formation of the state of Uttar Pradesh in its present name in 1950."
   },
   {
     "id": "manipur-statehood-day",
@@ -580,7 +603,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Manipur statehood day Imphal",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks Manipur attaining full statehood in 1972 under the North-Eastern Areas (Reorganisation) Act 1971."
   },
   {
     "id": "meghalaya-statehood-day",
@@ -600,7 +624,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Meghalaya statehood day cultural",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks Meghalaya attaining full statehood in 1972, carved out of Assam."
   },
   {
     "id": "tripura-statehood-day",
@@ -620,7 +645,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Tripura statehood day Agartala",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks Tripura attaining full statehood in 1972 under the North-Eastern Areas (Reorganisation) Act."
   },
   {
     "id": "himachal-full-statehood",
@@ -640,7 +666,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Himachal Pradesh statehood day Shimla",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Commemorates Himachal Pradesh becoming the 18th full state of India in 1971."
   },
   {
     "id": "rajasthan-day",
@@ -660,7 +687,8 @@
     "religion": "Secular",
     "season": "Spring",
     "imageQuery": "Rajasthan Diwas folk performance Jaipur",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the unification of princely states into the state of Rajasthan in 1949."
   },
   {
     "id": "bihar-diwas",
@@ -680,7 +708,8 @@
     "religion": "Secular",
     "season": "Spring",
     "imageQuery": "Bihar Diwas Patna celebration",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Commemorates the carving out of Bihar as a separate province from the Bengal Presidency in 1912."
   },
   {
     "id": "odisha-day",
@@ -700,7 +729,8 @@
     "religion": "Secular",
     "season": "Spring",
     "imageQuery": "Utkala Dibasa Odisha Day Odia culture",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the formation of Odisha as a separate province on linguistic basis in 1936."
   },
   {
     "id": "himachal-day",
@@ -720,7 +750,8 @@
     "religion": "Secular",
     "season": "Spring",
     "imageQuery": "Himachal Day hill culture",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Commemorates the formation of Himachal Pradesh as a Part-C state in 1948 by integrating hill principalities."
   },
   {
     "id": "maharashtra-day",
@@ -740,7 +771,8 @@
     "religion": "Secular",
     "season": "Summer",
     "imageQuery": "Maharashtra Day Mumbai parade",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the formation of the state of Maharashtra in 1960 when the Bombay State was split on linguistic lines."
   },
   {
     "id": "gujarat-day",
@@ -760,7 +792,8 @@
     "religion": "Secular",
     "season": "Summer",
     "imageQuery": "Gujarat Day Gujarati culture celebration",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the formation of the state of Gujarat in 1960 when the bilingual Bombay State was divided."
   },
   {
     "id": "sikkim-statehood-day",
@@ -780,7 +813,8 @@
     "religion": "Secular",
     "season": "Summer",
     "imageQuery": "Sikkim statehood day Gangtok",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Commemorates Sikkim becoming the 22nd state of India in 1975."
   },
   {
     "id": "telangana-formation-day",
@@ -800,7 +834,8 @@
     "religion": "Secular",
     "season": "Monsoon",
     "imageQuery": "Telangana Formation Day Hyderabad",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Telangana Day is a state public holiday in the Indian state of Telangana, commemorating the formation of the state of Telangana. It is observed annually on 2 June. Telangana Day is commonly associated with parades and political speeches and ceremonies, in addition to various other public and private events celebrating the history and traditions of Telangana. The state celebrates the occasion with formal events across the districts. The formal event of national flag hoisting by the Chief Minister of Telangana and the ceremonial parade is held at the parade grounds. Celebrations are held in all 33 districts of the state."
   },
   {
     "id": "jharkhand-foundation-day",
@@ -820,7 +855,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Jharkhand Foundation Day Birsa Munda",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the creation of Jharkhand as a separate state in 2000, carved out of Bihar. Coincides with the birth anniversary of tribal icon Birsa Munda."
   },
   {
     "id": "uttarakhand-foundation-day",
@@ -840,7 +876,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Uttarakhand Foundation Day Dehradun",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the creation of Uttarakhand (initially Uttaranchal) as a separate state in 2000, carved out of Uttar Pradesh."
   },
   {
     "id": "nagaland-foundation-day",
@@ -860,7 +897,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Nagaland statehood day cultural",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Commemorates Nagaland becoming the 16th state of India in 1963."
   },
   {
     "id": "karnataka-rajyotsava",
@@ -880,7 +918,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Karnataka Rajyotsava Kannada flag Bengaluru",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the formation of Karnataka state in 1956, unifying Kannada-speaking regions. The state was renamed from Mysore to Karnataka in 1973."
   },
   {
     "id": "andhra-pradesh-formation-day",
@@ -900,7 +939,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Andhra Pradesh Formation Day Telugu culture",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the formation of Andhra Pradesh in 1956 by merging Telugu-speaking areas. Observed as the state's formation day."
   },
   {
     "id": "kerala-piravi",
@@ -920,7 +960,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Kerala Piravi Malayalam culture",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the formation of Kerala state in 1956 by unifying Malayalam-speaking regions of Travancore, Cochin and Malabar."
   },
   {
     "id": "madhya-pradesh-foundation-day",
@@ -940,7 +981,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Madhya Pradesh Foundation Day Bhopal",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the formation of Madhya Pradesh in 1956 under the States Reorganisation Act."
   },
   {
     "id": "chhattisgarh-foundation-day",
@@ -960,7 +1002,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Chhattisgarh Rajyotsava Raipur folk",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the creation of Chhattisgarh as a separate state in 2000, carved out of Madhya Pradesh."
   },
   {
     "id": "haryana-day",
@@ -980,7 +1023,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Haryana Day cultural programme",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the formation of Haryana as a separate state in 1966, carved out of Punjab on linguistic lines."
   },
   {
     "id": "punjab-day",
@@ -1000,7 +1044,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Punjab Day Punjabi culture",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Associated with the reorganisation of Punjab in 1966 when Haryana and parts of Himachal were separated."
   },
   {
     "id": "assam-divas",
@@ -1020,7 +1065,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Asom Divas Sukapha Assam",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Asom Divas commemorates the arrival of Ahom king Chaolung Sukapha in the Brahmaputra valley in the 13th century, marking the foundation of the Ahom kingdom. It is observed as Assam Day, though Assam has no single modern statehood date."
   },
   {
     "id": "goa-statehood-day",
@@ -1040,7 +1086,8 @@
     "religion": "Secular",
     "season": "Summer",
     "imageQuery": "Goa statehood day celebration",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks Goa attaining full statehood in 1987, having earlier been part of the Union Territory of Goa, Daman and Diu."
   },
   {
     "id": "tamil-nadu-day",
@@ -1060,7 +1107,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Tamil Nadu Tamil culture",
-    "verificationStatus": "Needs Verification"
+    "verificationStatus": "Needs Verification",
+    "aboutLong": "Associated with the formation of the linguistic state in 1956; the state was renamed from Madras to Tamil Nadu in 1969. Observance of a single 'foundation day' is not uniformly standardised."
   },
   {
     "id": "arunachal-statehood-day",
@@ -1080,7 +1128,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Arunachal Pradesh statehood day Itanagar",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks Arunachal Pradesh attaining full statehood in 1987."
   },
   {
     "id": "mizoram-statehood-day",
@@ -1100,7 +1149,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Mizoram statehood day Aizawl",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks Mizoram attaining full statehood in 1987 under the State of Mizoram Act 1986."
   },
   {
     "id": "west-bengal-day",
@@ -1120,7 +1170,8 @@
     "religion": "Secular",
     "season": "Spring",
     "imageQuery": "West Bengal culture Kolkata",
-    "verificationStatus": "Needs Verification"
+    "verificationStatus": "Needs Verification",
+    "aboutLong": "A foundation day for West Bengal observed on 20 April has been promoted by the Raj Bhavan, but the date is politically contested and not universally accepted by the state government."
   },
   {
     "id": "puducherry-liberation-day",
@@ -1140,7 +1191,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Puducherry French heritage",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Marks the de facto transfer of the French establishments of Puducherry to India in 1954. Full legal transfer (de jure) occurred in 1962."
   },
   {
     "id": "chandigarh-formation",
@@ -1160,7 +1212,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Chandigarh Le Corbusier city",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Chandigarh was constituted as a Union Territory in 1966 when Haryana was carved out of Punjab; the city serves as the shared capital of both states."
   },
   {
     "id": "lakshadweep-formation",
@@ -1180,7 +1233,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Lakshadweep islands culture",
-    "verificationStatus": "Needs Verification"
+    "verificationStatus": "Needs Verification",
+    "aboutLong": "Lakshadweep was constituted as a Union Territory in 1956 (renamed from Laccadive, Minicoy and Amindivi Islands in 1973)."
   },
   {
     "id": "jk-ut-formation",
@@ -1200,7 +1254,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Jammu Kashmir landscape",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Marks the reorganisation of the former state of Jammu and Kashmir into a Union Territory in 2019."
   },
   {
     "id": "ladakh-ut-formation",
@@ -1220,7 +1275,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Ladakh monastery landscape",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Marks the creation of Ladakh as a separate Union Territory in 2019 following the reorganisation of Jammu and Kashmir."
   },
   {
     "id": "dnh-dd-merger",
@@ -1240,7 +1296,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Daman Diu coastal heritage",
-    "verificationStatus": "Needs Verification"
+    "verificationStatus": "Needs Verification",
+    "aboutLong": "The two former union territories were merged into a single Union Territory in 2020."
   },
   {
     "id": "delhi-nct",
@@ -1260,7 +1317,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Delhi India Gate cityscape",
-    "verificationStatus": "Needs Verification"
+    "verificationStatus": "Needs Verification",
+    "aboutLong": "The National Capital Territory of Delhi with a legislative assembly was established under the 69th Constitutional Amendment, effective 1992."
   },
   {
     "id": "andaman-nicobar-ut",
@@ -1280,7 +1338,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Andaman Nicobar Cellular Jail",
-    "verificationStatus": "Needs Verification"
+    "verificationStatus": "Needs Verification",
+    "aboutLong": "The Andaman and Nicobar Islands have been administered as a Union Territory of India since 1956."
   },
   {
     "id": "diwali",
@@ -1318,7 +1377,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Diwali festival lights diya rangoli celebration",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The festival of lights celebrates the victory of light over darkness and good over evil. It commemorates Lord Rama's return to Ayodhya after defeating Ravana, and is also associated with the worship of Goddess Lakshmi for prosperity."
   },
   {
     "id": "holi",
@@ -1354,7 +1414,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Holi festival colours gulal celebration India",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The festival of colours marks the arrival of spring and the triumph of good over evil, celebrating the legend of Holika and Prahlad, and the playful love of Radha and Krishna."
   },
   {
     "id": "dussehra",
@@ -1389,7 +1450,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Dussehra Ravana effigy burning Ramlila",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the victory of Lord Rama over the demon king Ravana, and of Goddess Durga over the buffalo demon Mahishasura, symbolising the triumph of good over evil."
   },
   {
     "id": "durga-puja",
@@ -1428,7 +1490,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Durga Puja pandal Kolkata idol",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Celebrates the victory of Goddess Durga over the demon Mahishasura, honouring the divine feminine power (Shakti). It is the most important festival of the Bengali calendar."
   },
   {
     "id": "ganesh-chaturthi",
@@ -1465,7 +1528,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Ganesh Chaturthi idol Mumbai visarjan",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Celebrates the birth of Lord Ganesha, the remover of obstacles and god of wisdom and new beginnings."
   },
   {
     "id": "navratri",
@@ -1500,7 +1564,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Navratri Garba Dandiya Gujarat dance",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A nine-night festival honouring the nine forms of Goddess Durga, celebrating divine feminine energy. Observed differently across regions, it precedes Dussehra."
   },
   {
     "id": "janmashtami",
@@ -1535,7 +1600,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Krishna Janmashtami Dahi Handi temple",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Celebrates the birth of Lord Krishna, the eighth avatar of Vishnu, revered for his teachings in the Bhagavad Gita."
   },
   {
     "id": "ram-navami",
@@ -1568,7 +1634,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Ram Navami Ayodhya temple procession",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Celebrates the birth of Lord Rama, the seventh avatar of Vishnu and hero of the Ramayana."
   },
   {
     "id": "maha-shivaratri",
@@ -1602,7 +1669,8 @@
     "religion": "Hindu",
     "season": "Winter",
     "imageQuery": "Maha Shivaratri temple Shiva lingam abhishekam",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The great night of Shiva commemorates the cosmic union of Shiva and Parvati and is dedicated to the worship of Lord Shiva."
   },
   {
     "id": "raksha-bandhan",
@@ -1635,7 +1703,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Raksha Bandhan rakhi sister brother",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Raksha Bandhan is a popular and traditionally Hindu annual rite or ceremony that is central to a festival of the same name celebrated in South Asia, and among people around the world influenced by Hindu culture. On this day, sisters of all ages tie a talisman or amulet, called the rakhi, around the wrists of their brothers. The sisters symbolically protect the brothers, receive a gift in return, and traditionally invest the brothers with a share of the responsibility of their potential care."
   },
   {
     "id": "makar-sankranti",
@@ -1671,7 +1740,8 @@
     "religion": "Hindu",
     "season": "Winter",
     "imageQuery": "Makar Sankranti kite flying festival",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the sun's transition into Capricorn (Makara) and the start of longer days; a harvest festival celebrated under many regional names."
   },
   {
     "id": "guru-nanak-jayanti",
@@ -1706,7 +1776,8 @@
     "religion": "Sikh",
     "season": "Autumn",
     "imageQuery": "Guru Nanak Jayanti Nagar Kirtan gurdwara",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Celebrates the birth anniversary of Guru Nanak Dev, the founder of Sikhism and the first of the ten Sikh Gurus."
   },
   {
     "id": "mahavir-jayanti",
@@ -1738,7 +1809,8 @@
     "religion": "Jain",
     "season": "Spring",
     "imageQuery": "Mahavir Jayanti Jain procession temple",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Celebrates the birth of Lord Mahavira, the 24th and last Tirthankara of Jainism, who taught non-violence, truth and non-attachment."
   },
   {
     "id": "buddha-purnima",
@@ -1773,7 +1845,8 @@
     "religion": "Buddhist",
     "season": "Summer",
     "imageQuery": "Buddha Purnima monastery prayer lamps",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Commemorates the birth, enlightenment and death (parinirvana) of Gautama Buddha, the founder of Buddhism."
   },
   {
     "id": "eid-al-fitr",
@@ -1808,7 +1881,8 @@
     "religion": "Muslim",
     "season": "Spring",
     "imageQuery": "Eid al-Fitr namaz celebration India",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Eid al-Fitr is the first of the two main festivals in Islam, the other being Eid al-Adha. The holiday falls on the first day of Shawwal, the tenth month of the Islamic calendar. One of the most important Islamic celebrations, Eid al-Fitr is celebrated by Muslims worldwide as it marks the end of the month-long, dawn-to-dusk fasting (sawm) during Ramadan. The holiday is known under various other names in different languages and countries around the world."
   },
   {
     "id": "eid-al-adha",
@@ -1843,7 +1917,8 @@
     "religion": "Muslim",
     "season": "Summer",
     "imageQuery": "Eid al-Adha Bakrid prayer celebration",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The festival of sacrifice commemorates Prophet Ibrahim's willingness to sacrifice his son in obedience to God; it coincides with the Hajj pilgrimage."
   },
   {
     "id": "muharram",
@@ -1877,7 +1952,8 @@
     "religion": "Muslim",
     "season": "Monsoon",
     "imageQuery": "Muharram tazia procession",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Muharram is the first month of the Islamic calendar. It is one of the four sacred months of the year when warfare is banned. It precedes the month of Safar. The tenth of Muharram is known as Ashura, an important day of commemoration in Islam. For Sunni Muslims, the day commemorates the parting of the Red Sea by Moses and the salvation of the Israelites, observed through voluntary fasting and other permissible expressions of gratitude. By contrast, Ashura is a day of mourning for Shia Muslims, who annually commemorate the death of Husayn ibn Ali, grandson of the Islamic prophet Muhammad and the third Shia imam. Husayn was killed, alongside most of his relatives and his small retinue, in the Battle of Karbala in 680 CE against the army of the Umayyad caliph Yazid ibn Mu'awiya. The Shia rituals span the first ten days of Muharram, culminating on Ashura with mourning processions in Shia cities. Also in Muharram, the Aqsa mosque in Jerusalem was initially set as the direction of prayer for early Muslims."
   },
   {
     "id": "christmas-india",
@@ -1917,7 +1993,8 @@
     "religion": "Christian",
     "season": "Winter",
     "imageQuery": "Christmas church India lights nativity",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Christmas is an annual celebration commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world. A liturgical feast central to Christianity, Christmas preparation begins on the First Sunday of Advent. Advent is followed by Christmastide, which historically in the West lasts twelve days and culminates on Twelfth Night. Christmas Day is a public holiday in many countries and is observed by a majority of Christians; it is also celebrated culturally by many non-Christians and forms an integral part of the annual holiday season."
   },
   {
     "id": "good-friday-easter",
@@ -1953,7 +2030,8 @@
     "religion": "Christian",
     "season": "Spring",
     "imageQuery": "Easter church celebration India",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Good Friday commemorates the crucifixion of Jesus Christ; Easter celebrates his resurrection, the cornerstone of Christian belief."
   },
   {
     "id": "chhath-puja",
@@ -1988,7 +2066,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Chhath Puja ghat sun offering Bihar",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "An ancient festival dedicated to the Sun God (Surya) and Chhathi Maiya, offering thanks for sustaining life and seeking blessings for family wellbeing."
   },
   {
     "id": "vasant-panchami",
@@ -2023,7 +2102,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Vasant Panchami Saraswati Puja yellow",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Marks the onset of spring and is dedicated to Goddess Saraswati, deity of knowledge, music and arts."
   },
   {
     "id": "onam",
@@ -2058,7 +2138,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Onam Kerala pookalam sadya boat race",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Kerala's harvest festival celebrating the homecoming of the legendary King Mahabali, symbolising prosperity and equality during his mythical reign."
   },
   {
     "id": "vishu",
@@ -2090,7 +2171,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Vishu Kerala Vishukkani arrangement",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Vishu is a Hindu festival celebrating the Malayali New Year in Kerala and Mahe of India. Vishu falls on the first day of the month of Medam, the first month of the Solar calendar used in Malabar of Kerala,, signifying the solar new year as the sun moves into the zodiac sign of Aries. It is the traditional new year, while the Kollam era calendar, which was later formed at Kollam in 825 CE, new year falls on the 1st Chingham."
   },
   {
     "id": "thrissur-pooram",
@@ -2121,7 +2203,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Thrissur Pooram elephants parasol Kerala",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A spectacular temple festival in Thrissur known as the 'pooram of all poorams', celebrating the deities of surrounding temples."
   },
   {
     "id": "theyyam",
@@ -2153,7 +2236,8 @@
     "religion": "Hindu",
     "season": "Winter",
     "imageQuery": "Theyyam Kerala ritual dance costume",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A ritualistic dance-worship form of north Kerala in which performers embody deities and ancestral spirits."
   },
   {
     "id": "pongal",
@@ -2186,7 +2270,8 @@
     "religion": "Hindu",
     "season": "Winter",
     "imageQuery": "Pongal Tamil Nadu pot kolam harvest",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Pongal may refer to:Pongal (dish), a South Indian meal prepared from rice, milk and other ingredients prepared during the festival\nPongal (festival) or Thai Pongal, an annual Tamil people festival, which is celebrated for planting crops during the month of Thai\nPongal River, a river in Espírito Santo, Brazil"
   },
   {
     "id": "thaipusam",
@@ -2217,7 +2302,8 @@
     "religion": "Hindu",
     "season": "Winter",
     "imageQuery": "Thaipusam kavadi Murugan devotees",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Dedicated to Lord Murugan, commemorating the occasion when Goddess Parvati gave him a divine spear to vanquish evil."
   },
   {
     "id": "karthigai-deepam",
@@ -2250,7 +2336,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Karthigai Deepam lamps Tiruvannamalai",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "An ancient festival of lights celebrating Lord Shiva; the great beacon atop Tiruvannamalai hill is its most famous expression."
   },
   {
     "id": "mysuru-dasara",
@@ -2284,7 +2371,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Mysuru Dasara palace illumination elephant procession",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Karnataka's grand state festival (Nadahabba) celebrating the victory of Goddess Chamundeshwari over the demon Mahishasura."
   },
   {
     "id": "ugadi",
@@ -2318,7 +2406,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Ugadi festival pachadi mango leaves",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The Telugu and Kannada New Year, marking the start of a new lunar year and the arrival of spring."
   },
   {
     "id": "hampi-utsav",
@@ -2349,7 +2438,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Hampi Utsav ruins light show Karnataka",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A cultural festival celebrating the heritage of the Vijayanagara Empire amid the ruins of Hampi, a UNESCO World Heritage Site."
   },
   {
     "id": "gudi-padwa",
@@ -2381,7 +2471,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Gudi Padwa Maharashtra gudi hoisting",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The Marathi New Year, marking the arrival of spring and, by tradition, the day Lord Brahma created the universe."
   },
   {
     "id": "pandharpur-wari",
@@ -2413,7 +2504,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Pandharpur Wari palkhi warkari pilgrimage",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A centuries-old pilgrimage of Varkari devotees to the Vithoba temple at Pandharpur, expressing devotion to Lord Vitthal."
   },
   {
     "id": "nag-panchami",
@@ -2444,7 +2536,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Nag Panchami snake worship India",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A festival venerating snakes (Nagas), seeking their blessings and protection from snakebite."
   },
   {
     "id": "uttarayan",
@@ -2478,7 +2571,8 @@
     "religion": "Hindu",
     "season": "Winter",
     "imageQuery": "Uttarayan Gujarat kite festival sky",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Gujarat's celebration of Makar Sankranti, marking the sun's northward journey, famed for its skies full of kites."
   },
   {
     "id": "rann-utsav",
@@ -2511,7 +2605,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Rann Utsav Kutch white desert tents",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A months-long cultural festival celebrating the white salt desert of the Kutch under the full moon."
   },
   {
     "id": "janmashtami-dwarka",
@@ -2542,7 +2637,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Dwarkadhish temple Janmashtami Gujarat",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Krishna Janmashtami at Dwarka, the legendary kingdom of Lord Krishna, draws devotees to one of Hinduism's holiest sites."
   },
   {
     "id": "baisakhi",
@@ -2577,7 +2673,8 @@
     "religion": "Sikh",
     "season": "Spring",
     "imageQuery": "Baisakhi Punjab Bhangra harvest",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A harvest festival and the Sikh new year; it also marks the founding of the Khalsa by Guru Gobind Singh in 1699."
   },
   {
     "id": "lohri",
@@ -2613,7 +2710,8 @@
     "religion": "Sikh",
     "season": "Winter",
     "imageQuery": "Lohri Punjab bonfire celebration",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A winter folk festival marking the end of the coldest days and the harvest of rabi crops; associated with the folk hero Dulla Bhatti."
   },
   {
     "id": "hola-mohalla",
@@ -2646,7 +2744,8 @@
     "religion": "Sikh",
     "season": "Spring",
     "imageQuery": "Hola Mohalla Nihang Gatka Anandpur Sahib",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A Sikh festival established by Guru Gobind Singh as an occasion to display martial skills, held the day after Holi."
   },
   {
     "id": "pushkar-fair",
@@ -2678,7 +2777,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Pushkar Camel Fair Rajasthan desert",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "One of the world's largest camel and livestock fairs, held around the sacred Pushkar lake during Kartik Purnima."
   },
   {
     "id": "desert-festival-jaisalmer",
@@ -2709,7 +2809,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Jaisalmer Desert Festival camel dunes Rajasthan",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A vibrant celebration of Rajasthani desert culture set against the golden dunes near Jaisalmer."
   },
   {
     "id": "gangaur",
@@ -2741,7 +2842,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Gangaur Rajasthan procession women idols",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Gangaur is a Hindu festival celebrated in the Indian states of Rajasthan, Haryana, Fazilka District of Punjab, the regions of Malwa, Nimar of Madhya Pradesh and the Braj and Bundelkhand regions of Uttar Pradesh. It is also celebrated in some parts of Gujarat and West Bengal. A variation of the same festival known as Chaitra Gauri Vrat is observed on the same day in the states of Maharashtra and northern Karnataka. Another variation called Saubhagya Gauri Vratam is observed in the states of Telangana and Andhra Pradesh."
   },
   {
     "id": "teej-rajasthan",
@@ -2775,7 +2877,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Teej festival swing mehndi women Rajasthan",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Teej is a collective term for three Hindu festivals dedicated to the goddess Parvati and her consort Shiva. It is mainly celebrated by married women and unmarried girls, to pray for the long life of their husband or future husband and to welcome the arrival of the monsoon through singing, swinging, dancing, joyous celebration, pūjā, and often fasting."
   },
   {
     "id": "poila-boishakh",
@@ -2809,7 +2912,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Poila Boishakh Bengali New Year Kolkata",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The Bengali New Year, marking the first day of the Bengali calendar and a time of fresh beginnings."
   },
   {
     "id": "kali-puja",
@@ -2842,7 +2946,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Kali Puja Bengal idol night",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Kali Puja, also known as Shyama Puja or Mahanisha Puja, is a festival originating from the Indian subcontinent, dedicated to the Hindu goddess Kali. It is celebrated on the new moon day of the Hindu calendar month of Ashwayuja or Kartika. The festival is especially popular in the regions of Barasat, Naihati, Begampur, Kolkata, Basirhat and Tamluk in West Bengal, Bhagalpur in Bihar's Anga, and other places like \nJharkhand, Odisha, Assam, and Tripura. Along with the neighbouring country of Bangladesh."
   },
   {
     "id": "jagaddhatri-puja",
@@ -2872,7 +2977,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Jagaddhatri Puja Chandannagar lighting",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Jagaddhatri Puja is a Hindu festival. It is famous in Krishnanagar in Nadia, Chandannagar, Rishra and Singur in Hooghly and Ichhapur Nawabgunj in North 24 Parganas in West Bengal where it is celebrated either for five days or on the Navami tithi only. Her worship and rituals are derived from Tantra. It is believed that her worship frees her devotees from ego and all other materialistic desires."
   },
   {
     "id": "bihu",
@@ -2906,7 +3012,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Bihu Assam dance dhol gamosa",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Assam's most important festival, Rongali Bihu marks the Assamese New Year and the onset of the agricultural season."
   },
   {
     "id": "ambubachi-mela",
@@ -2935,7 +3042,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Ambubachi Mela Kamakhya temple Guwahati",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "The Ambubachi Mela is an annual Hindu mela (gathering) held at Kamakhya Temple in Guwahati, Assam. This yearly mela is celebrated during the monsoon season that happens to fall during the Assamese month Ahar(আহাৰ) , around the middle of June when the sun transits to the zodiac of Mithuna, when the Brahmaputra River is in spate. During this time Brahmaputra River near the temple turns Red for three days."
   },
   {
     "id": "me-dam-me-phi",
@@ -2964,7 +3072,8 @@
     "religion": "Tribal",
     "season": "Winter",
     "imageQuery": "Me-Dam-Me-Phi Ahom festival Assam",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Me dam me phi is a socio-traditional festival celebrated by the Tai-Ahom and people of Assam. The festival has its roots in the ancestral worship of Confucianism in ancient China, which later developed into the Dam-phi tradition of the Tai people. In the modern era it's celebrated on 31 January while initially it's celebrated in the Tai month of Duin-Ha (March–April) of sexagenary cycle."
   },
   {
     "id": "rath-yatra-puri",
@@ -2997,7 +3106,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Rath Yatra Puri Jagannath chariot",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The famous chariot festival of Lord Jagannath, Balabhadra and Subhadra at Puri, when the deities journey to the Gundicha Temple."
   },
   {
     "id": "raja-parba",
@@ -3030,7 +3140,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Raja Parba Odisha swing women",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Raja Parba, also known as Mithuna Sankranti, is a three-day-long festival of womanhood celebrated in Odisha, India. The second day of the festival signifies beginning of the solar month of Mithuna, from which the season of rains starts."
   },
   {
     "id": "konark-festival",
@@ -3060,7 +3171,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Konark Dance Festival Sun Temple Odissi",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Konark Dance Festival is a five-day dance festival held every year in the month of December mostly from 1 to 5 in backdrop of the Sun temple in Konark, Odisha in India. It is one of the biggest dance festivals held in Odisha."
   },
   {
     "id": "sama-chakeva",
@@ -3090,7 +3202,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Sama Chakeva Mithila Bihar clay birds",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Saama Chakeba is a Hindu festival, originating from the Mithila region of the Indian subcontinent. It is a festival of unity. It is celebrated in November and commences when birds begin their migration from the Himalayas to the plains of India. According to the Hindustan Times, the festival, which includes folk theater and song, celebrates the love between brothers and sisters and is based on a legend recounted in the Puranas. It is celebrated by Maithils & Tharu people of India and Nepal."
   },
   {
     "id": "sonepur-mela",
@@ -3121,7 +3234,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Sonepur Mela Bihar cattle fair",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Sonepur Cattle Fair is held on Kartik Poornima over the months of November and December in Sonepur, Bihar, on the confluence of river Ganges (Gandak). It is also known as Harihar Kshetra Mela. To date, it is the biggest cattle fair in Asia and usually lasts from between fifteen days to one month in duration. The Sonepur Cattle Fair used to attract traders from places as far away as Tamil Nadu and Delhi. In 2018, the Fair started on the 21st of November and continued until the 22nd of December."
   },
   {
     "id": "sarhul",
@@ -3153,7 +3267,8 @@
     "religion": "Tribal",
     "season": "Spring",
     "imageQuery": "Sarhul Jharkhand tribal festival sal tree",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Sarhul is a spring festival celebrated in the Indian state of Jharkhand, marking the commencement of the new year. The festival lasts for three days, from the third day of the Chaitra month in Shukla Paksha to Chaitra Purnima. During the festival, the village priest, known as the Pahan offers a sacrifice of flowers, fruits, vermilion, a rooster, and tapan (liquor) in the Sarna to the Sun, the village deity, and the ancestors for the prosperity of the village. After the rituals, locals dance while holding Sal flowers."
   },
   {
     "id": "karma-festival",
@@ -3186,7 +3301,8 @@
     "religion": "Tribal",
     "season": "Monsoon",
     "imageQuery": "Karma festival Jharkhand tribal dance",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A tribal festival worshipping the Karam tree, symbolising youth, fertility and the bond with nature."
   },
   {
     "id": "sohrai",
@@ -3217,7 +3333,8 @@
     "religion": "Tribal",
     "season": "Autumn",
     "imageQuery": "Sohrai Jharkhand wall painting cattle",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A harvest and cattle festival of Jharkhand's tribal communities, famed for the distinctive Sohrai wall paintings."
   },
   {
     "id": "bastar-dussehra",
@@ -3246,7 +3363,8 @@
     "religion": "Tribal",
     "season": "Autumn",
     "imageQuery": "Bastar Dussehra Chhattisgarh tribal chariot",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A unique 75-day Dussehra in the Bastar region honouring the local goddess Danteshwari, distinct from the Rama-Ravana tradition."
   },
   {
     "id": "hareli",
@@ -3277,7 +3395,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Hareli Chhattisgarh festival farming",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "Chhattisgarh's first major festival of the year, celebrating greenery and the farming season's start."
   },
   {
     "id": "bathukamma",
@@ -3309,7 +3428,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Bathukamma Telangana flower stack women dance",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A vibrant floral festival of Telangana celebrating womanhood and the goddess Gauri, marking the monsoon's bounty."
   },
   {
     "id": "bonalu",
@@ -3338,7 +3458,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Bonalu Telangana pot offering temple",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A folk festival of Telangana honouring Goddess Mahakali, offering thanks and seeking protection, especially in Hyderabad and Secunderabad."
   },
   {
     "id": "brahmotsavam-tirupati",
@@ -3368,7 +3489,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Tirumala Brahmotsavam Tirupati procession",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The grandest annual festival at the Tirumala Venkateswara Temple, one of the world's most visited pilgrimage sites."
   },
   {
     "id": "goa-carnival",
@@ -3401,7 +3523,8 @@
     "religion": "Christian",
     "season": "Winter",
     "imageQuery": "Goa Carnival float parade Panaji",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A pre-Lenten carnival of Portuguese origin, unique to Goa, filled with colour, music and revelry."
   },
   {
     "id": "shigmo",
@@ -3434,7 +3557,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Shigmo Goa float parade folk dance",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Goa's spring festival, a Konkani celebration akin to Holi, marking the harvest and the return of warriors of yore."
   },
   {
     "id": "sao-joao",
@@ -3467,7 +3591,8 @@
     "religion": "Christian",
     "season": "Monsoon",
     "imageQuery": "Sao Joao Goa well jumping flower crown",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A monsoon festival honouring St John the Baptist, celebrated with exuberant water revelry."
   },
   {
     "id": "kullu-dussehra",
@@ -3500,7 +3625,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Kullu Dussehra Himachal deity procession",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A week-long international festival in the Kullu valley that begins when Dussehra ends elsewhere, centred on Lord Raghunath."
   },
   {
     "id": "minjar-mela",
@@ -3532,7 +3658,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Minjar Mela Chamba Himachal procession",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A historic fair in Chamba marking the maize-flowering season and a legendary victory, celebrated for over a millennium."
   },
   {
     "id": "losar",
@@ -3570,7 +3697,8 @@
     "religion": "Buddhist",
     "season": "Winter",
     "imageQuery": "Losar Tibetan New Year Cham dance monastery",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The Tibetan Buddhist New Year, celebrated in the Himalayan regions to welcome the new year and ward off evil spirits."
   },
   {
     "id": "dev-deepawali",
@@ -3602,7 +3730,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Dev Deepawali Varanasi ghats lamps Ganga",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The 'Diwali of the Gods' in Varanasi, celebrated on Kartik Purnima fifteen days after Diwali."
   },
   {
     "id": "lathmar-holi",
@@ -3635,7 +3764,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Lathmar Holi Barsana sticks colours",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A playful and famous form of Holi in Barsana and Nandgaon, re-enacting Krishna's legendary visits to Radha's village."
   },
   {
     "id": "taj-mahotsav",
@@ -3666,7 +3796,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Taj Mahotsav Agra crafts performance",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A ten-day cultural festival in Agra near the Taj Mahal showcasing India's arts, crafts and cuisine."
   },
   {
     "id": "harela",
@@ -3696,7 +3827,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Harela Uttarakhand green shoots festival",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A festival of the Kumaon region celebrating greenery, the monsoon and the start of the sowing season."
   },
   {
     "id": "ganga-dussehra",
@@ -3727,7 +3859,8 @@
     "religion": "Hindu",
     "season": "Summer",
     "imageQuery": "Ganga Dussehra Haridwar aarti river",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Celebrates the descent (avataran) of the holy river Ganga from heaven to earth, honouring her sanctity."
   },
   {
     "id": "nanda-devi-raj-jat",
@@ -3757,7 +3890,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Nanda Devi Raj Jat Uttarakhand Himalaya pilgrimage",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A grand Himalayan pilgrimage honouring Goddess Nanda Devi, held once roughly every twelve years (with an annual fair in between)."
   },
   {
     "id": "hornbill-festival",
@@ -3789,7 +3923,8 @@
     "religion": "Tribal",
     "season": "Winter",
     "imageQuery": "Hornbill Festival Nagaland tribal dance Kisama",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The 'Festival of Festivals' showcasing the cultures of all major Naga tribes, named after the revered hornbill bird."
   },
   {
     "id": "sekrenyi",
@@ -3820,7 +3955,8 @@
     "religion": "Tribal",
     "season": "Winter",
     "imageQuery": "Sekrenyi Angami Naga festival",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A purification festival of the Angami Naga tribe, focused on cleansing body and soul and renewing community bonds."
   },
   {
     "id": "yaoshang",
@@ -3852,7 +3988,8 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Yaoshang Manipur Thabal Chongba dance",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Manipur's most important festival, coinciding with Holi, blending Vaishnav and indigenous Meitei traditions over five days."
   },
   {
     "id": "ningol-chakouba",
@@ -3882,7 +4019,8 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Ningol Chakouba Manipur family feast",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A Meitei festival celebrating the bond between married women (ningol) and their parental families."
   },
   {
     "id": "sangai-festival",
@@ -3914,7 +4052,8 @@
     "religion": "Secular",
     "season": "Autumn",
     "imageQuery": "Sangai Festival Manipur dance culture",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Manipur's flagship tourism festival, named after the endangered Sangai (brow-antlered deer), showcasing the state's culture."
   },
   {
     "id": "nongkrem-dance",
@@ -3944,7 +4083,8 @@
     "religion": "Tribal",
     "season": "Autumn",
     "imageQuery": "Nongkrem Dance Festival Meghalaya Khasi",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A five-day religious festival of the Khasi people, thanking God for a good harvest and praying for prosperity and peace."
   },
   {
     "id": "wangala",
@@ -3975,7 +4115,8 @@
     "religion": "Tribal",
     "season": "Autumn",
     "imageQuery": "Wangala Hundred Drums Garo Meghalaya",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The 'Hundred Drums' harvest festival of the Garo tribe, thanking Misi Saljong (the sun god) for a bountiful harvest."
   },
   {
     "id": "chapchar-kut",
@@ -4006,7 +4147,8 @@
     "religion": "Tribal",
     "season": "Spring",
     "imageQuery": "Chapchar Kut Mizoram bamboo dance",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "Mizoram's most important festival, a spring celebration held after the clearing of jungle for cultivation."
   },
   {
     "id": "mim-kut",
@@ -4038,7 +4180,8 @@
     "religion": "Tribal",
     "season": "Monsoon",
     "imageQuery": "Mim Kut Mizoram harvest festival",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A maize harvest festival of the Mizo people, also commemorating departed family members."
   },
   {
     "id": "saga-dawa",
@@ -4069,7 +4212,8 @@
     "religion": "Buddhist",
     "season": "Summer",
     "imageQuery": "Saga Dawa Sikkim monks procession",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "The holiest Buddhist festival in Sikkim, marking the birth, enlightenment and parinirvana of Lord Buddha."
   },
   {
     "id": "pang-lhabsol",
@@ -4098,7 +4242,8 @@
     "religion": "Buddhist",
     "season": "Monsoon",
     "imageQuery": "Pang Lhabsol Sikkim warrior dance monastery",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A uniquely Sikkimese festival honouring Mount Khangchendzonga as the state's guardian deity."
   },
   {
     "id": "losar-arunachal",
@@ -4129,7 +4274,8 @@
     "religion": "Tribal",
     "season": "Spring",
     "imageQuery": "Mopin Festival Arunachal Galo Popir dance",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A popular harvest festival of the Galo tribe of Arunachal Pradesh, invoking the goddess Mopin for prosperity and good harvest."
   },
   {
     "id": "ziro-music-festival",
@@ -4160,7 +4306,8 @@
     "religion": "Secular",
     "season": "Monsoon",
     "imageQuery": "Ziro Music Festival Arunachal valley",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "An outdoor independent music festival set in the scenic Ziro valley, home of the Apatani tribe."
   },
   {
     "id": "kharchi-puja",
@@ -4191,7 +4338,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Kharchi Puja Tripura fourteen deities fair",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A festival worshipping fourteen deities of the Tripuri royal tradition, seeking cleansing of sin and prosperity for the land."
   },
   {
     "id": "garia-puja",
@@ -4222,7 +4370,8 @@
     "religion": "Tribal",
     "season": "Spring",
     "imageQuery": "Garia Puja Tripura tribal dance",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A festival of Tripura's tribal communities worshipping Garia, the deity of livestock and wealth, for prosperity."
   },
   {
     "id": "khajuraho-dance-festival",
@@ -4254,7 +4403,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Khajuraho Dance Festival temple classical dance",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A week-long classical dance festival held against the backdrop of the UNESCO-listed Khajuraho temples."
   },
   {
     "id": "lokrang-festival",
@@ -4284,7 +4434,8 @@
     "religion": "Secular",
     "season": "Winter",
     "imageQuery": "Lokrang Festival Bhopal folk dance",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A cultural festival in Bhopal celebrating the folk and tribal arts of Madhya Pradesh and India."
   },
   {
     "id": "haryana-gugga-naumi",
@@ -4315,7 +4466,8 @@
     "religion": "Hindu",
     "season": "Monsoon",
     "imageQuery": "Gugga Naumi Haryana folk procession",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A folk festival of Haryana venerating Gugga Pir (Gugga Jaharveer), revered as a protector against snakes."
   },
   {
     "id": "hemis-festival",
@@ -4348,7 +4500,8 @@
     "religion": "Buddhist",
     "season": "Summer",
     "imageQuery": "Hemis Festival Ladakh Cham masked dance",
-    "verificationStatus": "Verified"
+    "verificationStatus": "Verified",
+    "aboutLong": "A vibrant monastic festival at Hemis Monastery honouring Guru Padmasambhava (Guru Rinpoche), who brought Buddhism to the region."
   },
   {
     "id": "losar-ladakh",
@@ -4381,7 +4534,8 @@
     "religion": "Buddhist",
     "season": "Winter",
     "imageQuery": "Ladakh Losar new year procession",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "The Ladakhi New Year, celebrated with rituals to drive away evil and welcome prosperity in the high Himalayan desert."
   },
   {
     "id": "puducherry-masi-magam",
@@ -4411,6 +4565,7 @@
     "religion": "Hindu",
     "season": "Spring",
     "imageQuery": "Masi Magam Puducherry deity sea procession",
-    "verificationStatus": "Partially Verified"
+    "verificationStatus": "Partially Verified",
+    "aboutLong": "A festival when deities from various temples are taken to the sea or rivers for a ritual holy bath, prominent in Puducherry."
   }
 ]

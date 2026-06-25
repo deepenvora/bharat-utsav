@@ -4,6 +4,7 @@ import events from './data/india-cultural-calendar.json';
 import HeroSection from './components/home/HeroSection';
 import CardGrid from './components/home/CardGrid';
 import Header from './components/layout/Header';
+import ViewControlsBar from './components/layout/ViewControlsBar';
 import BottomTabBar from './components/layout/BottomTabBar';
 import FAB from './components/layout/FAB';
 import FiltersPanel from './components/filters/FiltersPanel';
@@ -113,12 +114,15 @@ function HomePage() {
         setSearch={setSearch}
         onFocusSearch={() => {}}
         showCompactHeader={showCompactHeader}
+        onOpenFilters={() => setShowFilters(true)}
+      />
+      <ViewControlsBar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         onOpenFilters={() => setShowFilters(true)}
         filterCount={filterCount}
       />
-      <main className="mx-auto max-w-[1140px] px-4 pb-24 pt-0 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-[1140px] px-6 pb-24 pt-0">
         <CardGrid events={filteredEvents} onOpenDetail={setSelectedEvent} />
       </main>
       <BottomTabBar activeTab={activeTab} onChange={setActiveTab} />
@@ -131,7 +135,12 @@ function HomePage() {
         availableOptions={availableOptions}
         onClear={clearFilters}
       />
-      <DetailModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />
+      <DetailModal
+        event={selectedEvent}
+        events={events}
+        onClose={() => setSelectedEvent(null)}
+        onSelectEvent={setSelectedEvent}
+      />
     </div>
   );
 }

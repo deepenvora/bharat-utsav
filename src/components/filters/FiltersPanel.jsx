@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { Cancel01Icon, FilterIcon } from '@hugeicons/core-free-icons';
@@ -10,6 +11,14 @@ const filterSections = [
 ];
 
 export default function FiltersPanel({ open, onClose, filters, onToggle, availableOptions, onClear }) {
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   if (!open) {
     return null;
   }
@@ -23,11 +32,15 @@ export default function FiltersPanel({ open, onClose, filters, onToggle, availab
       onClick={onClose}
     >
       <motion.aside
-        initial={{ x: '100%' }}
-        animate={{ x: 0 }}
-        exit={{ x: '100%' }}
+        initial={isMobile ? { y: '100%' } : { x: '100%' }}
+        animate={isMobile ? { y: 0 } : { x: 0 }}
+        exit={isMobile ? { y: '100%' } : { x: '100%' }}
         transition={{ type: 'spring', stiffness: 260, damping: 24 }}
-        className="ml-auto flex h-full w-full max-w-[420px] flex-col bg-white p-5 shadow-2xl"
+        className={
+          isMobile
+            ? 'fixed inset-0 flex h-full w-full flex-col bg-white p-5'
+            : 'ml-auto flex h-full w-full max-w-[420px] flex-col bg-white p-5 shadow-2xl'
+        }
         onClick={(event) => event.stopPropagation()}
       >
         <div className="mb-4 flex items-center justify-between">
