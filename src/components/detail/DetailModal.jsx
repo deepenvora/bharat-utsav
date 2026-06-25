@@ -81,7 +81,7 @@ export default function DetailModal({ event, events, onClose, onSelectEvent }) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-black/0 md:bg-black/60 md:p-6"
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-white md:p-6"
       onClick={isMobile ? undefined : onClose}
     >
       <motion.div

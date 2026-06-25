@@ -45,7 +45,6 @@ export default function FiltersPanel({ open, onClose, filters, onToggle, availab
       >
         <div className="mb-4 flex items-center justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-brand)]">Filters</p>
             <h2 className="text-2xl font-bold text-[var(--color-text-primary)]">Filter by</h2>
           </div>
           <button type="button" onClick={onClose} className="rounded-full border border-[var(--color-border)] p-2">

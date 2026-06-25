@@ -38,8 +38,8 @@ export default function HeroSection({ search, setSearch, onFocusSearch, sentinel
       <div className="absolute inset-x-0 bottom-0 px-4 pb-6 sm:px-6 md:px-8 lg:px-10">
         <div className="mx-auto flex max-w-[1140px] flex-col gap-4">
           <div className="max-w-3xl">
-            <h1 className="text-[48px] font-bold leading-tight text-white">Bharat Utsav</h1>
-            <p className="mt-3 text-[16px] font-medium leading-6 text-white/90">
+            <h1 className="mb-2 text-[32px] font-bold leading-tight text-white md:text-[48px]">Bharat Utsav</h1>
+            <p className="text-[12px] font-medium leading-6 text-white/90 md:text-[16px]">
               Festivals, holidays & traditions across India
             </p>
           </div>

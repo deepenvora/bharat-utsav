@@ -1,8 +1,8 @@
 import { HugeiconsIcon } from '@hugeicons/react';
-import { Calendar01Icon, GridIcon, MapsIcon } from '@hugeicons/core-free-icons';
+import { Calendar01Icon, Grid02Icon, MapsIcon } from '@hugeicons/core-free-icons';
 
 const tabs = [
-  { id: 'card', label: 'Card', icon: GridIcon },
+  { id: 'card', label: 'Card', icon: Grid02Icon },
   { id: 'calendar', label: 'Calendar', icon: Calendar01Icon },
   { id: 'map', label: 'Map', icon: MapsIcon },
 ];
