@@ -8,6 +8,7 @@ import BottomTabBar from './components/layout/BottomTabBar';
 import FAB from './components/layout/FAB';
 import FiltersPanel from './components/filters/FiltersPanel';
 import DetailModal from './components/detail/DetailModal';
+import DetailPage from './components/detail/DetailPage';
 import GalleryScreen from './components/gallery/GalleryScreen';
 
 const FILTER_KEYS = ['type', 'month', 'religion', 'state'];
@@ -146,6 +147,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/festival/:id" element={<DetailPage />} />
       <Route path="/gallery/:id" element={<GalleryScreen />} />
     </Routes>
   );

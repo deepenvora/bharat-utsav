@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { usePexels } from '../../hooks/usePexels';
 
 export default function FestivalCard({ event, onOpenDetail }) {
+  const navigate = useNavigate();
   const [images, setImages] = useState(event.images || []);
   const { fetchImages } = usePexels(event.imageQuery);
 
@@ -27,8 +29,16 @@ export default function FestivalCard({ event, onOpenDetail }) {
 
   const image = images?.[0]?.large2x;
 
+  const handleClick = () => {
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      navigate(`/festival/${event.id}`);
+    } else {
+      onOpenDetail(event);
+    }
+  };
+
   return (
-    <button type="button" onClick={() => onOpenDetail(event)} className="group flex h-full w-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card-bg)] text-left shadow-[var(--shadow-card)]">
+    <button type="button" onClick={handleClick} className="group flex h-full w-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-card-bg)] text-left shadow-[var(--shadow-card)]">
       <div className="aspect-[4/3] w-full overflow-hidden bg-[var(--color-border)]">
         {image ? (
           <img src={image} alt={event.title} className="h-full w-full object-cover object-center transition duration-300 group-hover:scale-105" />
