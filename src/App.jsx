@@ -4,11 +4,11 @@ import events from './data/india-cultural-calendar.json';
 import HeroSection from './components/home/HeroSection';
 import CardGrid from './components/home/CardGrid';
 import Header from './components/layout/Header';
-import ViewControlsBar from './components/layout/ViewControlsBar';
 import BottomTabBar from './components/layout/BottomTabBar';
 import FAB from './components/layout/FAB';
 import FiltersPanel from './components/filters/FiltersPanel';
 import DetailModal from './components/detail/DetailModal';
+import GalleryScreen from './components/gallery/GalleryScreen';
 
 const FILTER_KEYS = ['type', 'month', 'religion', 'state'];
 
@@ -115,14 +115,11 @@ function HomePage() {
         onFocusSearch={() => {}}
         showCompactHeader={showCompactHeader}
         onOpenFilters={() => setShowFilters(true)}
-      />
-      <ViewControlsBar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
-        onOpenFilters={() => setShowFilters(true)}
         filterCount={filterCount}
       />
-      <main className="mx-auto max-w-[1140px] px-6 pb-24 pt-0">
+      <main className="mx-auto max-w-[1140px] px-6 pb-24 pt-6">
         <CardGrid events={filteredEvents} onOpenDetail={setSelectedEvent} />
       </main>
       <BottomTabBar activeTab={activeTab} onChange={setActiveTab} />
@@ -145,25 +142,11 @@ function HomePage() {
   );
 }
 
-function GalleryPage() {
-  return (
-    <main className="min-h-screen bg-[var(--color-bg)] px-6 py-10 text-[var(--color-text-primary)]">
-      <div className="mx-auto max-w-4xl rounded-[var(--radius-card)] border border-[var(--color-border)] bg-white p-8 shadow-[var(--shadow-card)]">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-brand)]">Gallery</p>
-        <h1 className="text-3xl font-bold">Placeholder route</h1>
-        <p className="mt-3 text-base text-[var(--color-text-secondary)]">
-          The gallery route is prepared for the upcoming mobile gallery implementation.
-        </p>
-      </div>
-    </main>
-  );
-}
-
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/gallery/:id" element={<GalleryPage />} />
+      <Route path="/gallery/:id" element={<GalleryScreen />} />
     </Routes>
   );
 }

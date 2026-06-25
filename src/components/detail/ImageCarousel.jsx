@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { Cancel01Icon } from '@hugeicons/core-free-icons';
 
-export default function ImageCarousel({ images, title, meta, totalCount, onClose }) {
+export default function ImageCarousel({ images, title, meta, totalCount, onClose, eventId }) {
+  const navigate = useNavigate();
   const slides = images.slice(0, 3);
   const [index, setIndex] = useState(0);
 
@@ -63,7 +65,11 @@ export default function ImageCarousel({ images, title, meta, totalCount, onClose
           <span />
         )}
         {totalCount > 0 ? (
-          <button type="button" className="rounded-full bg-black/60 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur">
+          <button
+            type="button"
+            onClick={() => navigate(`/gallery/${eventId}`)}
+            className="rounded-full bg-black/60 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur"
+          >
             View all {totalCount} photos
           </button>
         ) : null}

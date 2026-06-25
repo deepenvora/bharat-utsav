@@ -9,7 +9,7 @@ const tabs = [
 
 export default function ViewControlsBar({ activeTab, setActiveTab, onOpenFilters, filterCount }) {
   return (
-    <div className="hidden border-b border-[var(--color-border)] py-4 md:block">
+    <div className="hidden bg-white pt-4 pb-6 md:block">
       <div className="mx-auto flex max-w-[1140px] items-center justify-between px-6">
         <button className="relative inline-flex rounded-full border border-[var(--color-border)] bg-white px-3 py-2 text-sm font-semibold text-[var(--color-text-primary)]" type="button" onClick={onOpenFilters}>
           <span className="inline-flex items-center gap-2">

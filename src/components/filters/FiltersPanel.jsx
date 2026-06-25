@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { Cancel01Icon, FilterIcon } from '@hugeicons/core-free-icons';
+import { Cancel01Icon } from '@hugeicons/core-free-icons';
 
 const filterSections = [
   { key: 'type', label: 'Type' },
@@ -46,7 +46,7 @@ export default function FiltersPanel({ open, onClose, filters, onToggle, availab
         <div className="mb-4 flex items-center justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-brand)]">Filters</p>
-            <h2 className="text-2xl font-bold text-[var(--color-text-primary)]">Refine your picks</h2>
+            <h2 className="text-2xl font-bold text-[var(--color-text-primary)]">Filter by</h2>
           </div>
           <button type="button" onClick={onClose} className="rounded-full border border-[var(--color-border)] p-2">
             <HugeiconsIcon icon={Cancel01Icon} size={18} strokeWidth={1.8} />
@@ -59,8 +59,7 @@ export default function FiltersPanel({ open, onClose, filters, onToggle, availab
             const selected = filters[section.key] || [];
             return (
               <section key={section.key}>
-                <div className="mb-3 flex items-center gap-2">
-                  <HugeiconsIcon icon={FilterIcon} size={16} strokeWidth={1.8} className="text-[var(--color-brand)]" />
+                <div className="mb-3">
                   <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-text-secondary)]">{section.label}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">

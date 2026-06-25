@@ -9,10 +9,31 @@ function shuffle(array) {
   return result;
 }
 
+function getRelatedEvents(current, events) {
+  const others = events.filter((event) => event.id !== current.id);
+  const byType = others.filter((event) => event.type === current.type);
+  const byMonth = others.filter((event) => event.month === current.month);
+
+  const primary = current.type === 'Festival' ? byMonth : byType;
+  const secondary = current.type === 'Festival' ? byType : byMonth;
+
+  const shuffledPrimary = shuffle(primary);
+  const poolIds = new Set(shuffledPrimary.map((event) => event.id));
+  const fill = [];
+  if (shuffledPrimary.length < 4) {
+    shuffle(secondary).forEach((event) => {
+      if (!poolIds.has(event.id)) {
+        fill.push(event);
+        poolIds.add(event.id);
+      }
+    });
+  }
+
+  return [...shuffledPrimary, ...fill].slice(0, 4);
+}
+
 export default function RelatedFestivals({ current, events, onSelect }) {
-  const related = shuffle(
-    events.filter((event) => event.id !== current.id && (event.type === current.type || event.month === current.month)),
-  ).slice(0, 8);
+  const related = getRelatedEvents(current, events);
 
   if (related.length === 0) {
     return null;
