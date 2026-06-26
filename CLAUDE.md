@@ -390,12 +390,12 @@ src/
 - **Wikipedia enrichment:** script exists (`scripts/enrich-wikipedia.js`) and has been run — all 155 entries have `aboutLong`. Needs a rate-limit fix before any future re-run (no throttling currently).
 - **Pexels enrichment:** script exists (`scripts/enrich-images.js`), not yet run on the full dataset — images are still fetched live per-card via `usePexels.js` rather than pre-populated `images[]`.
 - `src/hooks/usePexels.js` — throttles concurrent Pexels requests (max 15 in flight) to avoid 429s; image objects carry `large2x`/`original` sizes. Cache read/write hits `src/cache/pexels-cache.json` but nothing in `vite.config.js` persists the PUT yet, so caching is a no-op across reloads.
+- **Calendar view:** complete — `src/components/calendar/CalendarView.jsx`. `App.jsx`'s `HomePage` now branches on `activeTab`: `'calendar'` renders `CalendarView`, everything else (including `'map'`, still a stub) falls through to `CardGrid`. Events grouped by month in `MONTH_ORDER` (Jan→Dec), empty months hidden entirely; within a month, fixed-date events sort by day ascending and floating (no-date) events sort after, showing the month name as their label instead of a day. Each row reuses the `FestivalCard`/`usePexels` image-fetch + `window.innerWidth >= 768` navigate-vs-modal click pattern. Both `CardGrid` and `CalendarView` are wrapped in a `motion.div` fade so switching tabs animates. No Sort control exists yet (Batch 6 never built one), so "hide sort in Calendar" is a no-op for now.
 
-**1140px grid constraint:** the `max-w-[1140px] mx-auto px-6` container (currently on `App.jsx`'s `<main>`) must be applied to ALL views — Calendar, Map, and any new pages follow the same container.
+**1140px grid constraint:** the `max-w-[1140px] mx-auto px-6` container (currently on `App.jsx`'s `<main>`) must be applied to ALL views — Calendar, Map, and any new pages follow the same container. Calendar view confirmed to inherit it correctly (no separate container of its own).
 
 **Next to build:**
-- Batch 7 — Calendar view (month-grouped list, reuses Browse shell)
-- Batch 8 — Map view (SVG, `react-simple-maps`, state pins)
+- Batch 8 — Map view (SVG, `react-simple-maps`, state pins) — also needs to replace the `CardGrid` fallback currently used for the `'map'` tab
 - Batch 9 — AI Summary + FAB chat (Claude API)
 - Batch 10 — Gallery/Lightbox polish (fix the back-navigation gap above)
 - Netlify deploy

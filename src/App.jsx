@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import events from './data/india-cultural-calendar.json';
 import HeroSection from './components/home/HeroSection';
 import CardGrid from './components/home/CardGrid';
+import CalendarView from './components/calendar/CalendarView';
 import Header from './components/layout/Header';
 import BottomTabBar from './components/layout/BottomTabBar';
 import FAB from './components/layout/FAB';
@@ -121,7 +123,18 @@ function HomePage() {
         filterCount={filterCount}
       />
       <main className="mx-auto max-w-[1140px] px-6 pb-24 pt-6">
-        <CardGrid events={filteredEvents} onOpenDetail={setSelectedEvent} />
+        {activeTab === 'calendar' ? (
+          <CalendarView events={filteredEvents} onOpenDetail={setSelectedEvent} />
+        ) : (
+          <motion.div
+            key="card-grid"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+          >
+            <CardGrid events={filteredEvents} onOpenDetail={setSelectedEvent} />
+          </motion.div>
+        )}
       </main>
       <BottomTabBar activeTab={activeTab} onChange={setActiveTab} />
       <FAB />
