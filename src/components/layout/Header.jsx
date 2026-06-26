@@ -22,6 +22,7 @@ export default function Header({
       }}
       transition={{ duration: 0.25, ease: 'easeOut' }}
       className="fixed inset-x-0 top-0 z-40 bg-white"
+      data-app-header
     >
       <div className="border-b border-[var(--color-border)] bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1140px] flex-col gap-2 px-4 py-3 sm:px-6 md:flex-row md:items-center md:gap-3 lg:px-8">

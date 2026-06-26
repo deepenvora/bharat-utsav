@@ -5,6 +5,7 @@ import events from './data/india-cultural-calendar.json';
 import HeroSection from './components/home/HeroSection';
 import CardGrid from './components/home/CardGrid';
 import CalendarView from './components/calendar/CalendarView';
+import MapView from './components/map/MapView';
 import Header from './components/layout/Header';
 import BottomTabBar from './components/layout/BottomTabBar';
 import FAB from './components/layout/FAB';
@@ -35,6 +36,8 @@ function HomePage() {
   const [showFilters, setShowFilters] = useState(false);
   const [selectedFilters, setSelectedFilters] = useState({ type: [], month: [], religion: [], state: [] });
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [headerHeight, setHeaderHeight] = useState(0);
+  const [bottomBarHeight, setBottomBarHeight] = useState(0);
   const heroSentinelRef = useRef(null);
 
   useEffect(() => {
@@ -53,6 +56,22 @@ function HomePage() {
     observer.observe(node);
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const headerEl = document.querySelector('[data-app-header]');
+    const tabBarEl = document.querySelector('[data-app-bottom-tab-bar]');
+
+    const update = () => {
+      setHeaderHeight(headerEl?.getBoundingClientRect().height || 0);
+      setBottomBarHeight(tabBarEl?.getBoundingClientRect().height || 0);
+    };
+
+    update();
+    const observer = new ResizeObserver(update);
+    if (headerEl) observer.observe(headerEl);
+    if (tabBarEl) observer.observe(tabBarEl);
+    return () => observer.disconnect();
+  }, [activeTab]);
 
   const availableOptions = useMemo(() => getAvailableOptions(events), []);
 
@@ -105,26 +124,30 @@ function HomePage() {
 
   return (
     <div className="min-h-screen bg-[linear-gradient(180deg,#fff8fb_0%,#ffffff_30%,#fffafc_100%)] text-[var(--color-text-primary)]">
-      <HeroSection
-        search={search}
-        setSearch={setSearch}
-        onFocusSearch={() => {}}
-        sentinelRef={heroSentinelRef}
-        onOpenFilters={() => setShowFilters(true)}
-      />
+      {activeTab !== 'map' ? (
+        <HeroSection
+          search={search}
+          setSearch={setSearch}
+          onFocusSearch={() => {}}
+          sentinelRef={heroSentinelRef}
+          onOpenFilters={() => setShowFilters(true)}
+        />
+      ) : null}
       <Header
         search={search}
         setSearch={setSearch}
         onFocusSearch={() => {}}
-        showCompactHeader={showCompactHeader}
+        showCompactHeader={activeTab === 'map' ? true : showCompactHeader}
         onOpenFilters={() => setShowFilters(true)}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         filterCount={filterCount}
       />
-      <main className="mx-auto max-w-[1140px] px-6 pb-24 pt-6">
+      <main className="mx-auto max-w-[1140px] px-6 pb-24" style={{ paddingTop: activeTab === 'map' ? headerHeight + 24 : 24 }}>
         {activeTab === 'calendar' ? (
           <CalendarView events={filteredEvents} onOpenDetail={setSelectedEvent} />
+        ) : activeTab === 'map' ? (
+          <MapView events={filteredEvents} onOpenDetail={setSelectedEvent} headerHeight={headerHeight} bottomBarHeight={bottomBarHeight} />
         ) : (
           <motion.div
             key="card-grid"

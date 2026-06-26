@@ -9,7 +9,7 @@ const tabs = [
 
 export default function BottomTabBar({ activeTab, onChange }) {
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--color-border)] bg-white/95 px-4 py-3 backdrop-blur md:hidden">
+    <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--color-border)] bg-white/95 px-4 py-3 backdrop-blur md:hidden" data-app-bottom-tab-bar>
       <div className="mx-auto flex max-w-md items-center justify-between rounded-full border border-[var(--color-border)] bg-[var(--color-card-bg)] p-1 shadow-sm">
         {tabs.map((tab) => {
           const Icon = tab.icon;
