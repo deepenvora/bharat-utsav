@@ -43,12 +43,15 @@ function resolveStateKey(rawName) {
   return MATCH_MAP[key] || key;
 }
 
+const ANDAMAN_NICOBAR_KEY = 'andaman and nicobar islands';
+
 const STATE_COLORS = {};
 COLOR_GROUPS.forEach(({ fill, stroke, states }) => {
   states.forEach((state) => {
     STATE_COLORS[normalize(state)] = { fill, stroke };
   });
 });
+delete STATE_COLORS[ANDAMAN_NICOBAR_KEY];
 
 function getStateColor(stateKey) {
   return STATE_COLORS[stateKey] || FALLBACK_COLOR;
@@ -58,12 +61,7 @@ const CANONICAL_STATE_KEYS = new Set();
 allEvents.forEach((event) => (event.state || []).forEach((s) => CANONICAL_STATE_KEYS.add(normalize(s))));
 
 function getEventsForState(events, stateKey) {
-  return events.filter((event) =>
-    (event.state || []).some((rawState) => {
-      const key = resolveStateKey(rawState);
-      return key === stateKey || key === 'all india';
-    }),
-  );
+  return events.filter((event) => (event.state || []).some((rawState) => resolveStateKey(rawState) === stateKey));
 }
 
 function MapEventRow({ event }) {
@@ -146,33 +144,43 @@ function IndiaMap({ topology, isMobile, countForState, selectedStateKey, onSelec
     );
   }
 
+  const scale = isMobile ? 920 : 820;
+
   return (
-    <ComposableMap projection="geoMercator" projectionConfig={{ center: [82, 22], scale: 1300 }} width={500} height={550} style={{ width: '100%', height: '100%' }}>
+    <ComposableMap
+      projection="geoMercator"
+      projectionConfig={{ center: [82, 22], scale }}
+      width={500}
+      height={550}
+      style={{ width: '100%', height: '100%', display: 'block' }}
+    >
       <Geographies geography={topology}>
         {({ geographies }) =>
-          geographies.map((geo) => {
-            const rawName = geo.properties.st_nm;
-            const stateKey = resolveStateKey(rawName);
-            const isSelected = selectedStateKey === stateKey;
-            const palette = isSelected ? SELECTED_COLOR : getStateColor(stateKey);
-            const count = countForState(stateKey);
+          geographies
+            .filter((geo) => resolveStateKey(geo.properties.st_nm) !== ANDAMAN_NICOBAR_KEY)
+            .map((geo) => {
+              const rawName = geo.properties.st_nm;
+              const stateKey = resolveStateKey(rawName);
+              const isSelected = selectedStateKey === stateKey;
+              const palette = isSelected ? SELECTED_COLOR : getStateColor(stateKey);
+              const count = countForState(stateKey);
 
-            return (
-              <Geography
-                key={geo.rsmKey}
-                geography={geo}
-                onMouseEnter={(event) => !isMobile && onHover(event, rawName, count)}
-                onMouseMove={(event) => !isMobile && onMove(event)}
-                onMouseLeave={() => !isMobile && onLeave()}
-                onClick={() => onSelectState(stateKey, rawName, count)}
-                style={{
-                  default: { fill: palette.fill, stroke: palette.stroke, strokeWidth: 0.75, outline: 'none' },
-                  hover: { fill: palette.fill, stroke: palette.stroke, strokeWidth: 1.25, outline: 'none', cursor: 'pointer' },
-                  pressed: { fill: palette.fill, stroke: palette.stroke, outline: 'none' },
-                }}
-              />
-            );
-          })
+              return (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  onMouseEnter={(event) => !isMobile && onHover(event, rawName, count)}
+                  onMouseMove={(event) => !isMobile && onMove(event)}
+                  onMouseLeave={() => !isMobile && onLeave()}
+                  onClick={() => onSelectState(stateKey, rawName, count)}
+                  style={{
+                    default: { fill: palette.fill, stroke: palette.stroke, strokeWidth: 0.75, outline: 'none' },
+                    hover: { fill: palette.fill, stroke: palette.stroke, strokeWidth: 1.25, outline: 'none', cursor: 'pointer' },
+                    pressed: { fill: palette.fill, stroke: palette.stroke, outline: 'none' },
+                  }}
+                />
+              );
+            })
         }
       </Geographies>
     </ComposableMap>
@@ -262,7 +270,7 @@ export default function MapView({ events, onOpenDetail, headerHeight, bottomBarH
   if (isMobile) {
     return (
       <motion.div key="map-view" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.25, ease: 'easeOut' }}>
-        <div className="fixed inset-x-0 z-30 bg-white" style={{ top: headerHeight, bottom: bottomBarHeight }}>
+        <div className="fixed inset-x-0 z-30 bg-white" style={{ top: headerHeight, height: `calc(100vh - ${headerHeight}px - ${bottomBarHeight}px)` }}>
           <IndiaMap {...mapProps} />
         </div>
 
@@ -288,11 +296,11 @@ export default function MapView({ events, onOpenDetail, headerHeight, bottomBarH
                 <div className="flex justify-center pt-3">
                   <div className="h-1.5 w-10 rounded-full bg-[var(--color-border)]" />
                 </div>
-                <div className="flex items-center justify-between px-5 pt-3">
-                  <h2 className="text-base font-bold text-[var(--color-text-primary)]">
+                <div className="flex items-center justify-between gap-3 px-5 pt-3">
+                  <h2 className="min-w-0 truncate text-base font-bold text-[var(--color-text-primary)]">
                     {selectedState.name} · {countForState(selectedState.key)} {countForState(selectedState.key) === 1 ? 'event' : 'events'}
                   </h2>
-                  <button type="button" onClick={closeSheet} aria-label="Close" className="rounded-full border border-[var(--color-border)] p-1.5">
+                  <button type="button" onClick={closeSheet} aria-label="Close" className="shrink-0 rounded-full border border-[var(--color-border)] p-1.5">
                     <HugeiconsIcon icon={Cancel01Icon} size={14} strokeWidth={1.8} />
                   </button>
                 </div>
@@ -312,14 +320,20 @@ export default function MapView({ events, onOpenDetail, headerHeight, bottomBarH
   const selectedCount = selectedState ? countForState(selectedState.key) : null;
 
   return (
-    <motion.div key="map-view" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.25, ease: 'easeOut' }} className="grid grid-cols-[2fr_3fr] gap-6">
-      <div>
+    <motion.div
+      key="map-view"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.25, ease: 'easeOut' }}
+      className="grid grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-6"
+    >
+      <div className="min-w-0">
         {selectedState ? (
-          <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-base font-bold text-[var(--color-text-primary)]">
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <h2 className="min-w-0 truncate text-base font-bold text-[var(--color-text-primary)]">
               {selectedState.name} · {selectedCount} {selectedCount === 1 ? 'event' : 'events'}
             </h2>
-            <button type="button" onClick={() => setSelectedState(null)} aria-label="Clear state filter" className="rounded-full border border-[var(--color-border)] p-1.5">
+            <button type="button" onClick={() => setSelectedState(null)} aria-label="Clear state filter" className="shrink-0 rounded-full border border-[var(--color-border)] p-1.5">
               <HugeiconsIcon icon={Cancel01Icon} size={14} strokeWidth={1.8} />
             </button>
           </div>
@@ -336,7 +350,7 @@ export default function MapView({ events, onOpenDetail, headerHeight, bottomBarH
         )}
       </div>
 
-      <div className="sticky" style={{ top: headerHeight + 24, height: `calc(100vh - ${headerHeight + 48}px)` }}>
+      <div className="sticky" style={{ top: headerHeight, height: `calc(100vh - ${headerHeight}px)` }}>
         <IndiaMap {...mapProps} />
       </div>
 

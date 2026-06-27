@@ -126,18 +126,11 @@
 
 ### HOME — Mobile
 
-**Default state (hero visible):**
-- Full-bleed hero image (Pexels, static `imageQuery: "india festival celebration"`)
-- Dark gradient overlay (bottom 60%)
-- Over image: "Bharat Utsav" (white, Bricolage Grotesque, bold, large) + tagline (white, smaller)
-- Search bar (white, rounded-pill, mic icon right) + Filters pill — both overlaid on hero bottom
-- Below hero: section-grouped card grid (2-col)
-- Section headers: type label (e.g. "Festivals", "State Foundation Day") — bold, dark
+**No hero.** Page always starts with the sticky header.
 
-**Scroll-up state (hero collapsed, sticky header):**
-- Sticky top bar: "Bharat Utsav" in `#F71079` (Bricolage Grotesque, bold) | Search bar | Filters pill
-- Background: white, subtle bottom border
-- Transition: smooth collapse with Framer Motion
+- Sticky top bar: "Bharat Utsav" in `#F71079` (Bricolage Grotesque, bold) | Search bar | Filters pill — always visible, not scroll-dependent
+- Below header: section-grouped card grid (2-col)
+- Section headers: type label (e.g. "Festivals", "State Foundation Day") — bold, dark
 
 **Bottom of screen (always sticky):**
 - Tab bar: Card | Calendar | Map
@@ -150,17 +143,10 @@
 
 ### HOME — Web
 
-**Default state (hero visible):**
-- Full-bleed hero image (same static query as mobile)
-- Dark gradient overlay
-- Over image: "Bharat Utsav" (white, Bricolage Grotesque, bold, display size) + tagline (white)
-- Below headline: wide search bar (white, rounded-pill) — full width, centered below text
+**No hero.** Page always starts with the sticky header.
 
-**Scroll-up state (hero collapsed, sticky header):**
-- Sticky top bar: "Bharat Utsav" logo left | Search bar center (medium width) | (no extra controls)
-- Filters pill: left of card grid (below sticky header)
-- View toggle (Card | Calendar | Map): right of card grid row, active = filled `#F71079` pill
-- Transition: smooth collapse with Framer Motion
+- Sticky top bar: "Bharat Utsav" logo left | Search bar center (medium width)
+- Sub-bar below it, always visible: Filters pill left of card grid | View toggle (Card | Calendar | Map) right, active = filled `#F71079` pill
 
 **Card grid:** 4-col on desktop, 2-col on tablet
 
@@ -276,11 +262,10 @@
 src/
   components/
     layout/
-      Header.jsx          # Responsive sticky header (hero + collapsed states)
+      Header.jsx          # Always-visible sticky header (no hero, no scroll-collapse)
       BottomTabBar.jsx    # Mobile only, Card/Calendar/Map
       FAB.jsx             # Floating action button
     home/
-      HeroSection.jsx     # Full-bleed image + overlay text + search
       CardGrid.jsx        # Responsive grid, section-grouped
       FestivalCard.jsx    # Card component (image, title, month)
     detail/
@@ -383,18 +368,20 @@ src/
 
 ## Current Status
 
-- **Home screen:** complete (hero, scroll-collapse sticky header, card grid, search, filters, bottom tab bar, FAB stub).
+- **Home screen:** complete — **hero removed entirely** (`HeroSection.jsx` deleted, no longer referenced anywhere). `App.jsx`'s `HomePage` now always renders the compact sticky `Header` (logo + search + Filters, plus the Card/Calendar/Map sub-bar on desktop) — there is no scroll-collapse state any more (the old `showCompactHeader`/`heroSentinelRef`/`IntersectionObserver` machinery was removed since nothing reads it). Search lives permanently in the sticky header bar; `<main>` always gets `headerHeight + 24` top padding to clear the fixed header. Card grid, filters, bottom tab bar, FAB stub all unchanged.
 - **Detail page — web:** complete. Standalone route `/festival/:id` (`src/components/detail/DetailPage.jsx`), not a modal — card click on viewport ≥768px navigates here via `useNavigate`. Mosaic, AI summary box, conditional accordions (Traditions/Food only for `type === 'Festival'`), Related Festivals, X button calls `navigate(-1)` (browser-back semantics). `src/components/home/FestivalCard.jsx` branches on `window.innerWidth >= 768` to decide route-push vs. modal-open.
 - **Detail modal — mobile:** complete, unchanged. `src/components/detail/DetailModal.jsx` still owns the full-page slide-up modal (carousel + dots, accordions, related) for viewport <768px; `App.jsx`'s `HomePage` still renders it, now only ever triggered from mobile.
-- **Gallery / Lightbox:** built — `src/components/gallery/Lightbox.jsx` (web fullscreen overlay, prev/next, counter, vertical filmstrip, ←/→/Escape) and `src/components/gallery/GalleryScreen.jsx` (`/gallery/:id` route, black fullscreen, back arrow + counter, swipeable image, horizontal filmstrip) both exist and are wired — `DetailPage.jsx`'s "View all photos" opens `Lightbox` directly; `ImageCarousel.jsx`'s pill navigates to `/gallery/:id`. **Known gap:** `GalleryScreen`'s back arrow (`navigate(-1)`) doesn't restore `DetailModal`'s open state on mobile (state not lifted to URL); not yet polished end-to-end.
+- **Gallery / Lightbox:** built — `src/components/gallery/Lightbox.jsx` (web fullscreen overlay, prev/next, counter, vertical filmstrip, ←/→/Escape) and `src/components/gallery/GalleryScreen.jsx` (`/gallery/:id` route, black fullscreen, X button + centered counter, swipeable image, horizontal filmstrip) both exist and are wired — `DetailPage.jsx`'s "View all photos" opens `Lightbox` directly at index 0; clicking any individual mosaic image (`ImageMosaic.jsx`'s `onImageClick`) opens it at that image's index instead (`Lightbox` now takes an `initialIndex` prop). `GalleryScreen`'s header was a back arrow (`navigate(-1)`) — now an X (`handleClose`): web (`window.innerWidth >= 768`) goes to `/festival/:id`, mobile still does `navigate(-1)` back to whatever pushed the gallery route. **Known gap (mobile only):** `navigate(-1)` lands back on `/` but doesn't restore `DetailModal`'s open state (state not lifted to URL) — confirmed still present, out of scope for the X-button fix since mobile's `navigate(-1)` behavior was explicitly kept as-is.
 - **Wikipedia enrichment:** script exists (`scripts/enrich-wikipedia.js`) and has been run — all 155 entries have `aboutLong`. Needs a rate-limit fix before any future re-run (no throttling currently).
 - **Pexels enrichment:** script exists (`scripts/enrich-images.js`), not yet run on the full dataset — images are still fetched live per-card via `usePexels.js` rather than pre-populated `images[]`.
 - `src/hooks/usePexels.js` — throttles concurrent Pexels requests (max 15 in flight) to avoid 429s; image objects carry `large2x`/`original` sizes. Cache read/write hits `src/cache/pexels-cache.json` but nothing in `vite.config.js` persists the PUT yet, so caching is a no-op across reloads.
 - **Calendar view:** complete — `src/components/calendar/CalendarView.jsx`. `App.jsx`'s `HomePage` branches on `activeTab`: `'calendar'` → `CalendarView`, `'map'` → `MapView`, everything else → `CardGrid`. Events grouped by month in `MONTH_ORDER` (Jan→Dec), empty months hidden entirely; within a month, fixed-date events sort by day ascending and floating (no-date) events sort after, showing the month name as their label instead of a day. Each row reuses the `FestivalCard`/`usePexels` image-fetch + `window.innerWidth >= 768` navigate-vs-modal click pattern. `CardGrid`/`CalendarView`/`MapView` are each wrapped in a `motion.div` fade so switching tabs animates. No Sort control exists yet (Batch 6 never built one), so "hide sort in Calendar/Map" is a no-op for now.
-- **Map view:** complete — `src/components/map/MapView.jsx`, using `react-simple-maps`. **Topology source deviates from an earlier ask**: `deldersveld/topojson`'s `countries/india/india-states.json` returns 404 (repo no longer exists) — swapped to `udit-001/india-maps-data`'s `topojson/india.json` (trimmed client-side to just its `states` object before passing to `Geographies`, since the file also bundles district-level boundaries). This source's `st_nm` property values are an exact 1:1 match with this dataset's `state[]` strings (36/36, zero unmatched — confirmed via the `[MapView] matched ...` console log on every load), so the `MATCH_MAP` alias table is present per spec but currently inert; keep it if the topology source ever changes. Pastel `STATE_COLORS` + pink-fallback + `#F71079` selected-state styling all keyed off normalized state names. State event counts/filtering use a single inclusive predicate (`state[] includes the key OR includes 'All India'`) rather than additive direct+All-India sums — an earlier additive version double-counted events tagged with both a specific state and `'All India'` (e.g. Christmas, Good Friday).
-  - **Web:** 40/60 split panel inside the 1140px grid — left column is a plain-flow scrollable list (all events by default, or the selected state's events + "All India" ones), right column is `position: sticky` holding the SVG, hover shows a cursor-following tooltip (state name + count), click toggles selection.
-  - **Mobile:** Hero is skipped entirely for the `'map'` tab and the compact `Header` is forced on (so there's a stable, measured top edge) — `HomePage` measures `Header`'s and `BottomTabBar`'s rendered heights via `ResizeObserver` (matched by `data-app-header` / `data-app-bottom-tab-bar` attributes) and feeds them to `MapView` as `headerHeight`/`bottomBarHeight`, used both for `<main>`'s top padding on the map tab and for the map's `position: fixed` top/bottom insets so it fills exactly the space between header and tab bar. Tapping a state opens a `framer-motion` spring bottom sheet (stiffness 300 / damping 30); tapping a zero-event state does nothing (no sheet); tapping the backdrop closes it. Desktop's empty state instead keeps the selection and shows "No events found for [State]" in the left panel — confirmed reachable via search/filters (every state inherits all `'All India'`-tagged events otherwise, so an unfiltered 0-event state doesn't occur in this dataset).
-  - `ComposableMap` projection tuned to `scale: 1300`, `width={500} height={550}` (the values given in the original ask — `scale: 900`, `width={800} height={900}` — rendered India tiny in a sea of empty viewBox).
+- **Map view:** complete — `src/components/map/MapView.jsx`, using `react-simple-maps`. **Topology source deviates from an earlier ask**: `deldersveld/topojson`'s `countries/india/india-states.json` returns 404 (repo no longer exists) — swapped to `udit-001/india-maps-data`'s `topojson/india.json` (trimmed client-side to just its `states` object before passing to `Geographies`, since the file also bundles district-level boundaries). This source's `st_nm` property values are an exact 1:1 match with this dataset's `state[]` strings (36/36, zero unmatched — confirmed via the `[MapView] matched ...` console log on every load), so the `MATCH_MAP` alias table is present per spec but currently inert; keep it if the topology source ever changes. Pastel `STATE_COLORS` + pink-fallback + `#F71079` selected-state styling all keyed off normalized state names.
+  - **Counting/filtering (corrected):** `getEventsForState` is a single predicate — `state[] contains that exact state key` (case-insensitive via `resolveStateKey`) — used identically for the tooltip count, the selected-state count, and the filtered list. `'All India'` entries are **not** auto-included anymore; an event only counts toward a state if that state is literally in its `state[]`. (An earlier version additively summed direct-state-count + All-India-count, which double-counted events tagged with both, e.g. Christmas/Good Friday, and inflated every state's count by the full All-India total ~41.)
+  - **Andaman & Nicobar Islands excluded from the map**: filtered out of the `Geographies` render loop (`resolveStateKey(geo.properties.st_nm) !== 'andaman and nicobar islands'`) and explicitly deleted from the `STATE_COLORS` lookup (35 of the topology's 36 geometries render). Scoped to the map only — still a normal filterable state everywhere else (search, Filters panel, card/calendar views).
+  - **Web:** 40/60 split panel inside the 1140px grid (`grid-cols-[minmax(0,2fr)_minmax(0,3fr)]` — plain `2fr_3fr` let a long selected-state header, e.g. "Dadra and Nagar Haveli and Daman and Diu", blow out the track and made the left-panel dividers bleed under the map; both the grid item and the header text now have `min-w-0`/`truncate`). Left column is a plain-flow scrollable list (all events by default, or the selected state's events only), right column is `position: sticky; top: headerHeight; height: calc(100vh - headerHeight)` holding the SVG, hover shows a cursor-following tooltip (state name + count), click toggles selection.
+  - **Mobile:** `HomePage` measures `Header`'s and `BottomTabBar`'s rendered heights via `ResizeObserver` (matched by `data-app-header` / `data-app-bottom-tab-bar` attributes) and feeds them to `MapView` as `headerHeight`/`bottomBarHeight`. The fixed map container uses `top: headerHeight; height: calc(100vh - headerHeight - bottomBarHeight)` (measured `bottomBarHeight`, not a hardcoded value — BottomTabBar actually renders ~71px tall). Tapping a state opens a `framer-motion` spring bottom sheet (stiffness 300 / damping 30); tapping a zero-event state does nothing (no sheet); tapping the backdrop closes it. Desktop's empty state instead keeps the selection and shows "No events found for [State]" in the left panel — reachable via search/filters now that state counts no longer inherit All-India events by default.
+  - `ComposableMap` projection: `scale: 820` (desktop), `scale: 920` (mobile) — different per platform via the existing `isMobile` flag, `width={500} height={550}`, **default `preserveAspectRatio` ("meet")**, no `overflow: hidden` on either container. History here: `scale: 900`/no-crop under-filled → tried `scale: 1300` + `preserveAspectRatio="xMidYMid slice"` to fill completely, but `slice` *crops* whichever dimension overflows, which clipped Andaman/the southern tip on short viewports → reverted to default `preserveAspectRatio` (never crops, only letterboxes) and tuned `scale` up from there to shrink the letterbox margin as much as possible without cropping. Mobile's `920` (vs. the `580` first tried) was tuned by measuring the rendered content bounding box against the SVG's box directly — `580` only filled ~59% of the container width on a narrow phone viewport, `920` fills ~94% while still keeping the whole country inside the box (verified: content bbox ⊆ svg bbox on both platforms).
 
 **1140px grid constraint:** the `max-w-[1140px] mx-auto px-6` container (currently on `App.jsx`'s `<main>`) must be applied to ALL views — Calendar, Map, and any new pages follow the same container. Calendar and Map (desktop split-panel) both confirmed to inherit it correctly; Map's mobile full-bleed layer is a deliberate, spec'd exception (fixed, outside the padded container).
 

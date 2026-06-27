@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { ArrowLeft01Icon } from '@hugeicons/core-free-icons';
+import { Cancel01Icon } from '@hugeicons/core-free-icons';
 import events from '../../data/india-cultural-calendar.json';
 import { usePexels } from '../../hooks/usePexels';
 
@@ -29,6 +29,14 @@ export default function GalleryScreen() {
     };
   }, [event?.id, fetchImages]);
 
+  const handleClose = () => {
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      navigate(`/festival/${id}`);
+    } else {
+      navigate(-1);
+    }
+  };
+
   const handleDragEnd = (_, info) => {
     if (info.offset.x < -50 && index < images.length - 1) {
       setIndex((value) => value + 1);
@@ -52,18 +60,18 @@ export default function GalleryScreen() {
   return (
     <div className="flex h-screen flex-col bg-black text-white">
       <div className="flex items-center justify-between px-4 py-4">
-        <button
-          type="button"
-          onClick={() => navigate(-1)}
-          aria-label="Back"
-          className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10"
-        >
-          <HugeiconsIcon icon={ArrowLeft01Icon} size={20} strokeWidth={1.8} />
-        </button>
+        <span className="w-9" />
         <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold">
           {images.length ? `${index + 1} / ${images.length}` : '0 / 0'}
         </span>
-        <span className="w-9" />
+        <button
+          type="button"
+          onClick={handleClose}
+          aria-label="Close"
+          className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10"
+        >
+          <HugeiconsIcon icon={Cancel01Icon} size={20} strokeWidth={1.8} />
+        </button>
       </div>
 
       <motion.div

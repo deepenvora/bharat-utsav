@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { ArrowLeft01Icon, ArrowRight01Icon, Cancel01Icon } from '@hugeicons/core-free-icons';
 
-export default function Lightbox({ images, title, onClose }) {
-  const [index, setIndex] = useState(0);
+export default function Lightbox({ images, title, onClose, initialIndex = 0 }) {
+  const [index, setIndex] = useState(initialIndex);
 
   useEffect(() => {
     const handleKeyDown = (event) => {

@@ -17,6 +17,7 @@ export default function DetailPage() {
   const [images, setImages] = useState([]);
   const [scrolledPastHero, setScrolledPastHero] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
   const heroRef = useRef(null);
   const { fetchImages } = usePexels(event?.imageQuery);
 
@@ -107,7 +108,18 @@ export default function DetailPage() {
             <HugeiconsIcon icon={Cancel01Icon} size={18} strokeWidth={1.8} />
           </button>
         </div>
-        <ImageMosaic images={images} title={event.title} onViewAll={() => setLightboxOpen(true)} />
+        <ImageMosaic
+          images={images}
+          title={event.title}
+          onViewAll={() => {
+            setLightboxIndex(0);
+            setLightboxOpen(true);
+          }}
+          onImageClick={(index) => {
+            setLightboxIndex(index);
+            setLightboxOpen(true);
+          }}
+        />
       </div>
 
       <div className="mx-auto max-w-[1140px] px-8 py-6">
@@ -143,7 +155,9 @@ export default function DetailPage() {
         <RelatedFestivals current={event} events={events} onSelect={(relatedEvent) => navigate(`/festival/${relatedEvent.id}`)} />
       </div>
 
-      {lightboxOpen ? <Lightbox images={images} title={event.title} onClose={() => setLightboxOpen(false)} /> : null}
+      {lightboxOpen ? (
+        <Lightbox images={images} title={event.title} initialIndex={lightboxIndex} onClose={() => setLightboxOpen(false)} />
+      ) : null}
     </motion.div>
   );
 }

@@ -1,8 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import events from './data/india-cultural-calendar.json';
-import HeroSection from './components/home/HeroSection';
 import CardGrid from './components/home/CardGrid';
 import CalendarView from './components/calendar/CalendarView';
 import MapView from './components/map/MapView';
@@ -32,30 +31,11 @@ function getAvailableOptions(items) {
 function HomePage() {
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState('card');
-  const [showCompactHeader, setShowCompactHeader] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [selectedFilters, setSelectedFilters] = useState({ type: [], month: [], religion: [], state: [] });
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [headerHeight, setHeaderHeight] = useState(0);
   const [bottomBarHeight, setBottomBarHeight] = useState(0);
-  const heroSentinelRef = useRef(null);
-
-  useEffect(() => {
-    const node = heroSentinelRef.current;
-    if (!node) {
-      return undefined;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowCompactHeader(!entry.isIntersecting);
-      },
-      { threshold: 0 },
-    );
-
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     const headerEl = document.querySelector('[data-app-header]');
@@ -124,26 +104,17 @@ function HomePage() {
 
   return (
     <div className="min-h-screen bg-[linear-gradient(180deg,#fff8fb_0%,#ffffff_30%,#fffafc_100%)] text-[var(--color-text-primary)]">
-      {activeTab !== 'map' ? (
-        <HeroSection
-          search={search}
-          setSearch={setSearch}
-          onFocusSearch={() => {}}
-          sentinelRef={heroSentinelRef}
-          onOpenFilters={() => setShowFilters(true)}
-        />
-      ) : null}
       <Header
         search={search}
         setSearch={setSearch}
         onFocusSearch={() => {}}
-        showCompactHeader={activeTab === 'map' ? true : showCompactHeader}
+        showCompactHeader
         onOpenFilters={() => setShowFilters(true)}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         filterCount={filterCount}
       />
-      <main className="mx-auto max-w-[1140px] px-6 pb-24" style={{ paddingTop: activeTab === 'map' ? headerHeight + 24 : 24 }}>
+      <main className="mx-auto max-w-[1140px] px-6 pb-24" style={{ paddingTop: headerHeight + 24 }}>
         {activeTab === 'calendar' ? (
           <CalendarView events={filteredEvents} onOpenDetail={setSelectedEvent} />
         ) : activeTab === 'map' ? (
