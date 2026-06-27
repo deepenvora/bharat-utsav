@@ -5,15 +5,15 @@ const STARTER_PROMPTS = [
   'What is the significance of Holi?',
 ];
 
-export default function StarterPills({ onSelect, scroll = false }) {
+export default function StarterPills({ onSelect }) {
   return (
-    <div className={scroll ? 'flex gap-2 overflow-x-auto px-4 py-3' : 'flex flex-wrap gap-2 p-4'}>
+    <div className="flex flex-col gap-2 p-4 md:flex-row md:flex-wrap">
       {STARTER_PROMPTS.map((prompt) => (
         <button
           key={prompt}
           type="button"
           onClick={() => onSelect(prompt)}
-          className="shrink-0 rounded-[var(--radius-pill)] border border-[var(--color-border)] px-3 py-2 text-sm text-[var(--color-text-primary)] transition hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
+          className="w-full rounded-[var(--radius-pill)] border border-[var(--color-border)] px-4 py-2 text-left text-sm text-[var(--color-text-primary)] transition hover:border-[var(--color-brand)] hover:text-[var(--color-brand)] md:w-auto"
         >
           {prompt}
         </button>

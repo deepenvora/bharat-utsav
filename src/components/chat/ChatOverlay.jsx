@@ -26,7 +26,7 @@ export default function ChatOverlay({ onClose }) {
           <HugeiconsIcon icon={Cancel01Icon} size={16} strokeWidth={1.8} />
         </button>
       </div>
-      {messages.length === 0 ? <StarterPills onSelect={sendMessage} scroll /> : null}
+      {messages.length === 0 ? <StarterPills onSelect={sendMessage} /> : null}
       <div className="flex-1 overflow-y-auto">
         {messages.length > 0 ? <ChatMessages messages={messages} isTyping={isTyping} /> : null}
       </div>

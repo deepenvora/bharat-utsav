@@ -127,7 +127,7 @@ function HomePage() {
       />
       <main
         className="mx-auto max-w-[1140px] px-6 pb-24 transition-[margin-right] duration-300"
-        style={{ paddingTop: headerHeight + 24, marginRight: chatMode === 'panel' ? 320 : 0 }}
+        style={{ paddingTop: headerHeight + 24, marginRight: chatMode === 'panel' ? 400 : 0 }}
       >
         {activeTab === 'calendar' ? (
           <CalendarView events={filteredEvents} onOpenDetail={setSelectedEvent} />
