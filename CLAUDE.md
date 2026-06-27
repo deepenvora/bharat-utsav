@@ -285,9 +285,16 @@ src/
       CalendarView.jsx
     map/
       MapView.jsx
+    chat/
+      ChatPanel.jsx        # Web: 320px slide-in panel, FAB-toggled
+      ChatOverlay.jsx      # Mobile: full-screen modal, FAB-toggled
+      ChatMessages.jsx     # Message bubbles + typing indicator (shared)
+      ChatInput.jsx        # Pinned input row + send button (shared)
+      StarterPills.jsx     # 4 suggestion pills, shown until first message (shared)
   hooks/
     usePexels.js          # Fetch + cache Pexels images
     useWikipedia.js       # Fetch Wikipedia content
+    useChat.js            # Multi-turn chat state + direct Claude API call
     useSearch.js
     useFilters.js
   data/
@@ -336,7 +343,7 @@ src/
 6. **Search + Filters** — Search (title + keywords), filters panel (mobile full-page / web side-sheet), active filter pills, sort control (Card view only)
 7. **Calendar view** — Month-grouped list, reuses shell
 8. **Map view** — State pins, placeholder acceptable
-9. **AI features** — Summary generation via Claude API (FAB activation)
+9. **AI features** — local deterministic summary + keyword-search FAB chat (no external API)
 10. **Netlify deploy**
 
 ---
@@ -385,7 +392,16 @@ src/
 
 **1140px grid constraint:** the `max-w-[1140px] mx-auto px-6` container (currently on `App.jsx`'s `<main>`) must be applied to ALL views — Calendar, Map, and any new pages follow the same container. Calendar and Map (desktop split-panel) both confirmed to inherit it correctly; Map's mobile full-bleed layer is a deliberate, spec'd exception (fixed, outside the padded container).
 
+- **FAB chat:** complete — **rebuilt to be fully local, no Anthropic API call at all** (this replaces the original Claude-API-backed version: removed `fetch` to `https://api.anthropic.com/v1/messages`, the system-prompt builder, and the compact-database `useMemo` entirely). `useChat.js` now does keyword-based local search over the full `india-cultural-calendar.json` import: `extractKeywords(query)` lowercases the input, tokenizes on `[a-z0-9]+`, and strips a `STOP_WORDS` set (filler words like "tell", "me", "about", "which", "festival(s)", "celebrated", "significance", question words) so natural-language questions reduce to their meaningful terms (e.g. "What is the significance of Holi?" → `["holi"]`). `matchesKeyword(entry, keyword)` does case-insensitive substring matching against `title`/`keywords[]`/`state[]`/`whyCelebrated`/`religion`, plus exact match against `month`; `searchFestivals` returns entries matching ANY extracted keyword (OR), capped at 5. `generateLocalResponse` formats a single match as `**Title** (Month)\n\nwhyCelebrated\n\nhowCelebrated`, multiple matches as a bulleted list with bolded titles and an 80-char `whyCelebrated` snippet, and a fixed "couldn't find anything" string when zero match. `sendMessage` is now synchronous (no `async`/`try-catch` — local array filtering can't fail) and instant, same philosophy as the AI Summary box below. Verified live: zero network requests to `anthropic.com` fire (confirmed via a request listener), and all 4 starter pills — including full sentences like "Tell me about Onam" — now resolve to real results after the keyword-extraction step (without it, all 4 returned "couldn't find anything," since the original literal/substring design only matched short keyword-style input, not full questions).
+  - **Known minor false-positive:** plain substring matching means a keyword can match inside an unrelated word (e.g. `"holi"` matches inside `"holistic"` in International Day of Yoga's `whyCelebrated`), so a Holi query can surface one unrelated result alongside the correct Holi entry. Not fixed — inherent to substring matching, the correct result still appears, and word-boundary matching wasn't requested.
+  - `ChatMessages.jsx` updated to actually render this response format: added a safe `renderWithBold` helper (splits on `**...**`, wraps matches in `<strong>` — never `dangerouslySetInnerHTML`) and `whitespace-pre-line` on the bubble so `\n\n` produces real paragraph breaks. Previously the bubble rendered `{message.content}` as flat text, which would have shown literal asterisks and collapsed all line breaks.
+  - The `'error'` message role/rendering in `ChatMessages.jsx` is now dead code in practice (local search can't throw) but left in place — harmless, decoupled, not worth removing for its own sake.
+  - **Security flag from the old version is now moot**: no API key leaves the browser, no `anthropic.com` network call exists, so there's nothing to proxy before Netlify deploy for this feature. `VITE_ANTHROPIC_API_KEY` is no longer referenced anywhere in `src/` (confirmed via grep) — still sitting in `.env` (with its pre-existing accidental duplicate line) but currently unused by the app; harmless to leave, fine to clean up whenever.
+  - FAB (`src/components/layout/FAB.jsx`) still takes `isOpen`/`onClick`, swaps `SparklesIcon` ↔ `Cancel01Icon`, `z-[60]` so it stays clickable above the chat panel/overlay (both `z-50`). `App.jsx`'s `HomePage` still picks `'panel'` vs `'overlay'` via a one-time `window.innerWidth < 768` check at the moment the FAB is clicked, stored in `chatMode` state. `<main>` gets `marginRight: 320` (web only) while the panel is open; FAB hides entirely while the mobile overlay is open.
+  - Still no persistence — each panel/overlay open mounts a fresh `useChat()` instance, history resets between opens (unaffected by the rebuild).
+
+- **AI Summary box:** complete — deterministic, zero-API summary, replacing the old "coming soon" placeholder. `src/utils/generateSummary.js` exports `generateSummary(entry)`: sentence 1 from the first 1–2 sentences of `aboutLong` (sentence-split on `.!?`, then truncated to ~150 chars with an ellipsis if the combined length runs over — falls back to the full `whyCelebrated` string if `aboutLong` is missing), sentence 2 is the first sentence of `howCelebrated`, sentence 3 (Festivals only) is the fixed template `"Known for traditions like {traditions[0]} and {traditions[1]}, and dishes such as {foods[0]}."` — only appended when `traditions.length >= 2` and `foods.length >= 1` (skipped gracefully otherwise, not partially rendered). Returns `''` if no fields are present. Wired identically into `DetailPage.jsx` (web) and `DetailModal.jsx` (mobile): both compute `const summary = generateSummary(event)` and wrap the AI Summary card in `{summary ? (...) : null}` so the whole bordered box (label + text) disappears rather than rendering empty. Verified against real entries: Diwali (Festival) → 3 sentences with traditions/food; Republic Day (National Holiday) → 2 sentences, no third; National Youth Day (Awareness Day) → 2 sentences. No entry in the current 155-row dataset has every relevant field empty, so the hide-when-empty path was confirmed via the pure function (returns `""` for a field-less object) plus a code-level check of the `{summary ? ... : null}` guard, not a live empty-card screenshot.
+
 **Next to build:**
-- Batch 9 — AI Summary + FAB chat (Claude API)
 - Batch 10 — Gallery/Lightbox polish (fix the back-navigation gap above)
 - Netlify deploy

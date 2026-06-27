@@ -5,6 +5,7 @@ import { HugeiconsIcon } from '@hugeicons/react';
 import { Cancel01Icon } from '@hugeicons/core-free-icons';
 import events from '../../data/india-cultural-calendar.json';
 import { usePexels } from '../../hooks/usePexels';
+import { generateSummary } from '../../utils/generateSummary';
 import ImageMosaic from './ImageMosaic';
 import AccordionSection from './AccordionSection';
 import RelatedFestivals from './RelatedFestivals';
@@ -82,6 +83,7 @@ export default function DetailPage() {
 
   const isFestival = event.type === 'Festival';
   const meta = [event.type, event.state?.length ? event.state.join(', ') : null, event.month].filter(Boolean).join(' · ');
+  const summary = generateSummary(event);
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="min-h-screen bg-white">
@@ -123,12 +125,12 @@ export default function DetailPage() {
       </div>
 
       <div className="mx-auto max-w-[1140px] px-8 py-6">
-        <div className="rounded-[16px] border border-[var(--color-border)] bg-white p-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-brand)]">AI Summary</p>
-          <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-            AI-generated summary coming soon for {event.title}.
-          </p>
-        </div>
+        {summary ? (
+          <div className="rounded-[16px] border border-[var(--color-border)] bg-white p-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-brand)]">AI Summary</p>
+            <p className="mt-2 text-sm text-[var(--color-text-secondary)]">{summary}</p>
+          </div>
+        ) : null}
 
         <div className="mt-6">
           <AccordionSection title="About" defaultOpen>

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { Cancel01Icon } from '@hugeicons/core-free-icons';
 import { usePexels } from '../../hooks/usePexels';
+import { generateSummary } from '../../utils/generateSummary';
 import ImageMosaic from './ImageMosaic';
 import ImageCarousel from './ImageCarousel';
 import AccordionSection from './AccordionSection';
@@ -67,6 +68,7 @@ export default function DetailModal({ event, events, onClose, onSelectEvent }) {
 
   const isFestival = event.type === 'Festival';
   const meta = [event.type, event.state?.length ? event.state.join(', ') : null, event.month].filter(Boolean).join(' · ');
+  const summary = generateSummary(event);
 
   const handleScroll = () => {
     const activeHero = mobileHeroRef.current?.offsetHeight ? mobileHeroRef.current : webHeroRef.current;
@@ -130,12 +132,12 @@ export default function DetailModal({ event, events, onClose, onSelectEvent }) {
           </div>
 
           <div className="px-4 py-6 md:px-8">
-            <div className="rounded-[16px] border border-[var(--color-border)] bg-white p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-brand)]">AI Summary</p>
-              <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-                AI-generated summary coming soon for {event.title}.
-              </p>
-            </div>
+            {summary ? (
+              <div className="rounded-[16px] border border-[var(--color-border)] bg-white p-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-brand)]">AI Summary</p>
+                <p className="mt-2 text-sm text-[var(--color-text-secondary)]">{summary}</p>
+              </div>
+            ) : null}
 
             <div className="mt-6">
               <AccordionSection title="About" defaultOpen>

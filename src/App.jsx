@@ -12,6 +12,8 @@ import FiltersPanel from './components/filters/FiltersPanel';
 import DetailModal from './components/detail/DetailModal';
 import DetailPage from './components/detail/DetailPage';
 import GalleryScreen from './components/gallery/GalleryScreen';
+import ChatPanel from './components/chat/ChatPanel';
+import ChatOverlay from './components/chat/ChatOverlay';
 
 const FILTER_KEYS = ['type', 'month', 'religion', 'state'];
 
@@ -36,6 +38,15 @@ function HomePage() {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [headerHeight, setHeaderHeight] = useState(0);
   const [bottomBarHeight, setBottomBarHeight] = useState(0);
+  const [chatMode, setChatMode] = useState(null); // null | 'panel' | 'overlay'
+
+  const handleToggleChat = () => {
+    if (chatMode) {
+      setChatMode(null);
+      return;
+    }
+    setChatMode(window.innerWidth < 768 ? 'overlay' : 'panel');
+  };
 
   useEffect(() => {
     const headerEl = document.querySelector('[data-app-header]');
@@ -114,7 +125,10 @@ function HomePage() {
         setActiveTab={setActiveTab}
         filterCount={filterCount}
       />
-      <main className="mx-auto max-w-[1140px] px-6 pb-24" style={{ paddingTop: headerHeight + 24 }}>
+      <main
+        className="mx-auto max-w-[1140px] px-6 pb-24 transition-[margin-right] duration-300"
+        style={{ paddingTop: headerHeight + 24, marginRight: chatMode === 'panel' ? 320 : 0 }}
+      >
         {activeTab === 'calendar' ? (
           <CalendarView events={filteredEvents} onOpenDetail={setSelectedEvent} />
         ) : activeTab === 'map' ? (
@@ -131,7 +145,9 @@ function HomePage() {
         )}
       </main>
       <BottomTabBar activeTab={activeTab} onChange={setActiveTab} />
-      <FAB />
+      {chatMode !== 'overlay' ? <FAB isOpen={!!chatMode} onClick={handleToggleChat} /> : null}
+      {chatMode === 'panel' ? <ChatPanel onClose={() => setChatMode(null)} /> : null}
+      {chatMode === 'overlay' ? <ChatOverlay onClose={() => setChatMode(null)} /> : null}
       <FiltersPanel
         open={showFilters}
         onClose={() => setShowFilters(false)}
