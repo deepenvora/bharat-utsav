@@ -26,7 +26,7 @@ export default function ChatPanel({ onClose }) {
         className="fixed inset-y-0 right-0 z-50 flex w-[400px] flex-col border-l border-[var(--color-border)] bg-white shadow-[-8px_0_30px_rgba(0,0,0,0.08)]"
       >
         <div className="flex items-center justify-between p-4">
-          <h2 className="text-base font-bold text-[var(--color-text-primary)]">Ask about festivals</h2>
+          <h2 className="text-base font-bold text-[var(--color-text-primary)]">Ask anything</h2>
           <button type="button" onClick={onClose} aria-label="Close" className="rounded-full border border-[var(--color-border)] p-1.5">
             <HugeiconsIcon icon={Cancel01Icon} size={16} strokeWidth={1.8} />
           </button>

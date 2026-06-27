@@ -21,7 +21,7 @@ export default function ChatOverlay({ onClose }) {
         <div className="h-1.5 w-10 rounded-full bg-[var(--color-border)]" />
       </div>
       <div className="flex items-center justify-between px-4 pb-3 pt-2">
-        <h2 className="text-base font-bold text-[var(--color-text-primary)]">Ask about festivals</h2>
+        <h2 className="text-base font-bold text-[var(--color-text-primary)]">Ask anything</h2>
         <button type="button" onClick={onClose} aria-label="Close" className="rounded-full border border-[var(--color-border)] p-1.5">
           <HugeiconsIcon icon={Cancel01Icon} size={16} strokeWidth={1.8} />
         </button>

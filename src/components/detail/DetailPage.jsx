@@ -92,12 +92,14 @@ export default function DetailPage() {
         animate={{ opacity: scrolledPastHero ? 1 : 0, y: scrolledPastHero ? 0 : -16 }}
         transition={{ duration: 0.2 }}
         style={{ pointerEvents: scrolledPastHero ? 'auto' : 'none' }}
-        className="fixed inset-x-0 top-0 z-10 flex items-center justify-between border-b border-[var(--color-border)] bg-white/95 px-8 py-4 backdrop-blur"
+        className="fixed inset-x-0 top-0 z-10 border-b border-[var(--color-border)] bg-white/95 backdrop-blur"
       >
-        <h2 className="text-lg font-bold text-[var(--color-text-primary)]">{event.title}</h2>
-        <button type="button" onClick={() => navigate(-1)} className="rounded-full border border-[var(--color-border)] p-2">
-          <HugeiconsIcon icon={Cancel01Icon} size={18} strokeWidth={1.8} />
-        </button>
+        <div className="mx-auto flex max-w-[1140px] items-center justify-between px-8 py-4">
+          <h2 className="text-lg font-bold text-[var(--color-text-primary)]">{event.title}</h2>
+          <button type="button" onClick={() => navigate(-1)} className="rounded-full border border-[var(--color-border)] p-2">
+            <HugeiconsIcon icon={Cancel01Icon} size={18} strokeWidth={1.8} />
+          </button>
+        </div>
       </motion.div>
 
       <div ref={heroRef} className="mx-auto max-w-[1140px] px-8 pt-8">

@@ -125,10 +125,7 @@ function HomePage() {
         setActiveTab={setActiveTab}
         filterCount={filterCount}
       />
-      <main
-        className="mx-auto max-w-[1140px] px-6 pb-24 transition-[margin-right] duration-300"
-        style={{ paddingTop: headerHeight + 24, marginRight: chatMode === 'panel' ? 400 : 0 }}
-      >
+      <main className="mx-auto max-w-[1140px] px-6 pb-24" style={{ paddingTop: headerHeight + 24 }}>
         {activeTab === 'calendar' ? (
           <CalendarView events={filteredEvents} onOpenDetail={setSelectedEvent} />
         ) : activeTab === 'map' ? (
@@ -145,7 +142,7 @@ function HomePage() {
         )}
       </main>
       <BottomTabBar activeTab={activeTab} onChange={setActiveTab} />
-      {chatMode !== 'overlay' ? <FAB isOpen={!!chatMode} onClick={handleToggleChat} /> : null}
+      {!chatMode ? <FAB onClick={handleToggleChat} /> : null}
       {chatMode === 'panel' ? <ChatPanel onClose={() => setChatMode(null)} /> : null}
       {chatMode === 'overlay' ? <ChatOverlay onClose={() => setChatMode(null)} /> : null}
       <FiltersPanel

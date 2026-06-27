@@ -27,8 +27,23 @@ function matchesKeyword(entry, keyword) {
   );
 }
 
+function normalizeTitle(title) {
+  return (title.toLowerCase().match(/[a-z0-9]+/g) || []).join(' ');
+}
+
+function findExactTitleMatch(keywords, data) {
+  const joined = keywords.join(' ');
+  return data.find((entry) => normalizeTitle(entry.title) === joined) || null;
+}
+
 function searchFestivals(query, data) {
   const keywords = extractKeywords(query);
+
+  const exactMatch = findExactTitleMatch(keywords, data);
+  if (exactMatch) {
+    return [exactMatch];
+  }
+
   return data.filter((entry) => keywords.some((keyword) => matchesKeyword(entry, keyword))).slice(0, 5);
 }
 
