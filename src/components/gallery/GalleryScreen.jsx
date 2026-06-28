@@ -5,6 +5,7 @@ import { HugeiconsIcon } from '@hugeicons/react';
 import { Cancel01Icon } from '@hugeicons/core-free-icons';
 import events from '../../data/india-cultural-calendar.json';
 import { usePexels } from '../../hooks/usePexels';
+import DetailModal from '../detail/DetailModal';
 
 export default function GalleryScreen() {
   const { id } = useParams();
@@ -12,6 +13,7 @@ export default function GalleryScreen() {
   const event = events.find((item) => item.id === id);
   const [images, setImages] = useState([]);
   const [index, setIndex] = useState(0);
+  const [modalEvent, setModalEvent] = useState(null);
   const { fetchImages } = usePexels(event?.imageQuery);
 
   useEffect(() => {
@@ -33,7 +35,7 @@ export default function GalleryScreen() {
     if (typeof window !== 'undefined' && window.innerWidth >= 768) {
       navigate(`/festival/${id}`);
     } else {
-      navigate(-1);
+      setModalEvent(event);
     }
   };
 
@@ -109,6 +111,10 @@ export default function GalleryScreen() {
           </button>
         ))}
       </div>
+
+      {modalEvent ? (
+        <DetailModal event={modalEvent} events={events} onClose={() => navigate(-1)} onSelectEvent={setModalEvent} />
+      ) : null}
     </div>
   );
 }
