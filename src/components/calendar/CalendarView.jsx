@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { usePexels } from '../../hooks/usePexels';
@@ -48,11 +48,31 @@ function formatDateLabel(event) {
 function CalendarEventRow({ event, onOpenDetail }) {
   const navigate = useNavigate();
   const [images, setImages] = useState(event.images || []);
-  const { fetchImages } = usePexels(event.imageQuery);
+  const [isVisible, setIsVisible] = useState(false);
+  const rowRef = useRef(null);
+  const { fetchImages } = usePexels(event.imageQuery, event.id);
+
+  useEffect(() => {
+    if (!rowRef.current || isVisible) {
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { rootMargin: '200px' },
+    );
+
+    observer.observe(rowRef.current);
+    return () => observer.disconnect();
+  }, [isVisible]);
 
   useEffect(() => {
     let ignore = false;
-    if (!event.imageQuery) {
+    if (!event.imageQuery || !isVisible) {
       return undefined;
     }
 
@@ -65,7 +85,7 @@ function CalendarEventRow({ event, onOpenDetail }) {
     return () => {
       ignore = true;
     };
-  }, [event.imageQuery, event.images, fetchImages]);
+  }, [event.imageQuery, event.images, fetchImages, isVisible]);
 
   const thumb = images?.[0]?.thumb || images?.[0]?.large2x;
 
@@ -80,11 +100,12 @@ function CalendarEventRow({ event, onOpenDetail }) {
   return (
     <button
       type="button"
+      ref={rowRef}
       onClick={handleClick}
       className="flex w-full items-center gap-4 border-b border-[var(--color-border)] py-3 text-left last:border-b-0"
     >
       <div className="h-12 w-12 shrink-0 overflow-hidden rounded-[var(--radius-card)] bg-[var(--color-border)]">
-        {thumb ? <img src={thumb} alt={event.title} className="h-full w-full object-cover" /> : null}
+        {thumb ? <img src={thumb} alt={event.title} className="h-full w-full object-cover" /> : <div className="h-full w-full animate-pulse bg-[var(--color-border)]" />}
       </div>
       <div className="min-w-0 flex-1">
         <p className="truncate text-base font-bold text-[var(--color-text-primary)]">{event.title}</p>
