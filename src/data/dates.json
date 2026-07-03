@@ -1,0 +1,4550 @@
+{
+  "republic-day-india": {
+    "type": "fixed",
+    "rule": "01-26",
+    "source": "dataset"
+  },
+  "independence-day-india": {
+    "type": "fixed",
+    "rule": "08-15",
+    "source": "dataset"
+  },
+  "gandhi-jayanti": {
+    "type": "fixed",
+    "rule": "10-02",
+    "source": "dataset"
+  },
+  "national-youth-day": {
+    "type": "fixed",
+    "rule": "01-12",
+    "source": "dataset"
+  },
+  "army-day-india": {
+    "type": "fixed",
+    "rule": "01-15",
+    "source": "dataset"
+  },
+  "national-voters-day": {
+    "type": "fixed",
+    "rule": "01-25",
+    "source": "dataset"
+  },
+  "national-science-day": {
+    "type": "fixed",
+    "rule": "02-28",
+    "source": "dataset"
+  },
+  "ambedkar-jayanti": {
+    "type": "fixed",
+    "rule": "04-14",
+    "source": "dataset"
+  },
+  "labour-day-india": {
+    "type": "fixed",
+    "rule": "05-01",
+    "source": "dataset"
+  },
+  "international-yoga-day": {
+    "type": "fixed",
+    "rule": "06-21",
+    "source": "dataset"
+  },
+  "national-doctors-day": {
+    "type": "fixed",
+    "rule": "07-01",
+    "source": "dataset"
+  },
+  "kargil-vijay-diwas": {
+    "type": "fixed",
+    "rule": "07-26",
+    "source": "dataset"
+  },
+  "national-sports-day": {
+    "type": "fixed",
+    "rule": "08-29",
+    "source": "dataset"
+  },
+  "teachers-day-india": {
+    "type": "fixed",
+    "rule": "09-05",
+    "source": "dataset"
+  },
+  "hindi-diwas": {
+    "type": "fixed",
+    "rule": "09-14",
+    "source": "dataset"
+  },
+  "engineers-day-india": {
+    "type": "fixed",
+    "rule": "09-15",
+    "source": "dataset"
+  },
+  "air-force-day-india": {
+    "type": "fixed",
+    "rule": "10-08",
+    "source": "dataset"
+  },
+  "national-unity-day": {
+    "type": "fixed",
+    "rule": "10-31",
+    "source": "dataset"
+  },
+  "national-education-day": {
+    "type": "fixed",
+    "rule": "11-11",
+    "source": "dataset"
+  },
+  "childrens-day-india": {
+    "type": "fixed",
+    "rule": "11-14",
+    "source": "dataset"
+  },
+  "constitution-day-india": {
+    "type": "fixed",
+    "rule": "11-26",
+    "source": "dataset"
+  },
+  "navy-day-india": {
+    "type": "fixed",
+    "rule": "12-04",
+    "source": "dataset"
+  },
+  "up-foundation-day": {
+    "type": "fixed",
+    "rule": "01-24",
+    "source": "dataset"
+  },
+  "manipur-statehood-day": {
+    "type": "fixed",
+    "rule": "01-21",
+    "source": "dataset"
+  },
+  "meghalaya-statehood-day": {
+    "type": "fixed",
+    "rule": "01-21",
+    "source": "dataset"
+  },
+  "tripura-statehood-day": {
+    "type": "fixed",
+    "rule": "01-21",
+    "source": "dataset"
+  },
+  "himachal-full-statehood": {
+    "type": "fixed",
+    "rule": "01-25",
+    "source": "dataset"
+  },
+  "rajasthan-day": {
+    "type": "fixed",
+    "rule": "03-30",
+    "source": "dataset"
+  },
+  "bihar-diwas": {
+    "type": "fixed",
+    "rule": "03-22",
+    "source": "dataset"
+  },
+  "odisha-day": {
+    "type": "fixed",
+    "rule": "04-01",
+    "source": "dataset"
+  },
+  "himachal-day": {
+    "type": "fixed",
+    "rule": "04-15",
+    "source": "dataset"
+  },
+  "maharashtra-day": {
+    "type": "fixed",
+    "rule": "05-01",
+    "source": "dataset"
+  },
+  "gujarat-day": {
+    "type": "fixed",
+    "rule": "05-01",
+    "source": "dataset"
+  },
+  "sikkim-statehood-day": {
+    "type": "fixed",
+    "rule": "05-16",
+    "source": "dataset"
+  },
+  "telangana-formation-day": {
+    "type": "fixed",
+    "rule": "06-02",
+    "source": "dataset"
+  },
+  "jharkhand-foundation-day": {
+    "type": "fixed",
+    "rule": "11-15",
+    "source": "dataset"
+  },
+  "uttarakhand-foundation-day": {
+    "type": "fixed",
+    "rule": "11-09",
+    "source": "dataset"
+  },
+  "nagaland-foundation-day": {
+    "type": "fixed",
+    "rule": "12-01",
+    "source": "dataset"
+  },
+  "karnataka-rajyotsava": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "andhra-pradesh-formation-day": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "kerala-piravi": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "madhya-pradesh-foundation-day": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "chhattisgarh-foundation-day": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "haryana-day": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "punjab-day": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "assam-divas": {
+    "type": "fixed",
+    "rule": "12-02",
+    "source": "dataset"
+  },
+  "goa-statehood-day": {
+    "type": "fixed",
+    "rule": "05-30",
+    "source": "dataset"
+  },
+  "tamil-nadu-day": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "arunachal-statehood-day": {
+    "type": "fixed",
+    "rule": "02-20",
+    "source": "dataset"
+  },
+  "mizoram-statehood-day": {
+    "type": "fixed",
+    "rule": "02-20",
+    "source": "dataset"
+  },
+  "west-bengal-day": {
+    "type": "fixed",
+    "rule": "04-20",
+    "source": "dataset"
+  },
+  "puducherry-liberation-day": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "chandigarh-formation": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "lakshadweep-formation": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "jk-ut-formation": {
+    "type": "fixed",
+    "rule": "10-31",
+    "source": "dataset"
+  },
+  "ladakh-ut-formation": {
+    "type": "fixed",
+    "rule": "10-31",
+    "source": "dataset"
+  },
+  "dnh-dd-merger": {
+    "type": "fixed",
+    "rule": "01-26",
+    "source": "dataset"
+  },
+  "delhi-nct": {
+    "type": "fixed",
+    "rule": "02-01",
+    "source": "dataset"
+  },
+  "andaman-nicobar-ut": {
+    "type": "fixed",
+    "rule": "11-01",
+    "source": "dataset"
+  },
+  "diwali": {
+    "type": "series",
+    "children": [
+      "diwali-dhanteras",
+      "diwali-naraka-chaturdashi",
+      "diwali-lakshmi-puja",
+      "diwali-govardhan-puja",
+      "diwali-bhai-dooj"
+    ],
+    "source": "pending-fetch"
+  },
+  "diwali-dhanteras": {
+    "type": "variable",
+    "aliases": [
+      "Dhanteras",
+      "Dhantrayodashi"
+    ],
+    "bucket": "A",
+    "occurrences": {},
+    "parent": "diwali",
+    "source": "unresolved"
+  },
+  "diwali-naraka-chaturdashi": {
+    "type": "variable",
+    "aliases": [
+      "Naraka Chaturdashi",
+      "Choti Diwali",
+      "Chhoti Diwali"
+    ],
+    "bucket": "A",
+    "occurrences": {},
+    "parent": "diwali",
+    "source": "unresolved"
+  },
+  "diwali-lakshmi-puja": {
+    "type": "variable",
+    "aliases": [
+      "Diwali",
+      "Deepavali",
+      "Lakshmi Puja"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-11-08",
+        "end": "2026-11-08",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2027": {
+        "start": "2027-10-29",
+        "end": "2027-10-29",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2028": {
+        "start": "2028-10-17",
+        "end": "2028-10-17",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2029": {
+        "start": "2029-11-05",
+        "end": "2029-11-05",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2030": {
+        "start": "2030-10-26",
+        "end": "2030-10-26",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2031": {
+        "start": "2031-11-14",
+        "end": "2031-11-14",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2032": {
+        "start": "2032-11-02",
+        "end": "2032-11-02",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2033": {
+        "start": "2033-10-22",
+        "end": "2033-10-22",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2034": {
+        "start": "2034-11-10",
+        "end": "2034-11-10",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2035": {
+        "start": "2035-10-30",
+        "end": "2035-10-30",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2036": {
+        "start": "2036-10-18",
+        "end": "2036-10-18",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2037": {
+        "start": "2037-11-07",
+        "end": "2037-11-07",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2038": {
+        "start": "2038-10-27",
+        "end": "2038-10-27",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2039": {
+        "start": "2039-11-15",
+        "end": "2039-11-15",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2040": {
+        "start": "2040-11-04",
+        "end": "2040-11-04",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2041": {
+        "start": "2041-10-24",
+        "end": "2041-10-24",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2042": {
+        "start": "2042-11-12",
+        "end": "2042-11-12",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2043": {
+        "start": "2043-11-01",
+        "end": "2043-11-01",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2044": {
+        "start": "2044-10-20",
+        "end": "2044-10-20",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2045": {
+        "start": "2045-11-08",
+        "end": "2045-11-08",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2046": {
+        "start": "2046-10-29",
+        "end": "2046-10-29",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2047": {
+        "start": "2047-10-18",
+        "end": "2047-10-18",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2048": {
+        "start": "2048-11-05",
+        "end": "2048-11-05",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2049": {
+        "start": "2049-10-26",
+        "end": "2049-10-26",
+        "matchedName": "Diwali/Deepavali"
+      },
+      "2050": {
+        "start": "2050-11-14",
+        "end": "2050-11-14",
+        "matchedName": "Diwali/Deepavali"
+      }
+    },
+    "parent": "diwali",
+    "source": "fetched"
+  },
+  "diwali-govardhan-puja": {
+    "type": "seasonal",
+    "aliases": [
+      "Govardhan Puja",
+      "Annakut"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-11-09",
+        "end": "2026-11-09",
+        "matchedName": "Govardhan Puja"
+      }
+    },
+    "parent": "diwali",
+    "source": "seasonal-with-anchor",
+    "window": {
+      "from": "10",
+      "to": "10"
+    }
+  },
+  "diwali-bhai-dooj": {
+    "type": "variable",
+    "aliases": [
+      "Bhai Dooj",
+      "Bhai Duj",
+      "Bhau Beej"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-11-11",
+        "end": "2026-11-11",
+        "matchedName": "Bhai Duj"
+      },
+      "2027": {
+        "start": "2027-10-31",
+        "end": "2027-10-31",
+        "matchedName": "Bhai Duj"
+      },
+      "2028": {
+        "start": "2028-10-19",
+        "end": "2028-10-19",
+        "matchedName": "Bhai Duj"
+      },
+      "2029": {
+        "start": "2029-11-07",
+        "end": "2029-11-07",
+        "matchedName": "Bhai Duj"
+      },
+      "2030": {
+        "start": "2030-10-28",
+        "end": "2030-10-28",
+        "matchedName": "Bhai Duj"
+      },
+      "2031": {
+        "start": "2031-11-16",
+        "end": "2031-11-16",
+        "matchedName": "Bhai Duj"
+      },
+      "2032": {
+        "start": "2032-11-04",
+        "end": "2032-11-04",
+        "matchedName": "Bhai Duj"
+      },
+      "2033": {
+        "start": "2033-10-25",
+        "end": "2033-10-25",
+        "matchedName": "Bhai Duj"
+      },
+      "2034": {
+        "start": "2034-11-12",
+        "end": "2034-11-12",
+        "matchedName": "Bhai Duj"
+      },
+      "2035": {
+        "start": "2035-11-01",
+        "end": "2035-11-01",
+        "matchedName": "Bhai Duj"
+      },
+      "2036": {
+        "start": "2036-10-21",
+        "end": "2036-10-21",
+        "matchedName": "Bhai Duj"
+      },
+      "2037": {
+        "start": "2037-11-08",
+        "end": "2037-11-08",
+        "matchedName": "Bhai Duj"
+      },
+      "2038": {
+        "start": "2038-10-29",
+        "end": "2038-10-29",
+        "matchedName": "Bhai Duj"
+      },
+      "2039": {
+        "start": "2039-11-17",
+        "end": "2039-11-17",
+        "matchedName": "Bhai Duj"
+      },
+      "2040": {
+        "start": "2040-11-06",
+        "end": "2040-11-06",
+        "matchedName": "Bhai Duj"
+      },
+      "2041": {
+        "start": "2041-10-26",
+        "end": "2041-10-26",
+        "matchedName": "Bhai Duj"
+      },
+      "2042": {
+        "start": "2042-11-14",
+        "end": "2042-11-14",
+        "matchedName": "Bhai Duj"
+      },
+      "2043": {
+        "start": "2043-11-03",
+        "end": "2043-11-03",
+        "matchedName": "Bhai Duj"
+      },
+      "2044": {
+        "start": "2044-10-22",
+        "end": "2044-10-22",
+        "matchedName": "Bhai Duj"
+      },
+      "2045": {
+        "start": "2045-11-10",
+        "end": "2045-11-10",
+        "matchedName": "Bhai Duj"
+      },
+      "2046": {
+        "start": "2046-10-30",
+        "end": "2046-10-30",
+        "matchedName": "Bhai Duj"
+      },
+      "2047": {
+        "start": "2047-10-20",
+        "end": "2047-10-20",
+        "matchedName": "Bhai Duj"
+      },
+      "2048": {
+        "start": "2048-11-07",
+        "end": "2048-11-07",
+        "matchedName": "Bhai Duj"
+      },
+      "2049": {
+        "start": "2049-10-28",
+        "end": "2049-10-28",
+        "matchedName": "Bhai Duj"
+      },
+      "2050": {
+        "start": "2050-11-16",
+        "end": "2050-11-16",
+        "matchedName": "Bhai Duj"
+      }
+    },
+    "parent": "diwali",
+    "source": "fetched"
+  },
+  "holi": {
+    "type": "variable",
+    "aliases": [
+      "Holi"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-03-03",
+        "end": "2026-03-04",
+        "matchedName": "Holika Dahana"
+      },
+      "2027": {
+        "start": "2027-03-22",
+        "end": "2027-03-22",
+        "matchedName": "Holi"
+      },
+      "2028": {
+        "start": "2028-03-11",
+        "end": "2028-03-11",
+        "matchedName": "Holi"
+      },
+      "2029": {
+        "start": "2029-03-01",
+        "end": "2029-03-01",
+        "matchedName": "Holi"
+      },
+      "2030": {
+        "start": "2030-03-20",
+        "end": "2030-03-20",
+        "matchedName": "Holi"
+      },
+      "2031": {
+        "start": "2031-03-09",
+        "end": "2031-03-09",
+        "matchedName": "Holi"
+      },
+      "2032": {
+        "start": "2032-03-27",
+        "end": "2032-03-27",
+        "matchedName": "Holi"
+      },
+      "2033": {
+        "start": "2033-03-16",
+        "end": "2033-03-16",
+        "matchedName": "Holi"
+      },
+      "2034": {
+        "start": "2034-03-05",
+        "end": "2034-03-05",
+        "matchedName": "Holi"
+      },
+      "2035": {
+        "start": "2035-03-24",
+        "end": "2035-03-24",
+        "matchedName": "Holi"
+      },
+      "2036": {
+        "start": "2036-03-12",
+        "end": "2036-03-12",
+        "matchedName": "Holi"
+      },
+      "2037": {
+        "start": "2037-03-02",
+        "end": "2037-03-02",
+        "matchedName": "Holi"
+      },
+      "2038": {
+        "start": "2038-03-21",
+        "end": "2038-03-21",
+        "matchedName": "Holi"
+      },
+      "2039": {
+        "start": "2039-03-11",
+        "end": "2039-03-11",
+        "matchedName": "Holi"
+      },
+      "2040": {
+        "start": "2040-03-29",
+        "end": "2040-03-29",
+        "matchedName": "Holi"
+      },
+      "2041": {
+        "start": "2041-03-18",
+        "end": "2041-03-18",
+        "matchedName": "Holi"
+      },
+      "2042": {
+        "start": "2042-03-07",
+        "end": "2042-03-07",
+        "matchedName": "Holi"
+      },
+      "2043": {
+        "start": "2043-03-26",
+        "end": "2043-03-26",
+        "matchedName": "Holi"
+      },
+      "2044": {
+        "start": "2044-03-14",
+        "end": "2044-03-14",
+        "matchedName": "Holi"
+      },
+      "2045": {
+        "start": "2045-03-03",
+        "end": "2045-03-03",
+        "matchedName": "Holi"
+      },
+      "2046": {
+        "start": "2046-03-22",
+        "end": "2046-03-22",
+        "matchedName": "Holi"
+      },
+      "2047": {
+        "start": "2047-03-12",
+        "end": "2047-03-12",
+        "matchedName": "Holi"
+      },
+      "2048": {
+        "start": "2048-03-01",
+        "end": "2048-03-01",
+        "matchedName": "Holi"
+      },
+      "2049": {
+        "start": "2049-03-20",
+        "end": "2049-03-20",
+        "matchedName": "Holi"
+      },
+      "2050": {
+        "start": "2050-03-09",
+        "end": "2050-03-09",
+        "matchedName": "Holi"
+      }
+    },
+    "source": "fetched"
+  },
+  "dussehra": {
+    "type": "variable",
+    "aliases": [
+      "Dussehra",
+      "Vijayadashami",
+      "Dasara"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-10-20",
+        "end": "2026-10-20",
+        "matchedName": "Dussehra"
+      },
+      "2027": {
+        "start": "2027-10-09",
+        "end": "2027-10-09",
+        "matchedName": "Dussehra"
+      },
+      "2028": {
+        "start": "2028-09-27",
+        "end": "2028-09-27",
+        "matchedName": "Dussehra"
+      },
+      "2029": {
+        "start": "2029-10-16",
+        "end": "2029-10-16",
+        "matchedName": "Dussehra"
+      },
+      "2030": {
+        "start": "2030-10-06",
+        "end": "2030-10-06",
+        "matchedName": "Dussehra"
+      },
+      "2031": {
+        "start": "2031-10-25",
+        "end": "2031-10-25",
+        "matchedName": "Dussehra"
+      },
+      "2032": {
+        "start": "2032-10-14",
+        "end": "2032-10-14",
+        "matchedName": "Dussehra"
+      },
+      "2033": {
+        "start": "2033-10-03",
+        "end": "2033-10-03",
+        "matchedName": "Dussehra"
+      },
+      "2034": {
+        "start": "2034-10-22",
+        "end": "2034-10-22",
+        "matchedName": "Dussehra"
+      },
+      "2035": {
+        "start": "2035-10-11",
+        "end": "2035-10-11",
+        "matchedName": "Dussehra"
+      },
+      "2036": {
+        "start": "2036-09-29",
+        "end": "2036-09-29",
+        "matchedName": "Dussehra"
+      },
+      "2037": {
+        "start": "2037-10-18",
+        "end": "2037-10-18",
+        "matchedName": "Dussehra"
+      },
+      "2038": {
+        "start": "2038-10-07",
+        "end": "2038-10-07",
+        "matchedName": "Dussehra"
+      },
+      "2039": {
+        "start": "2039-10-26",
+        "end": "2039-10-26",
+        "matchedName": "Dussehra"
+      },
+      "2040": {
+        "start": "2040-10-15",
+        "end": "2040-10-15",
+        "matchedName": "Dussehra"
+      },
+      "2041": {
+        "start": "2041-10-05",
+        "end": "2041-10-05",
+        "matchedName": "Dussehra"
+      },
+      "2042": {
+        "start": "2042-10-24",
+        "end": "2042-10-24",
+        "matchedName": "Dussehra"
+      },
+      "2043": {
+        "start": "2043-10-13",
+        "end": "2043-10-13",
+        "matchedName": "Dussehra"
+      },
+      "2044": {
+        "start": "2044-10-01",
+        "end": "2044-10-01",
+        "matchedName": "Dussehra"
+      },
+      "2045": {
+        "start": "2045-10-20",
+        "end": "2045-10-20",
+        "matchedName": "Dussehra"
+      },
+      "2046": {
+        "start": "2046-10-09",
+        "end": "2046-10-09",
+        "matchedName": "Dussehra"
+      },
+      "2047": {
+        "start": "2047-09-28",
+        "end": "2047-09-28",
+        "matchedName": "Dussehra"
+      },
+      "2048": {
+        "start": "2048-10-16",
+        "end": "2048-10-16",
+        "matchedName": "Dussehra"
+      },
+      "2049": {
+        "start": "2049-10-06",
+        "end": "2049-10-06",
+        "matchedName": "Dussehra"
+      },
+      "2050": {
+        "start": "2050-10-25",
+        "end": "2050-10-25",
+        "matchedName": "Dussehra"
+      }
+    },
+    "source": "fetched"
+  },
+  "durga-puja": {
+    "type": "variable",
+    "aliases": [
+      "Durga Puja"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-10-17",
+        "end": "2026-10-17",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2027": {
+        "start": "2027-10-05",
+        "end": "2027-10-05",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2028": {
+        "start": "2028-09-24",
+        "end": "2028-09-24",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2029": {
+        "start": "2029-10-12",
+        "end": "2029-10-12",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2030": {
+        "start": "2030-10-02",
+        "end": "2030-10-02",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2031": {
+        "start": "2031-10-21",
+        "end": "2031-10-21",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2032": {
+        "start": "2032-10-10",
+        "end": "2032-10-10",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2033": {
+        "start": "2033-09-30",
+        "end": "2033-09-30",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2034": {
+        "start": "2034-10-18",
+        "end": "2034-10-18",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2035": {
+        "start": "2035-10-07",
+        "end": "2035-10-07",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2036": {
+        "start": "2036-09-25",
+        "end": "2036-09-25",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2037": {
+        "start": "2037-10-14",
+        "end": "2037-10-14",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2038": {
+        "start": "2038-10-03",
+        "end": "2038-10-03",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2039": {
+        "start": "2039-10-22",
+        "end": "2039-10-22",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2040": {
+        "start": "2040-10-11",
+        "end": "2040-10-11",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2041": {
+        "start": "2041-10-01",
+        "end": "2041-10-01",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2042": {
+        "start": "2042-10-20",
+        "end": "2042-10-20",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2043": {
+        "start": "2043-10-09",
+        "end": "2043-10-09",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2044": {
+        "start": "2044-09-27",
+        "end": "2044-09-27",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2045": {
+        "start": "2045-10-16",
+        "end": "2045-10-16",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2046": {
+        "start": "2046-10-05",
+        "end": "2046-10-05",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2047": {
+        "start": "2047-09-24",
+        "end": "2047-09-24",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2048": {
+        "start": "2048-10-13",
+        "end": "2048-10-13",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2049": {
+        "start": "2049-10-02",
+        "end": "2049-10-02",
+        "matchedName": "First Day of Durga Puja Festivities"
+      },
+      "2050": {
+        "start": "2050-10-21",
+        "end": "2050-10-21",
+        "matchedName": "First Day of Durga Puja Festivities"
+      }
+    },
+    "source": "fetched"
+  },
+  "ganesh-chaturthi": {
+    "type": "variable",
+    "aliases": [
+      "Ganesh Chaturthi",
+      "Vinayaka Chaturthi"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-09-14",
+        "end": "2026-09-14",
+        "matchedName": "Ganesh Chaturthi"
+      },
+      "2027": {
+        "start": "2027-09-04",
+        "end": "2027-09-04",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2028": {
+        "start": "2028-08-23",
+        "end": "2028-08-23",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2029": {
+        "start": "2029-09-11",
+        "end": "2029-09-11",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2030": {
+        "start": "2030-09-01",
+        "end": "2030-09-01",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2031": {
+        "start": "2031-09-20",
+        "end": "2031-09-20",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2032": {
+        "start": "2032-09-08",
+        "end": "2032-09-08",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2033": {
+        "start": "2033-08-28",
+        "end": "2033-08-28",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2034": {
+        "start": "2034-09-16",
+        "end": "2034-09-16",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2035": {
+        "start": "2035-09-05",
+        "end": "2035-09-05",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2036": {
+        "start": "2036-08-24",
+        "end": "2036-08-24",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2037": {
+        "start": "2037-09-12",
+        "end": "2037-09-12",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2038": {
+        "start": "2038-09-02",
+        "end": "2038-09-02",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2039": {
+        "start": "2039-08-23",
+        "end": "2039-08-23",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2040": {
+        "start": "2040-09-10",
+        "end": "2040-09-10",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2041": {
+        "start": "2041-08-30",
+        "end": "2041-08-30",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2042": {
+        "start": "2042-09-18",
+        "end": "2042-09-18",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2043": {
+        "start": "2043-09-07",
+        "end": "2043-09-07",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2044": {
+        "start": "2044-08-26",
+        "end": "2044-08-26",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2045": {
+        "start": "2045-09-14",
+        "end": "2045-09-14",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2046": {
+        "start": "2046-09-03",
+        "end": "2046-09-03",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2047": {
+        "start": "2047-08-24",
+        "end": "2047-08-24",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2048": {
+        "start": "2048-09-11",
+        "end": "2048-09-11",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2049": {
+        "start": "2049-09-01",
+        "end": "2049-09-01",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      },
+      "2050": {
+        "start": "2050-09-20",
+        "end": "2050-09-20",
+        "matchedName": "Ganesh Chaturthi/Vinayaka Chaturthi"
+      }
+    },
+    "source": "fetched"
+  },
+  "navratri": {
+    "type": "variable",
+    "aliases": [
+      "Navratri",
+      "Sharad Navratri"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-10-11",
+        "end": "2026-10-11",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2027": {
+        "start": "2027-09-30",
+        "end": "2027-09-30",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2028": {
+        "start": "2028-09-19",
+        "end": "2028-09-19",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2029": {
+        "start": "2029-10-08",
+        "end": "2029-10-08",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2030": {
+        "start": "2030-09-28",
+        "end": "2030-09-28",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2031": {
+        "start": "2031-10-17",
+        "end": "2031-10-17",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2032": {
+        "start": "2032-10-05",
+        "end": "2032-10-05",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2033": {
+        "start": "2033-09-24",
+        "end": "2033-09-24",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2034": {
+        "start": "2034-10-13",
+        "end": "2034-10-13",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2035": {
+        "start": "2035-10-02",
+        "end": "2035-10-02",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2036": {
+        "start": "2036-09-20",
+        "end": "2036-09-20",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2037": {
+        "start": "2037-10-09",
+        "end": "2037-10-09",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2038": {
+        "start": "2038-09-29",
+        "end": "2038-09-29",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2039": {
+        "start": "2039-10-18",
+        "end": "2039-10-18",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2040": {
+        "start": "2040-10-07",
+        "end": "2040-10-07",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2041": {
+        "start": "2041-09-26",
+        "end": "2041-09-26",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2042": {
+        "start": "2042-10-15",
+        "end": "2042-10-15",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2043": {
+        "start": "2043-10-04",
+        "end": "2043-10-04",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2044": {
+        "start": "2044-09-22",
+        "end": "2044-09-22",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2045": {
+        "start": "2045-10-11",
+        "end": "2045-10-11",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2046": {
+        "start": "2046-09-30",
+        "end": "2046-09-30",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2047": {
+        "start": "2047-09-20",
+        "end": "2047-09-20",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2048": {
+        "start": "2048-10-08",
+        "end": "2048-10-08",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2049": {
+        "start": "2049-09-28",
+        "end": "2049-09-28",
+        "matchedName": "First Day of Sharad Navratri"
+      },
+      "2050": {
+        "start": "2050-10-16",
+        "end": "2050-10-16",
+        "matchedName": "First Day of Sharad Navratri"
+      }
+    },
+    "source": "fetched"
+  },
+  "janmashtami": {
+    "type": "variable",
+    "aliases": [
+      "Janmashtami",
+      "Krishna Janmashtami"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-09-04",
+        "end": "2026-09-04",
+        "matchedName": "Janmashtami"
+      },
+      "2027": {
+        "start": "2027-08-25",
+        "end": "2027-08-25",
+        "matchedName": "Janmashtami"
+      },
+      "2028": {
+        "start": "2028-08-13",
+        "end": "2028-08-13",
+        "matchedName": "Janmashtami"
+      },
+      "2029": {
+        "start": "2029-09-01",
+        "end": "2029-09-01",
+        "matchedName": "Janmashtami"
+      },
+      "2030": {
+        "start": "2030-08-21",
+        "end": "2030-08-21",
+        "matchedName": "Janmashtami"
+      },
+      "2031": {
+        "start": "2031-08-09",
+        "end": "2031-08-10",
+        "matchedName": "Janmashtami (Smarta)"
+      },
+      "2032": {
+        "start": "2032-08-28",
+        "end": "2032-08-28",
+        "matchedName": "Janmashtami"
+      },
+      "2033": {
+        "start": "2033-08-17",
+        "end": "2033-08-17",
+        "matchedName": "Janmashtami"
+      },
+      "2034": {
+        "start": "2034-09-05",
+        "end": "2034-09-06",
+        "matchedName": "Janmashtami (Smarta)"
+      },
+      "2035": {
+        "start": "2035-08-26",
+        "end": "2035-08-26",
+        "matchedName": "Janmashtami"
+      },
+      "2036": {
+        "start": "2036-08-14",
+        "end": "2036-08-15",
+        "matchedName": "Janmashtami (Smarta)"
+      },
+      "2037": {
+        "start": "2037-09-02",
+        "end": "2037-09-03",
+        "matchedName": "Janmashtami (Smarta)"
+      },
+      "2038": {
+        "start": "2038-08-23",
+        "end": "2038-08-23",
+        "matchedName": "Janmashtami"
+      },
+      "2039": {
+        "start": "2039-08-11",
+        "end": "2039-08-12",
+        "matchedName": "Janmashtami (Smarta)"
+      },
+      "2040": {
+        "start": "2040-08-29",
+        "end": "2040-08-29",
+        "matchedName": "Janmashtami"
+      },
+      "2041": {
+        "start": "2041-08-18",
+        "end": "2041-08-19",
+        "matchedName": "Janmashtami (Smarta)"
+      },
+      "2042": {
+        "start": "2042-09-06",
+        "end": "2042-09-07",
+        "matchedName": "Janmashtami (Smarta)"
+      },
+      "2043": {
+        "start": "2043-08-27",
+        "end": "2043-08-28",
+        "matchedName": "Janmashtami (Smarta)"
+      },
+      "2044": {
+        "start": "2044-08-16",
+        "end": "2044-08-16",
+        "matchedName": "Janmashtami"
+      },
+      "2045": {
+        "start": "2045-09-04",
+        "end": "2045-09-04",
+        "matchedName": "Janmashtami"
+      },
+      "2046": {
+        "start": "2046-08-25",
+        "end": "2046-08-25",
+        "matchedName": "Janmashtami"
+      },
+      "2047": {
+        "start": "2047-08-13",
+        "end": "2047-08-14",
+        "matchedName": "Janmashtami (Smarta)"
+      },
+      "2048": {
+        "start": "2048-08-31",
+        "end": "2048-08-31",
+        "matchedName": "Janmashtami"
+      },
+      "2049": {
+        "start": "2049-08-20",
+        "end": "2049-08-20",
+        "matchedName": "Janmashtami"
+      },
+      "2050": {
+        "start": "2050-08-09",
+        "end": "2050-08-10",
+        "matchedName": "Janmashtami (Smarta)"
+      }
+    },
+    "source": "fetched"
+  },
+  "ram-navami": {
+    "type": "variable",
+    "aliases": [
+      "Ram Navami",
+      "Rama Navami"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-03-26",
+        "end": "2026-03-26",
+        "matchedName": "Rama Navami"
+      },
+      "2027": {
+        "start": "2027-04-15",
+        "end": "2027-04-15",
+        "matchedName": "Rama Navami"
+      },
+      "2028": {
+        "start": "2028-04-03",
+        "end": "2028-04-03",
+        "matchedName": "Rama Navami"
+      },
+      "2029": {
+        "start": "2029-04-22",
+        "end": "2029-04-22",
+        "matchedName": "Rama Navami"
+      },
+      "2030": {
+        "start": "2030-04-12",
+        "end": "2030-04-12",
+        "matchedName": "Rama Navami"
+      },
+      "2031": {
+        "start": "2031-04-01",
+        "end": "2031-04-01",
+        "matchedName": "Rama Navami"
+      },
+      "2032": {
+        "start": "2032-04-19",
+        "end": "2032-04-19",
+        "matchedName": "Rama Navami"
+      },
+      "2033": {
+        "start": "2033-04-07",
+        "end": "2033-04-07",
+        "matchedName": "Rama Navami"
+      },
+      "2034": {
+        "start": "2034-03-28",
+        "end": "2034-03-28",
+        "matchedName": "Rama Navami"
+      },
+      "2035": {
+        "start": "2035-04-16",
+        "end": "2035-04-16",
+        "matchedName": "Rama Navami"
+      },
+      "2036": {
+        "start": "2036-04-05",
+        "end": "2036-04-05",
+        "matchedName": "Rama Navami"
+      },
+      "2037": {
+        "start": "2037-03-25",
+        "end": "2037-03-25",
+        "matchedName": "Rama Navami"
+      },
+      "2038": {
+        "start": "2038-04-13",
+        "end": "2038-04-13",
+        "matchedName": "Rama Navami"
+      },
+      "2039": {
+        "start": "2039-04-03",
+        "end": "2039-04-03",
+        "matchedName": "Rama Navami"
+      },
+      "2040": {
+        "start": "2040-04-20",
+        "end": "2040-04-20",
+        "matchedName": "Rama Navami"
+      },
+      "2041": {
+        "start": "2041-04-09",
+        "end": "2041-04-09",
+        "matchedName": "Rama Navami"
+      },
+      "2042": {
+        "start": "2042-03-29",
+        "end": "2042-03-29",
+        "matchedName": "Rama Navami"
+      },
+      "2043": {
+        "start": "2043-04-17",
+        "end": "2043-04-17",
+        "matchedName": "Rama Navami"
+      },
+      "2044": {
+        "start": "2044-04-06",
+        "end": "2044-04-06",
+        "matchedName": "Rama Navami"
+      },
+      "2045": {
+        "start": "2045-03-27",
+        "end": "2045-03-27",
+        "matchedName": "Rama Navami"
+      },
+      "2046": {
+        "start": "2046-04-15",
+        "end": "2046-04-15",
+        "matchedName": "Rama Navami"
+      },
+      "2047": {
+        "start": "2047-04-04",
+        "end": "2047-04-04",
+        "matchedName": "Rama Navami"
+      },
+      "2048": {
+        "start": "2048-04-22",
+        "end": "2048-04-22",
+        "matchedName": "Rama Navami"
+      },
+      "2049": {
+        "start": "2049-04-11",
+        "end": "2049-04-11",
+        "matchedName": "Rama Navami"
+      },
+      "2050": {
+        "start": "2050-03-31",
+        "end": "2050-03-31",
+        "matchedName": "Rama Navami"
+      }
+    },
+    "source": "fetched"
+  },
+  "maha-shivaratri": {
+    "type": "variable",
+    "aliases": [
+      "Maha Shivaratri",
+      "Mahashivratri"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-02-15",
+        "end": "2026-02-15",
+        "matchedName": "Maha Shivaratri"
+      },
+      "2027": {
+        "start": "2027-03-06",
+        "end": "2027-03-06",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2028": {
+        "start": "2028-02-23",
+        "end": "2028-02-23",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2029": {
+        "start": "2029-02-11",
+        "end": "2029-02-11",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2030": {
+        "start": "2030-03-02",
+        "end": "2030-03-02",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2031": {
+        "start": "2031-02-20",
+        "end": "2031-02-20",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2032": {
+        "start": "2032-03-10",
+        "end": "2032-03-10",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2033": {
+        "start": "2033-02-27",
+        "end": "2033-02-27",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2034": {
+        "start": "2034-02-17",
+        "end": "2034-02-17",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2035": {
+        "start": "2035-03-08",
+        "end": "2035-03-08",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2036": {
+        "start": "2036-02-25",
+        "end": "2036-02-25",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2037": {
+        "start": "2037-02-13",
+        "end": "2037-02-13",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2038": {
+        "start": "2038-03-04",
+        "end": "2038-03-04",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2039": {
+        "start": "2039-02-21",
+        "end": "2039-02-21",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2040": {
+        "start": "2040-03-11",
+        "end": "2040-03-11",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2041": {
+        "start": "2041-03-01",
+        "end": "2041-03-01",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2042": {
+        "start": "2042-02-18",
+        "end": "2042-02-18",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2043": {
+        "start": "2043-03-09",
+        "end": "2043-03-09",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2044": {
+        "start": "2044-02-27",
+        "end": "2044-02-27",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2045": {
+        "start": "2045-02-15",
+        "end": "2045-02-15",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2046": {
+        "start": "2046-03-05",
+        "end": "2046-03-05",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2047": {
+        "start": "2047-02-22",
+        "end": "2047-02-22",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2048": {
+        "start": "2048-02-12",
+        "end": "2048-02-12",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2049": {
+        "start": "2049-03-02",
+        "end": "2049-03-02",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      },
+      "2050": {
+        "start": "2050-02-20",
+        "end": "2050-02-20",
+        "matchedName": "Maha Shivaratri/Shivaratri"
+      }
+    },
+    "source": "fetched"
+  },
+  "raksha-bandhan": {
+    "type": "variable",
+    "aliases": [
+      "Raksha Bandhan",
+      "Rakhi"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-08-28",
+        "end": "2026-08-28",
+        "matchedName": "Raksha Bandhan"
+      },
+      "2027": {
+        "start": "2027-08-17",
+        "end": "2027-08-17",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2028": {
+        "start": "2028-08-05",
+        "end": "2028-08-05",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2029": {
+        "start": "2029-08-23",
+        "end": "2029-08-23",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2030": {
+        "start": "2030-08-13",
+        "end": "2030-08-13",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2031": {
+        "start": "2031-08-02",
+        "end": "2031-08-02",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2032": {
+        "start": "2032-08-20",
+        "end": "2032-08-20",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2033": {
+        "start": "2033-08-10",
+        "end": "2033-08-10",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2034": {
+        "start": "2034-08-29",
+        "end": "2034-08-29",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2035": {
+        "start": "2035-08-18",
+        "end": "2035-08-18",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2036": {
+        "start": "2036-08-06",
+        "end": "2036-08-06",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2037": {
+        "start": "2037-08-25",
+        "end": "2037-08-25",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2038": {
+        "start": "2038-08-14",
+        "end": "2038-08-14",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2039": {
+        "start": "2039-08-04",
+        "end": "2039-08-04",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2040": {
+        "start": "2040-08-22",
+        "end": "2040-08-22",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2041": {
+        "start": "2041-08-11",
+        "end": "2041-08-11",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2042": {
+        "start": "2042-08-30",
+        "end": "2042-08-30",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2043": {
+        "start": "2043-08-20",
+        "end": "2043-08-20",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2044": {
+        "start": "2044-08-08",
+        "end": "2044-08-08",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2045": {
+        "start": "2045-08-27",
+        "end": "2045-08-27",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2046": {
+        "start": "2046-08-16",
+        "end": "2046-08-16",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2047": {
+        "start": "2047-08-05",
+        "end": "2047-08-05",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2048": {
+        "start": "2048-08-23",
+        "end": "2048-08-23",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2049": {
+        "start": "2049-08-13",
+        "end": "2049-08-13",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      },
+      "2050": {
+        "start": "2050-08-02",
+        "end": "2050-08-02",
+        "matchedName": "Raksha Bandhan (Rakhi)"
+      }
+    },
+    "source": "fetched"
+  },
+  "makar-sankranti": {
+    "type": "fixed",
+    "rule": "01-14",
+    "source": "dataset"
+  },
+  "guru-nanak-jayanti": {
+    "type": "seasonal",
+    "aliases": [
+      "Guru Nanak Jayanti",
+      "Guru Purab",
+      "Gurpurab"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-11-24",
+        "end": "2026-11-24",
+        "matchedName": "Guru Nanak Jayanti"
+      }
+    },
+    "source": "seasonal-with-anchor",
+    "window": {
+      "from": "11",
+      "to": "11"
+    }
+  },
+  "mahavir-jayanti": {
+    "type": "seasonal",
+    "aliases": [
+      "Mahavir Jayanti"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-03-31",
+        "end": "2026-03-31",
+        "matchedName": "Mahavir Jayanti"
+      }
+    },
+    "source": "seasonal-with-anchor",
+    "window": {
+      "from": "04",
+      "to": "04"
+    }
+  },
+  "buddha-purnima": {
+    "type": "seasonal",
+    "aliases": [
+      "Buddha Purnima",
+      "Vesak",
+      "Buddha Jayanti"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-05-01",
+        "end": "2026-05-01",
+        "matchedName": "Buddha Purnima"
+      }
+    },
+    "source": "seasonal-with-anchor",
+    "window": {
+      "from": "05",
+      "to": "05"
+    }
+  },
+  "eid-al-fitr": {
+    "type": "variable",
+    "aliases": [
+      "Eid al-Fitr",
+      "Eid ul-Fitr",
+      "Ramzan"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-03-21",
+        "end": "2026-03-21",
+        "matchedName": "Ramzan Id"
+      },
+      "2027": {
+        "start": "2027-03-10",
+        "end": "2027-03-10",
+        "matchedName": "Ramzan Id"
+      },
+      "2028": {
+        "start": "2028-02-27",
+        "end": "2028-02-27",
+        "matchedName": "Ramzan Id"
+      },
+      "2029": {
+        "start": "2029-02-15",
+        "end": "2029-02-15",
+        "matchedName": "Ramzan Id"
+      },
+      "2030": {
+        "start": "2030-02-05",
+        "end": "2030-02-05",
+        "matchedName": "Ramzan Id"
+      },
+      "2031": {
+        "start": "2031-01-25",
+        "end": "2031-01-25",
+        "matchedName": "Ramzan Id"
+      },
+      "2032": {
+        "start": "2032-01-15",
+        "end": "2032-01-15",
+        "matchedName": "Ramzan Id"
+      },
+      "2033": {
+        "start": "2033-01-03",
+        "end": "2033-12-24",
+        "matchedName": "Ramzan Id"
+      },
+      "2034": {
+        "start": "2034-12-13",
+        "end": "2034-12-13",
+        "matchedName": "Ramzan Id"
+      },
+      "2035": {
+        "start": "2035-12-02",
+        "end": "2035-12-02",
+        "matchedName": "Ramzan Id"
+      },
+      "2036": {
+        "start": "2036-11-20",
+        "end": "2036-11-20",
+        "matchedName": "Ramzan Id"
+      },
+      "2037": {
+        "start": "2037-11-09",
+        "end": "2037-11-09",
+        "matchedName": "Ramzan Id"
+      },
+      "2038": {
+        "start": "2038-10-30",
+        "end": "2038-10-30",
+        "matchedName": "Ramzan Id"
+      },
+      "2039": {
+        "start": "2039-10-20",
+        "end": "2039-10-20",
+        "matchedName": "Ramzan Id"
+      },
+      "2040": {
+        "start": "2040-10-08",
+        "end": "2040-10-08",
+        "matchedName": "Ramzan Id"
+      },
+      "2041": {
+        "start": "2041-09-28",
+        "end": "2041-09-28",
+        "matchedName": "Ramzan Id"
+      },
+      "2042": {
+        "start": "2042-09-17",
+        "end": "2042-09-17",
+        "matchedName": "Ramzan Id"
+      },
+      "2043": {
+        "start": "2043-09-06",
+        "end": "2043-09-06",
+        "matchedName": "Ramzan Id"
+      },
+      "2044": {
+        "start": "2044-08-25",
+        "end": "2044-08-25",
+        "matchedName": "Ramzan Id"
+      },
+      "2045": {
+        "start": "2045-08-15",
+        "end": "2045-08-15",
+        "matchedName": "Ramzan Id"
+      },
+      "2046": {
+        "start": "2046-08-04",
+        "end": "2046-08-04",
+        "matchedName": "Ramzan Id"
+      },
+      "2047": {
+        "start": "2047-07-25",
+        "end": "2047-07-25",
+        "matchedName": "Ramzan Id"
+      },
+      "2048": {
+        "start": "2048-07-13",
+        "end": "2048-07-13",
+        "matchedName": "Ramzan Id"
+      },
+      "2049": {
+        "start": "2049-07-02",
+        "end": "2049-07-02",
+        "matchedName": "Ramzan Id"
+      },
+      "2050": {
+        "start": "2050-06-21",
+        "end": "2050-06-21",
+        "matchedName": "Ramzan Id"
+      }
+    },
+    "source": "fetched"
+  },
+  "eid-al-adha": {
+    "type": "variable",
+    "aliases": [
+      "Eid al-Adha",
+      "Eid ul-Adha",
+      "Bakrid",
+      "Bakr-Id"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-05-27",
+        "end": "2026-05-27",
+        "matchedName": "Bakrid"
+      },
+      "2027": {
+        "start": "2027-05-17",
+        "end": "2027-05-17",
+        "matchedName": "Bakrid"
+      },
+      "2028": {
+        "start": "2028-05-06",
+        "end": "2028-05-06",
+        "matchedName": "Bakrid"
+      },
+      "2029": {
+        "start": "2029-04-25",
+        "end": "2029-04-25",
+        "matchedName": "Bakrid"
+      },
+      "2030": {
+        "start": "2030-04-14",
+        "end": "2030-04-14",
+        "matchedName": "Bakrid"
+      },
+      "2031": {
+        "start": "2031-04-03",
+        "end": "2031-04-03",
+        "matchedName": "Bakrid"
+      },
+      "2032": {
+        "start": "2032-03-22",
+        "end": "2032-03-22",
+        "matchedName": "Bakrid"
+      },
+      "2033": {
+        "start": "2033-03-12",
+        "end": "2033-03-12",
+        "matchedName": "Bakrid"
+      },
+      "2034": {
+        "start": "2034-03-02",
+        "end": "2034-03-02",
+        "matchedName": "Bakrid"
+      },
+      "2035": {
+        "start": "2035-02-19",
+        "end": "2035-02-19",
+        "matchedName": "Bakrid"
+      },
+      "2036": {
+        "start": "2036-02-08",
+        "end": "2036-02-08",
+        "matchedName": "Bakrid"
+      },
+      "2037": {
+        "start": "2037-01-27",
+        "end": "2037-01-27",
+        "matchedName": "Bakrid"
+      },
+      "2038": {
+        "start": "2038-01-17",
+        "end": "2038-01-17",
+        "matchedName": "Bakrid"
+      },
+      "2039": {
+        "start": "2039-01-06",
+        "end": "2039-12-27",
+        "matchedName": "Bakrid"
+      },
+      "2040": {
+        "start": "2040-12-15",
+        "end": "2040-12-15",
+        "matchedName": "Bakrid"
+      },
+      "2041": {
+        "start": "2041-12-05",
+        "end": "2041-12-05",
+        "matchedName": "Bakrid"
+      },
+      "2042": {
+        "start": "2042-11-24",
+        "end": "2042-11-24",
+        "matchedName": "Bakrid"
+      },
+      "2043": {
+        "start": "2043-11-13",
+        "end": "2043-11-13",
+        "matchedName": "Bakrid"
+      },
+      "2044": {
+        "start": "2044-11-01",
+        "end": "2044-11-01",
+        "matchedName": "Bakrid"
+      },
+      "2045": {
+        "start": "2045-10-22",
+        "end": "2045-10-22",
+        "matchedName": "Bakrid"
+      },
+      "2046": {
+        "start": "2046-10-11",
+        "end": "2046-10-11",
+        "matchedName": "Bakrid"
+      },
+      "2047": {
+        "start": "2047-10-01",
+        "end": "2047-10-01",
+        "matchedName": "Bakrid"
+      },
+      "2048": {
+        "start": "2048-09-20",
+        "end": "2048-09-20",
+        "matchedName": "Bakrid"
+      },
+      "2049": {
+        "start": "2049-09-09",
+        "end": "2049-09-09",
+        "matchedName": "Bakrid"
+      },
+      "2050": {
+        "start": "2050-08-29",
+        "end": "2050-08-29",
+        "matchedName": "Bakrid"
+      }
+    },
+    "source": "fetched"
+  },
+  "muharram": {
+    "type": "variable",
+    "aliases": [
+      "Muharram",
+      "Ashura"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-06-26",
+        "end": "2026-06-26",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2027": {
+        "start": "2027-06-16",
+        "end": "2027-06-16",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2028": {
+        "start": "2028-06-04",
+        "end": "2028-06-04",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2029": {
+        "start": "2029-05-25",
+        "end": "2029-05-25",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2030": {
+        "start": "2030-05-14",
+        "end": "2030-05-14",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2031": {
+        "start": "2031-05-03",
+        "end": "2031-05-03",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2032": {
+        "start": "2032-04-21",
+        "end": "2032-04-21",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2033": {
+        "start": "2033-04-11",
+        "end": "2033-04-11",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2034": {
+        "start": "2034-03-31",
+        "end": "2034-03-31",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2035": {
+        "start": "2035-03-21",
+        "end": "2035-03-21",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2036": {
+        "start": "2036-03-09",
+        "end": "2036-03-09",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2037": {
+        "start": "2037-02-26",
+        "end": "2037-02-26",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2038": {
+        "start": "2038-02-15",
+        "end": "2038-02-15",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2039": {
+        "start": "2039-02-04",
+        "end": "2039-02-04",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2040": {
+        "start": "2040-01-25",
+        "end": "2040-01-25",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2041": {
+        "start": "2041-01-14",
+        "end": "2041-01-14",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2042": {
+        "start": "2042-01-03",
+        "end": "2042-12-24",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2043": {
+        "start": "2043-12-13",
+        "end": "2043-12-13",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2044": {
+        "start": "2044-12-01",
+        "end": "2044-12-01",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2045": {
+        "start": "2045-11-20",
+        "end": "2045-11-20",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2046": {
+        "start": "2046-11-10",
+        "end": "2046-11-10",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2047": {
+        "start": "2047-10-30",
+        "end": "2047-10-30",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2048": {
+        "start": "2048-10-19",
+        "end": "2048-10-19",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2049": {
+        "start": "2049-10-08",
+        "end": "2049-10-08",
+        "matchedName": "Muharram/Ashura"
+      },
+      "2050": {
+        "start": "2050-09-28",
+        "end": "2050-09-28",
+        "matchedName": "Muharram/Ashura"
+      }
+    },
+    "source": "fetched"
+  },
+  "christmas-india": {
+    "type": "fixed",
+    "rule": "12-25",
+    "source": "dataset"
+  },
+  "good-friday-easter": {
+    "type": "variable",
+    "aliases": [
+      "Good Friday",
+      "Easter"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-04-03",
+        "end": "2026-04-05",
+        "matchedName": "Good Friday"
+      },
+      "2027": {
+        "start": "2027-03-26",
+        "end": "2027-03-28",
+        "matchedName": "Good Friday"
+      },
+      "2028": {
+        "start": "2028-04-14",
+        "end": "2028-04-16",
+        "matchedName": "Good Friday"
+      },
+      "2029": {
+        "start": "2029-03-30",
+        "end": "2029-04-01",
+        "matchedName": "Good Friday"
+      },
+      "2030": {
+        "start": "2030-04-19",
+        "end": "2030-04-21",
+        "matchedName": "Good Friday"
+      },
+      "2031": {
+        "start": "2031-04-11",
+        "end": "2031-04-13",
+        "matchedName": "Good Friday"
+      },
+      "2032": {
+        "start": "2032-03-26",
+        "end": "2032-03-28",
+        "matchedName": "Good Friday"
+      },
+      "2033": {
+        "start": "2033-04-15",
+        "end": "2033-04-17",
+        "matchedName": "Good Friday"
+      },
+      "2034": {
+        "start": "2034-04-07",
+        "end": "2034-04-09",
+        "matchedName": "Good Friday"
+      },
+      "2035": {
+        "start": "2035-03-23",
+        "end": "2035-03-25",
+        "matchedName": "Good Friday"
+      },
+      "2036": {
+        "start": "2036-04-11",
+        "end": "2036-04-13",
+        "matchedName": "Good Friday"
+      },
+      "2037": {
+        "start": "2037-04-03",
+        "end": "2037-04-05",
+        "matchedName": "Good Friday"
+      },
+      "2038": {
+        "start": "2038-04-23",
+        "end": "2038-04-25",
+        "matchedName": "Good Friday"
+      },
+      "2039": {
+        "start": "2039-04-08",
+        "end": "2039-04-10",
+        "matchedName": "Good Friday"
+      },
+      "2040": {
+        "start": "2040-03-30",
+        "end": "2040-04-01",
+        "matchedName": "Good Friday"
+      },
+      "2041": {
+        "start": "2041-04-19",
+        "end": "2041-04-21",
+        "matchedName": "Good Friday"
+      },
+      "2042": {
+        "start": "2042-04-04",
+        "end": "2042-04-06",
+        "matchedName": "Good Friday"
+      },
+      "2043": {
+        "start": "2043-03-27",
+        "end": "2043-03-29",
+        "matchedName": "Good Friday"
+      },
+      "2044": {
+        "start": "2044-04-15",
+        "end": "2044-04-17",
+        "matchedName": "Good Friday"
+      },
+      "2045": {
+        "start": "2045-04-07",
+        "end": "2045-04-09",
+        "matchedName": "Good Friday"
+      },
+      "2046": {
+        "start": "2046-03-23",
+        "end": "2046-03-25",
+        "matchedName": "Good Friday"
+      },
+      "2047": {
+        "start": "2047-04-12",
+        "end": "2047-04-14",
+        "matchedName": "Good Friday"
+      },
+      "2048": {
+        "start": "2048-04-03",
+        "end": "2048-04-05",
+        "matchedName": "Good Friday"
+      },
+      "2049": {
+        "start": "2049-04-16",
+        "end": "2049-04-18",
+        "matchedName": "Good Friday"
+      },
+      "2050": {
+        "start": "2050-04-08",
+        "end": "2050-04-10",
+        "matchedName": "Good Friday"
+      }
+    },
+    "source": "fetched"
+  },
+  "chhath-puja": {
+    "type": "variable",
+    "aliases": [
+      "Chhath Puja",
+      "Chhath",
+      "Chhat Puja"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-11-15",
+        "end": "2026-11-15",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2027": {
+        "start": "2027-11-04",
+        "end": "2027-11-04",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2028": {
+        "start": "2028-10-23",
+        "end": "2028-10-23",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2029": {
+        "start": "2029-11-11",
+        "end": "2029-11-11",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2030": {
+        "start": "2030-11-01",
+        "end": "2030-11-01",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2031": {
+        "start": "2031-11-20",
+        "end": "2031-11-20",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2032": {
+        "start": "2032-11-09",
+        "end": "2032-11-09",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2033": {
+        "start": "2033-10-29",
+        "end": "2033-10-29",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2034": {
+        "start": "2034-11-17",
+        "end": "2034-11-17",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2035": {
+        "start": "2035-11-06",
+        "end": "2035-11-06",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2036": {
+        "start": "2036-10-25",
+        "end": "2036-10-25",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2037": {
+        "start": "2037-11-13",
+        "end": "2037-11-13",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2038": {
+        "start": "2038-11-02",
+        "end": "2038-11-02",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2039": {
+        "start": "2039-11-21",
+        "end": "2039-11-21",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2040": {
+        "start": "2040-11-10",
+        "end": "2040-11-10",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2041": {
+        "start": "2041-10-31",
+        "end": "2041-10-31",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2042": {
+        "start": "2042-11-19",
+        "end": "2042-11-19",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2043": {
+        "start": "2043-11-08",
+        "end": "2043-11-08",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2044": {
+        "start": "2044-10-27",
+        "end": "2044-10-27",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2045": {
+        "start": "2045-11-14",
+        "end": "2045-11-14",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2046": {
+        "start": "2046-11-03",
+        "end": "2046-11-03",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2047": {
+        "start": "2047-10-24",
+        "end": "2047-10-24",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2048": {
+        "start": "2048-11-11",
+        "end": "2048-11-11",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2049": {
+        "start": "2049-11-01",
+        "end": "2049-11-01",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      },
+      "2050": {
+        "start": "2050-11-20",
+        "end": "2050-11-20",
+        "matchedName": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)"
+      }
+    },
+    "source": "fetched"
+  },
+  "vasant-panchami": {
+    "type": "variable",
+    "aliases": [
+      "Vasant Panchami",
+      "Basant Panchami",
+      "Saraswati Puja"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-01-23",
+        "end": "2026-01-23",
+        "matchedName": "Vasant Panchami"
+      },
+      "2027": {
+        "start": "2027-02-11",
+        "end": "2027-02-11",
+        "matchedName": "Vasant Panchami"
+      },
+      "2028": {
+        "start": "2028-01-31",
+        "end": "2028-01-31",
+        "matchedName": "Vasant Panchami"
+      },
+      "2029": {
+        "start": "2029-01-19",
+        "end": "2029-01-19",
+        "matchedName": "Vasant Panchami"
+      },
+      "2030": {
+        "start": "2030-02-07",
+        "end": "2030-02-07",
+        "matchedName": "Vasant Panchami"
+      },
+      "2031": {
+        "start": "2031-01-27",
+        "end": "2031-01-27",
+        "matchedName": "Vasant Panchami"
+      },
+      "2032": {
+        "start": "2032-02-15",
+        "end": "2032-02-15",
+        "matchedName": "Vasant Panchami"
+      },
+      "2033": {
+        "start": "2033-02-04",
+        "end": "2033-02-04",
+        "matchedName": "Vasant Panchami"
+      },
+      "2034": {
+        "start": "2034-01-24",
+        "end": "2034-01-24",
+        "matchedName": "Vasant Panchami"
+      },
+      "2035": {
+        "start": "2035-02-12",
+        "end": "2035-02-12",
+        "matchedName": "Vasant Panchami"
+      },
+      "2036": {
+        "start": "2036-02-02",
+        "end": "2036-02-02",
+        "matchedName": "Vasant Panchami"
+      },
+      "2037": {
+        "start": "2037-01-21",
+        "end": "2037-01-21",
+        "matchedName": "Vasant Panchami"
+      },
+      "2038": {
+        "start": "2038-02-09",
+        "end": "2038-02-09",
+        "matchedName": "Vasant Panchami"
+      },
+      "2039": {
+        "start": "2039-01-29",
+        "end": "2039-01-29",
+        "matchedName": "Vasant Panchami"
+      },
+      "2040": {
+        "start": "2040-02-16",
+        "end": "2040-02-16",
+        "matchedName": "Vasant Panchami"
+      },
+      "2041": {
+        "start": "2041-02-05",
+        "end": "2041-02-05",
+        "matchedName": "Vasant Panchami"
+      },
+      "2042": {
+        "start": "2042-01-26",
+        "end": "2042-01-26",
+        "matchedName": "Vasant Panchami"
+      },
+      "2043": {
+        "start": "2043-02-14",
+        "end": "2043-02-14",
+        "matchedName": "Vasant Panchami"
+      },
+      "2044": {
+        "start": "2044-02-03",
+        "end": "2044-02-03",
+        "matchedName": "Vasant Panchami"
+      },
+      "2045": {
+        "start": "2045-01-23",
+        "end": "2045-01-23",
+        "matchedName": "Vasant Panchami"
+      },
+      "2046": {
+        "start": "2046-02-11",
+        "end": "2046-02-11",
+        "matchedName": "Vasant Panchami"
+      },
+      "2047": {
+        "start": "2047-01-30",
+        "end": "2047-01-30",
+        "matchedName": "Vasant Panchami"
+      },
+      "2048": {
+        "start": "2048-01-19",
+        "end": "2048-01-19",
+        "matchedName": "Vasant Panchami"
+      },
+      "2049": {
+        "start": "2049-02-06",
+        "end": "2049-02-06",
+        "matchedName": "Vasant Panchami"
+      },
+      "2050": {
+        "start": "2050-01-27",
+        "end": "2050-01-27",
+        "matchedName": "Vasant Panchami"
+      }
+    },
+    "source": "fetched"
+  },
+  "onam": {
+    "type": "variable",
+    "aliases": [
+      "Onam",
+      "Thiruvonam"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-08-26",
+        "end": "2026-08-26",
+        "matchedName": "Onam"
+      },
+      "2027": {
+        "start": "2027-09-12",
+        "end": "2027-09-12",
+        "matchedName": "Onam"
+      },
+      "2028": {
+        "start": "2028-09-01",
+        "end": "2028-09-01",
+        "matchedName": "Onam"
+      },
+      "2029": {
+        "start": "2029-08-22",
+        "end": "2029-08-22",
+        "matchedName": "Onam"
+      },
+      "2030": {
+        "start": "2030-09-09",
+        "end": "2030-09-09",
+        "matchedName": "Onam"
+      },
+      "2031": {
+        "start": "2031-08-30",
+        "end": "2031-08-30",
+        "matchedName": "Onam"
+      },
+      "2032": {
+        "start": "2032-08-20",
+        "end": "2032-08-20",
+        "matchedName": "Onam"
+      },
+      "2033": {
+        "start": "2033-09-06",
+        "end": "2033-09-06",
+        "matchedName": "Onam"
+      },
+      "2034": {
+        "start": "2034-08-28",
+        "end": "2034-08-28",
+        "matchedName": "Onam"
+      },
+      "2035": {
+        "start": "2035-09-14",
+        "end": "2035-09-14",
+        "matchedName": "Onam"
+      },
+      "2036": {
+        "start": "2036-09-03",
+        "end": "2036-09-03",
+        "matchedName": "Onam"
+      },
+      "2037": {
+        "start": "2037-08-24",
+        "end": "2037-08-24",
+        "matchedName": "Onam"
+      },
+      "2038": {
+        "start": "2038-09-10",
+        "end": "2038-09-10",
+        "matchedName": "Onam"
+      },
+      "2039": {
+        "start": "2039-08-31",
+        "end": "2039-08-31",
+        "matchedName": "Onam"
+      },
+      "2040": {
+        "start": "2040-08-21",
+        "end": "2040-08-21",
+        "matchedName": "Onam"
+      },
+      "2041": {
+        "start": "2041-09-08",
+        "end": "2041-09-08",
+        "matchedName": "Onam"
+      },
+      "2042": {
+        "start": "2042-08-29",
+        "end": "2042-08-29",
+        "matchedName": "Onam"
+      },
+      "2043": {
+        "start": "2043-09-16",
+        "end": "2043-09-16",
+        "matchedName": "Onam"
+      },
+      "2044": {
+        "start": "2044-09-05",
+        "end": "2044-09-05",
+        "matchedName": "Onam"
+      },
+      "2045": {
+        "start": "2045-08-25",
+        "end": "2045-08-25",
+        "matchedName": "Onam"
+      },
+      "2046": {
+        "start": "2046-09-12",
+        "end": "2046-09-12",
+        "matchedName": "Onam"
+      },
+      "2047": {
+        "start": "2047-09-02",
+        "end": "2047-09-02",
+        "matchedName": "Onam"
+      },
+      "2048": {
+        "start": "2048-08-22",
+        "end": "2048-08-22",
+        "matchedName": "Onam"
+      },
+      "2049": {
+        "start": "2049-09-09",
+        "end": "2049-09-09",
+        "matchedName": "Onam"
+      },
+      "2050": {
+        "start": "2050-08-30",
+        "end": "2050-08-30",
+        "matchedName": "Onam"
+      }
+    },
+    "source": "fetched"
+  },
+  "vishu": {
+    "type": "seasonal",
+    "aliases": [
+      "Vishu"
+    ],
+    "bucket": "A",
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "04",
+      "to": "04"
+    }
+  },
+  "thrissur-pooram": {
+    "type": "seasonal",
+    "window": {
+      "from": "04",
+      "to": "04"
+    },
+    "source": "editorial"
+  },
+  "theyyam": {
+    "type": "seasonal",
+    "window": {
+      "from": "12",
+      "to": "12"
+    },
+    "source": "editorial"
+  },
+  "pongal": {
+    "type": "variable",
+    "aliases": [
+      "Pongal",
+      "Makar Sankranti"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-01-14",
+        "end": "2026-01-14",
+        "matchedName": "Pongal"
+      },
+      "2027": {
+        "start": "2027-01-15",
+        "end": "2027-01-15",
+        "matchedName": "Pongal"
+      },
+      "2028": {
+        "start": "2028-01-15",
+        "end": "2028-01-15",
+        "matchedName": "Pongal"
+      },
+      "2029": {
+        "start": "2029-01-14",
+        "end": "2029-01-14",
+        "matchedName": "Pongal"
+      },
+      "2030": {
+        "start": "2030-01-14",
+        "end": "2030-01-14",
+        "matchedName": "Pongal"
+      },
+      "2031": {
+        "start": "2031-01-15",
+        "end": "2031-01-15",
+        "matchedName": "Pongal"
+      },
+      "2032": {
+        "start": "2032-01-15",
+        "end": "2032-01-15",
+        "matchedName": "Pongal"
+      },
+      "2033": {
+        "start": "2033-01-14",
+        "end": "2033-01-14",
+        "matchedName": "Pongal"
+      },
+      "2034": {
+        "start": "2034-01-14",
+        "end": "2034-01-14",
+        "matchedName": "Pongal"
+      },
+      "2035": {
+        "start": "2035-01-15",
+        "end": "2035-01-15",
+        "matchedName": "Pongal"
+      },
+      "2036": {
+        "start": "2036-01-15",
+        "end": "2036-01-15",
+        "matchedName": "Pongal"
+      },
+      "2037": {
+        "start": "2037-01-14",
+        "end": "2037-01-14",
+        "matchedName": "Pongal"
+      },
+      "2038": {
+        "start": "2038-01-14",
+        "end": "2038-01-14",
+        "matchedName": "Pongal"
+      },
+      "2039": {
+        "start": "2039-01-15",
+        "end": "2039-01-15",
+        "matchedName": "Pongal"
+      },
+      "2040": {
+        "start": "2040-01-15",
+        "end": "2040-01-15",
+        "matchedName": "Pongal"
+      },
+      "2041": {
+        "start": "2041-01-14",
+        "end": "2041-01-14",
+        "matchedName": "Pongal"
+      },
+      "2042": {
+        "start": "2042-01-14",
+        "end": "2042-01-14",
+        "matchedName": "Pongal"
+      },
+      "2043": {
+        "start": "2043-01-15",
+        "end": "2043-01-15",
+        "matchedName": "Pongal"
+      },
+      "2044": {
+        "start": "2044-01-15",
+        "end": "2044-01-15",
+        "matchedName": "Pongal"
+      },
+      "2045": {
+        "start": "2045-01-14",
+        "end": "2045-01-14",
+        "matchedName": "Pongal"
+      },
+      "2046": {
+        "start": "2046-01-15",
+        "end": "2046-01-15",
+        "matchedName": "Pongal"
+      },
+      "2047": {
+        "start": "2047-01-15",
+        "end": "2047-01-15",
+        "matchedName": "Pongal"
+      },
+      "2048": {
+        "start": "2048-01-15",
+        "end": "2048-01-15",
+        "matchedName": "Pongal"
+      },
+      "2049": {
+        "start": "2049-01-14",
+        "end": "2049-01-14",
+        "matchedName": "Pongal"
+      },
+      "2050": {
+        "start": "2050-01-15",
+        "end": "2050-01-15",
+        "matchedName": "Pongal"
+      }
+    },
+    "source": "fetched"
+  },
+  "thaipusam": {
+    "type": "variable",
+    "aliases": [
+      "Thaipusam"
+    ],
+    "bucket": "A",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "karthigai-deepam": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "mysuru-dasara": {
+    "type": "variable",
+    "aliases": [
+      "Dussehra",
+      "Vijayadashami",
+      "Mysuru Dasara",
+      "Mysore Dasara"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-10-20",
+        "end": "2026-10-20",
+        "matchedName": "Dussehra"
+      },
+      "2027": {
+        "start": "2027-10-09",
+        "end": "2027-10-09",
+        "matchedName": "Dussehra"
+      },
+      "2028": {
+        "start": "2028-09-27",
+        "end": "2028-09-27",
+        "matchedName": "Dussehra"
+      },
+      "2029": {
+        "start": "2029-10-16",
+        "end": "2029-10-16",
+        "matchedName": "Dussehra"
+      },
+      "2030": {
+        "start": "2030-10-06",
+        "end": "2030-10-06",
+        "matchedName": "Dussehra"
+      },
+      "2031": {
+        "start": "2031-10-25",
+        "end": "2031-10-25",
+        "matchedName": "Dussehra"
+      },
+      "2032": {
+        "start": "2032-10-14",
+        "end": "2032-10-14",
+        "matchedName": "Dussehra"
+      },
+      "2033": {
+        "start": "2033-10-03",
+        "end": "2033-10-03",
+        "matchedName": "Dussehra"
+      },
+      "2034": {
+        "start": "2034-10-22",
+        "end": "2034-10-22",
+        "matchedName": "Dussehra"
+      },
+      "2035": {
+        "start": "2035-10-11",
+        "end": "2035-10-11",
+        "matchedName": "Dussehra"
+      },
+      "2036": {
+        "start": "2036-09-29",
+        "end": "2036-09-29",
+        "matchedName": "Dussehra"
+      },
+      "2037": {
+        "start": "2037-10-18",
+        "end": "2037-10-18",
+        "matchedName": "Dussehra"
+      },
+      "2038": {
+        "start": "2038-10-07",
+        "end": "2038-10-07",
+        "matchedName": "Dussehra"
+      },
+      "2039": {
+        "start": "2039-10-26",
+        "end": "2039-10-26",
+        "matchedName": "Dussehra"
+      },
+      "2040": {
+        "start": "2040-10-15",
+        "end": "2040-10-15",
+        "matchedName": "Dussehra"
+      },
+      "2041": {
+        "start": "2041-10-05",
+        "end": "2041-10-05",
+        "matchedName": "Dussehra"
+      },
+      "2042": {
+        "start": "2042-10-24",
+        "end": "2042-10-24",
+        "matchedName": "Dussehra"
+      },
+      "2043": {
+        "start": "2043-10-13",
+        "end": "2043-10-13",
+        "matchedName": "Dussehra"
+      },
+      "2044": {
+        "start": "2044-10-01",
+        "end": "2044-10-01",
+        "matchedName": "Dussehra"
+      },
+      "2045": {
+        "start": "2045-10-20",
+        "end": "2045-10-20",
+        "matchedName": "Dussehra"
+      },
+      "2046": {
+        "start": "2046-10-09",
+        "end": "2046-10-09",
+        "matchedName": "Dussehra"
+      },
+      "2047": {
+        "start": "2047-09-28",
+        "end": "2047-09-28",
+        "matchedName": "Dussehra"
+      },
+      "2048": {
+        "start": "2048-10-16",
+        "end": "2048-10-16",
+        "matchedName": "Dussehra"
+      },
+      "2049": {
+        "start": "2049-10-06",
+        "end": "2049-10-06",
+        "matchedName": "Dussehra"
+      },
+      "2050": {
+        "start": "2050-10-25",
+        "end": "2050-10-25",
+        "matchedName": "Dussehra"
+      }
+    },
+    "source": "fetched"
+  },
+  "ugadi": {
+    "type": "variable",
+    "aliases": [
+      "Ugadi"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-03-19",
+        "end": "2026-03-19",
+        "matchedName": "Ugadi"
+      },
+      "2027": {
+        "start": "2027-04-07",
+        "end": "2027-04-07",
+        "matchedName": "Ugadi"
+      },
+      "2028": {
+        "start": "2028-03-27",
+        "end": "2028-03-27",
+        "matchedName": "Ugadi"
+      },
+      "2029": {
+        "start": "2029-04-14",
+        "end": "2029-04-14",
+        "matchedName": "Ugadi"
+      },
+      "2030": {
+        "start": "2030-04-03",
+        "end": "2030-04-03",
+        "matchedName": "Ugadi"
+      },
+      "2031": {
+        "start": "2031-03-24",
+        "end": "2031-03-24",
+        "matchedName": "Ugadi"
+      },
+      "2032": {
+        "start": "2032-04-11",
+        "end": "2032-04-11",
+        "matchedName": "Ugadi"
+      },
+      "2033": {
+        "start": "2033-03-31",
+        "end": "2033-03-31",
+        "matchedName": "Ugadi"
+      },
+      "2034": {
+        "start": "2034-03-21",
+        "end": "2034-03-21",
+        "matchedName": "Ugadi"
+      },
+      "2035": {
+        "start": "2035-04-09",
+        "end": "2035-04-09",
+        "matchedName": "Ugadi"
+      },
+      "2036": {
+        "start": "2036-03-28",
+        "end": "2036-03-28",
+        "matchedName": "Ugadi"
+      },
+      "2037": {
+        "start": "2037-03-17",
+        "end": "2037-03-17",
+        "matchedName": "Ugadi"
+      },
+      "2038": {
+        "start": "2038-04-05",
+        "end": "2038-04-05",
+        "matchedName": "Ugadi"
+      },
+      "2039": {
+        "start": "2039-03-25",
+        "end": "2039-03-25",
+        "matchedName": "Ugadi"
+      },
+      "2040": {
+        "start": "2040-04-12",
+        "end": "2040-04-12",
+        "matchedName": "Ugadi"
+      },
+      "2041": {
+        "start": "2041-04-01",
+        "end": "2041-04-01",
+        "matchedName": "Ugadi"
+      },
+      "2042": {
+        "start": "2042-03-22",
+        "end": "2042-03-22",
+        "matchedName": "Ugadi"
+      },
+      "2043": {
+        "start": "2043-04-10",
+        "end": "2043-04-10",
+        "matchedName": "Ugadi"
+      },
+      "2044": {
+        "start": "2044-03-30",
+        "end": "2044-03-30",
+        "matchedName": "Ugadi"
+      },
+      "2045": {
+        "start": "2045-03-19",
+        "end": "2045-03-19",
+        "matchedName": "Ugadi"
+      },
+      "2046": {
+        "start": "2046-04-07",
+        "end": "2046-04-07",
+        "matchedName": "Ugadi"
+      },
+      "2047": {
+        "start": "2047-03-27",
+        "end": "2047-03-27",
+        "matchedName": "Ugadi"
+      },
+      "2048": {
+        "start": "2048-04-14",
+        "end": "2048-04-14",
+        "matchedName": "Ugadi"
+      },
+      "2049": {
+        "start": "2049-04-03",
+        "end": "2049-04-03",
+        "matchedName": "Ugadi"
+      },
+      "2050": {
+        "start": "2050-03-23",
+        "end": "2050-03-23",
+        "matchedName": "Ugadi"
+      }
+    },
+    "source": "fetched"
+  },
+  "hampi-utsav": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "gudi-padwa": {
+    "type": "variable",
+    "aliases": [
+      "Gudi Padwa"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-03-19",
+        "end": "2026-03-19",
+        "matchedName": "Gudi Padwa"
+      },
+      "2027": {
+        "start": "2027-04-07",
+        "end": "2027-04-07",
+        "matchedName": "Gudi Padwa"
+      },
+      "2028": {
+        "start": "2028-03-27",
+        "end": "2028-03-27",
+        "matchedName": "Gudi Padwa"
+      },
+      "2029": {
+        "start": "2029-04-14",
+        "end": "2029-04-14",
+        "matchedName": "Gudi Padwa"
+      },
+      "2030": {
+        "start": "2030-04-03",
+        "end": "2030-04-03",
+        "matchedName": "Gudi Padwa"
+      },
+      "2031": {
+        "start": "2031-03-24",
+        "end": "2031-03-24",
+        "matchedName": "Gudi Padwa"
+      },
+      "2032": {
+        "start": "2032-04-11",
+        "end": "2032-04-11",
+        "matchedName": "Gudi Padwa"
+      },
+      "2033": {
+        "start": "2033-03-31",
+        "end": "2033-03-31",
+        "matchedName": "Gudi Padwa"
+      },
+      "2034": {
+        "start": "2034-03-21",
+        "end": "2034-03-21",
+        "matchedName": "Gudi Padwa"
+      },
+      "2035": {
+        "start": "2035-04-09",
+        "end": "2035-04-09",
+        "matchedName": "Gudi Padwa"
+      },
+      "2036": {
+        "start": "2036-03-28",
+        "end": "2036-03-28",
+        "matchedName": "Gudi Padwa"
+      },
+      "2037": {
+        "start": "2037-03-17",
+        "end": "2037-03-17",
+        "matchedName": "Gudi Padwa"
+      },
+      "2038": {
+        "start": "2038-04-05",
+        "end": "2038-04-05",
+        "matchedName": "Gudi Padwa"
+      },
+      "2039": {
+        "start": "2039-03-25",
+        "end": "2039-03-25",
+        "matchedName": "Gudi Padwa"
+      },
+      "2040": {
+        "start": "2040-04-12",
+        "end": "2040-04-12",
+        "matchedName": "Gudi Padwa"
+      },
+      "2041": {
+        "start": "2041-04-01",
+        "end": "2041-04-01",
+        "matchedName": "Gudi Padwa"
+      },
+      "2042": {
+        "start": "2042-03-22",
+        "end": "2042-03-22",
+        "matchedName": "Gudi Padwa"
+      },
+      "2043": {
+        "start": "2043-04-10",
+        "end": "2043-04-10",
+        "matchedName": "Gudi Padwa"
+      },
+      "2044": {
+        "start": "2044-03-30",
+        "end": "2044-03-30",
+        "matchedName": "Gudi Padwa"
+      },
+      "2045": {
+        "start": "2045-03-19",
+        "end": "2045-03-19",
+        "matchedName": "Gudi Padwa"
+      },
+      "2046": {
+        "start": "2046-04-07",
+        "end": "2046-04-07",
+        "matchedName": "Gudi Padwa"
+      },
+      "2047": {
+        "start": "2047-03-27",
+        "end": "2047-03-27",
+        "matchedName": "Gudi Padwa"
+      },
+      "2048": {
+        "start": "2048-04-14",
+        "end": "2048-04-14",
+        "matchedName": "Gudi Padwa"
+      },
+      "2049": {
+        "start": "2049-04-03",
+        "end": "2049-04-03",
+        "matchedName": "Gudi Padwa"
+      },
+      "2050": {
+        "start": "2050-03-23",
+        "end": "2050-03-23",
+        "matchedName": "Gudi Padwa"
+      }
+    },
+    "source": "fetched"
+  },
+  "pandharpur-wari": {
+    "type": "variable",
+    "aliases": [
+      "Ashadhi Ekadashi",
+      "Pandharpur Wari"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "nag-panchami": {
+    "type": "seasonal",
+    "aliases": [
+      "Nag Panchami"
+    ],
+    "bucket": "A",
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "08",
+      "to": "08"
+    }
+  },
+  "uttarayan": {
+    "type": "fixed",
+    "rule": "01-14",
+    "source": "estimated-needs-verification"
+  },
+  "rann-utsav": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "02"
+    },
+    "note": "~4-month tourism season, not a single date.",
+    "source": "editorial"
+  },
+  "janmashtami-dwarka": {
+    "type": "seasonal",
+    "window": {
+      "from": "08",
+      "to": "08"
+    },
+    "source": "editorial"
+  },
+  "baisakhi": {
+    "type": "seasonal",
+    "aliases": [
+      "Baisakhi",
+      "Vaisakhi"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-04-14",
+        "end": "2026-04-14",
+        "matchedName": "Vaisakhi"
+      }
+    },
+    "source": "seasonal-with-anchor",
+    "window": {
+      "from": "04",
+      "to": "04"
+    }
+  },
+  "lohri": {
+    "type": "fixed",
+    "rule": "01-13",
+    "source": "dataset"
+  },
+  "hola-mohalla": {
+    "type": "variable",
+    "aliases": [
+      "Hola Mohalla"
+    ],
+    "bucket": "A",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "pushkar-fair": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "desert-festival-jaisalmer": {
+    "type": "seasonal",
+    "window": {
+      "from": "02",
+      "to": "02"
+    },
+    "source": "editorial"
+  },
+  "gangaur": {
+    "type": "variable",
+    "aliases": [
+      "Gangaur"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "teej-rajasthan": {
+    "type": "variable",
+    "aliases": [
+      "Teej",
+      "Hariyali Teej"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "poila-boishakh": {
+    "type": "variable",
+    "aliases": [
+      "Poila Boishakh",
+      "Pohela Boishakh",
+      "Bengali New Year"
+    ],
+    "bucket": "A",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "kali-puja": {
+    "type": "variable",
+    "aliases": [
+      "Kali Puja"
+    ],
+    "bucket": "A",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "jagaddhatri-puja": {
+    "type": "variable",
+    "aliases": [
+      "Jagaddhatri Puja"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "bihu": {
+    "type": "seasonal",
+    "aliases": [
+      "Bihu",
+      "Rongali Bihu",
+      "Bohag Bihu",
+      "Bahag Bihu"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-04-15",
+        "end": "2026-04-15",
+        "matchedName": "Bahag Bihu"
+      }
+    },
+    "source": "seasonal-with-anchor",
+    "window": {
+      "from": "04",
+      "to": "04"
+    }
+  },
+  "ambubachi-mela": {
+    "type": "seasonal",
+    "window": {
+      "from": "06",
+      "to": "06"
+    },
+    "source": "editorial"
+  },
+  "me-dam-me-phi": {
+    "type": "fixed",
+    "rule": "01-31",
+    "source": "estimated-needs-verification"
+  },
+  "rath-yatra-puri": {
+    "type": "variable",
+    "aliases": [
+      "Rath Yatra"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-07-16",
+        "end": "2026-07-16",
+        "matchedName": "Rath Yatra"
+      },
+      "2027": {
+        "start": "2027-07-05",
+        "end": "2027-07-05",
+        "matchedName": "Rath Yatra"
+      },
+      "2028": {
+        "start": "2028-06-24",
+        "end": "2028-06-24",
+        "matchedName": "Rath Yatra"
+      },
+      "2029": {
+        "start": "2029-07-13",
+        "end": "2029-07-13",
+        "matchedName": "Rath Yatra"
+      },
+      "2030": {
+        "start": "2030-07-02",
+        "end": "2030-07-02",
+        "matchedName": "Rath Yatra"
+      },
+      "2031": {
+        "start": "2031-06-22",
+        "end": "2031-06-22",
+        "matchedName": "Rath Yatra"
+      },
+      "2032": {
+        "start": "2032-07-09",
+        "end": "2032-07-09",
+        "matchedName": "Rath Yatra"
+      },
+      "2033": {
+        "start": "2033-06-28",
+        "end": "2033-06-28",
+        "matchedName": "Rath Yatra"
+      },
+      "2034": {
+        "start": "2034-07-17",
+        "end": "2034-07-17",
+        "matchedName": "Rath Yatra"
+      },
+      "2035": {
+        "start": "2035-07-07",
+        "end": "2035-07-07",
+        "matchedName": "Rath Yatra"
+      },
+      "2036": {
+        "start": "2036-06-25",
+        "end": "2036-06-25",
+        "matchedName": "Rath Yatra"
+      },
+      "2037": {
+        "start": "2037-07-14",
+        "end": "2037-07-14",
+        "matchedName": "Rath Yatra"
+      },
+      "2038": {
+        "start": "2038-07-04",
+        "end": "2038-07-04",
+        "matchedName": "Rath Yatra"
+      },
+      "2039": {
+        "start": "2039-06-23",
+        "end": "2039-06-23",
+        "matchedName": "Rath Yatra"
+      },
+      "2040": {
+        "start": "2040-07-11",
+        "end": "2040-07-11",
+        "matchedName": "Rath Yatra"
+      },
+      "2041": {
+        "start": "2041-06-30",
+        "end": "2041-06-30",
+        "matchedName": "Rath Yatra"
+      },
+      "2042": {
+        "start": "2042-06-19",
+        "end": "2042-06-19",
+        "matchedName": "Rath Yatra"
+      },
+      "2043": {
+        "start": "2043-07-08",
+        "end": "2043-07-08",
+        "matchedName": "Rath Yatra"
+      },
+      "2044": {
+        "start": "2044-06-27",
+        "end": "2044-06-27",
+        "matchedName": "Rath Yatra"
+      },
+      "2045": {
+        "start": "2045-07-16",
+        "end": "2045-07-16",
+        "matchedName": "Rath Yatra"
+      },
+      "2046": {
+        "start": "2046-07-05",
+        "end": "2046-07-05",
+        "matchedName": "Rath Yatra"
+      },
+      "2047": {
+        "start": "2047-06-25",
+        "end": "2047-06-25",
+        "matchedName": "Rath Yatra"
+      },
+      "2048": {
+        "start": "2048-07-13",
+        "end": "2048-07-13",
+        "matchedName": "Rath Yatra"
+      },
+      "2049": {
+        "start": "2049-07-02",
+        "end": "2049-07-02",
+        "matchedName": "Rath Yatra"
+      },
+      "2050": {
+        "start": "2050-06-21",
+        "end": "2050-06-21",
+        "matchedName": "Rath Yatra"
+      }
+    },
+    "source": "fetched"
+  },
+  "raja-parba": {
+    "type": "variable",
+    "aliases": [
+      "Raja Parba",
+      "Mithuna Sankranti"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "konark-festival": {
+    "type": "seasonal",
+    "window": {
+      "from": "12",
+      "to": "12"
+    },
+    "source": "editorial"
+  },
+  "sama-chakeva": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "sonepur-mela": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "sarhul": {
+    "type": "seasonal",
+    "window": {
+      "from": "04",
+      "to": "04"
+    },
+    "source": "editorial"
+  },
+  "karma-festival": {
+    "type": "variable",
+    "aliases": [
+      "Karma Puja",
+      "Karma Parab"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "sohrai": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "bastar-dussehra": {
+    "type": "seasonal",
+    "window": {
+      "from": "09",
+      "to": "10"
+    },
+    "durationDays": 75,
+    "note": "75-day festival; exact start date varies by year.",
+    "source": "editorial"
+  },
+  "hareli": {
+    "type": "variable",
+    "aliases": [
+      "Hareli"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "bathukamma": {
+    "type": "variable",
+    "aliases": [
+      "Bathukamma"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "bonalu": {
+    "type": "seasonal",
+    "window": {
+      "from": "07",
+      "to": "07"
+    },
+    "source": "editorial"
+  },
+  "brahmotsavam-tirupati": {
+    "type": "seasonal",
+    "window": {
+      "from": "09",
+      "to": "09"
+    },
+    "source": "editorial"
+  },
+  "goa-carnival": {
+    "type": "seasonal",
+    "window": {
+      "from": "02",
+      "to": "02"
+    },
+    "source": "editorial"
+  },
+  "shigmo": {
+    "type": "variable",
+    "aliases": [
+      "Shigmo"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "sao-joao": {
+    "type": "fixed",
+    "rule": "06-24",
+    "source": "estimated-needs-verification"
+  },
+  "kullu-dussehra": {
+    "type": "variable",
+    "aliases": [
+      "Dussehra",
+      "Vijayadashami",
+      "Kullu Dussehra"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-10-20",
+        "end": "2026-10-20",
+        "matchedName": "Dussehra"
+      },
+      "2027": {
+        "start": "2027-10-09",
+        "end": "2027-10-09",
+        "matchedName": "Dussehra"
+      },
+      "2028": {
+        "start": "2028-09-27",
+        "end": "2028-09-27",
+        "matchedName": "Dussehra"
+      },
+      "2029": {
+        "start": "2029-10-16",
+        "end": "2029-10-16",
+        "matchedName": "Dussehra"
+      },
+      "2030": {
+        "start": "2030-10-06",
+        "end": "2030-10-06",
+        "matchedName": "Dussehra"
+      },
+      "2031": {
+        "start": "2031-10-25",
+        "end": "2031-10-25",
+        "matchedName": "Dussehra"
+      },
+      "2032": {
+        "start": "2032-10-14",
+        "end": "2032-10-14",
+        "matchedName": "Dussehra"
+      },
+      "2033": {
+        "start": "2033-10-03",
+        "end": "2033-10-03",
+        "matchedName": "Dussehra"
+      },
+      "2034": {
+        "start": "2034-10-22",
+        "end": "2034-10-22",
+        "matchedName": "Dussehra"
+      },
+      "2035": {
+        "start": "2035-10-11",
+        "end": "2035-10-11",
+        "matchedName": "Dussehra"
+      },
+      "2036": {
+        "start": "2036-09-29",
+        "end": "2036-09-29",
+        "matchedName": "Dussehra"
+      },
+      "2037": {
+        "start": "2037-10-18",
+        "end": "2037-10-18",
+        "matchedName": "Dussehra"
+      },
+      "2038": {
+        "start": "2038-10-07",
+        "end": "2038-10-07",
+        "matchedName": "Dussehra"
+      },
+      "2039": {
+        "start": "2039-10-26",
+        "end": "2039-10-26",
+        "matchedName": "Dussehra"
+      },
+      "2040": {
+        "start": "2040-10-15",
+        "end": "2040-10-15",
+        "matchedName": "Dussehra"
+      },
+      "2041": {
+        "start": "2041-10-05",
+        "end": "2041-10-05",
+        "matchedName": "Dussehra"
+      },
+      "2042": {
+        "start": "2042-10-24",
+        "end": "2042-10-24",
+        "matchedName": "Dussehra"
+      },
+      "2043": {
+        "start": "2043-10-13",
+        "end": "2043-10-13",
+        "matchedName": "Dussehra"
+      },
+      "2044": {
+        "start": "2044-10-01",
+        "end": "2044-10-01",
+        "matchedName": "Dussehra"
+      },
+      "2045": {
+        "start": "2045-10-20",
+        "end": "2045-10-20",
+        "matchedName": "Dussehra"
+      },
+      "2046": {
+        "start": "2046-10-09",
+        "end": "2046-10-09",
+        "matchedName": "Dussehra"
+      },
+      "2047": {
+        "start": "2047-09-28",
+        "end": "2047-09-28",
+        "matchedName": "Dussehra"
+      },
+      "2048": {
+        "start": "2048-10-16",
+        "end": "2048-10-16",
+        "matchedName": "Dussehra"
+      },
+      "2049": {
+        "start": "2049-10-06",
+        "end": "2049-10-06",
+        "matchedName": "Dussehra"
+      },
+      "2050": {
+        "start": "2050-10-25",
+        "end": "2050-10-25",
+        "matchedName": "Dussehra"
+      }
+    },
+    "source": "fetched"
+  },
+  "minjar-mela": {
+    "type": "seasonal",
+    "window": {
+      "from": "07",
+      "to": "07"
+    },
+    "source": "editorial"
+  },
+  "losar": {
+    "type": "seasonal",
+    "aliases": [
+      "Losar"
+    ],
+    "bucket": "A",
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "02",
+      "to": "02"
+    }
+  },
+  "dev-deepawali": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "lathmar-holi": {
+    "type": "seasonal",
+    "window": {
+      "from": "03",
+      "to": "03"
+    },
+    "source": "editorial"
+  },
+  "taj-mahotsav": {
+    "type": "fixed",
+    "rule": {
+      "start": "02-18",
+      "end": "02-27"
+    },
+    "source": "estimated-needs-verification"
+  },
+  "harela": {
+    "type": "seasonal",
+    "window": {
+      "from": "07",
+      "to": "07"
+    },
+    "source": "editorial"
+  },
+  "ganga-dussehra": {
+    "type": "variable",
+    "aliases": [
+      "Ganga Dussehra"
+    ],
+    "bucket": "A",
+    "occurrences": {
+      "2026": {
+        "start": "2026-10-20",
+        "end": "2026-10-20",
+        "matchedName": "Dussehra"
+      },
+      "2027": {
+        "start": "2027-10-09",
+        "end": "2027-10-09",
+        "matchedName": "Dussehra"
+      },
+      "2028": {
+        "start": "2028-09-27",
+        "end": "2028-09-27",
+        "matchedName": "Dussehra"
+      },
+      "2029": {
+        "start": "2029-10-16",
+        "end": "2029-10-16",
+        "matchedName": "Dussehra"
+      },
+      "2030": {
+        "start": "2030-10-06",
+        "end": "2030-10-06",
+        "matchedName": "Dussehra"
+      },
+      "2031": {
+        "start": "2031-10-25",
+        "end": "2031-10-25",
+        "matchedName": "Dussehra"
+      },
+      "2032": {
+        "start": "2032-10-14",
+        "end": "2032-10-14",
+        "matchedName": "Dussehra"
+      },
+      "2033": {
+        "start": "2033-10-03",
+        "end": "2033-10-03",
+        "matchedName": "Dussehra"
+      },
+      "2034": {
+        "start": "2034-10-22",
+        "end": "2034-10-22",
+        "matchedName": "Dussehra"
+      },
+      "2035": {
+        "start": "2035-10-11",
+        "end": "2035-10-11",
+        "matchedName": "Dussehra"
+      },
+      "2036": {
+        "start": "2036-09-29",
+        "end": "2036-09-29",
+        "matchedName": "Dussehra"
+      },
+      "2037": {
+        "start": "2037-10-18",
+        "end": "2037-10-18",
+        "matchedName": "Dussehra"
+      },
+      "2038": {
+        "start": "2038-10-07",
+        "end": "2038-10-07",
+        "matchedName": "Dussehra"
+      },
+      "2039": {
+        "start": "2039-10-26",
+        "end": "2039-10-26",
+        "matchedName": "Dussehra"
+      },
+      "2040": {
+        "start": "2040-10-15",
+        "end": "2040-10-15",
+        "matchedName": "Dussehra"
+      },
+      "2041": {
+        "start": "2041-10-05",
+        "end": "2041-10-05",
+        "matchedName": "Dussehra"
+      },
+      "2042": {
+        "start": "2042-10-24",
+        "end": "2042-10-24",
+        "matchedName": "Dussehra"
+      },
+      "2043": {
+        "start": "2043-10-13",
+        "end": "2043-10-13",
+        "matchedName": "Dussehra"
+      },
+      "2044": {
+        "start": "2044-10-01",
+        "end": "2044-10-01",
+        "matchedName": "Dussehra"
+      },
+      "2045": {
+        "start": "2045-10-20",
+        "end": "2045-10-20",
+        "matchedName": "Dussehra"
+      },
+      "2046": {
+        "start": "2046-10-09",
+        "end": "2046-10-09",
+        "matchedName": "Dussehra"
+      },
+      "2047": {
+        "start": "2047-09-28",
+        "end": "2047-09-28",
+        "matchedName": "Dussehra"
+      },
+      "2048": {
+        "start": "2048-10-16",
+        "end": "2048-10-16",
+        "matchedName": "Dussehra"
+      },
+      "2049": {
+        "start": "2049-10-06",
+        "end": "2049-10-06",
+        "matchedName": "Dussehra"
+      },
+      "2050": {
+        "start": "2050-10-25",
+        "end": "2050-10-25",
+        "matchedName": "Dussehra"
+      }
+    },
+    "source": "fetched"
+  },
+  "nanda-devi-raj-jat": {
+    "type": "periodic",
+    "intervalYears": 12,
+    "note": "Occurs once every 12 years, not annually. Next confirmed date needs manual research — do not auto-generate yearly occurrences.",
+    "source": "editorial"
+  },
+  "hornbill-festival": {
+    "type": "fixed",
+    "rule": {
+      "start": "12-01",
+      "end": "12-10"
+    },
+    "source": "estimated-needs-verification"
+  },
+  "sekrenyi": {
+    "type": "seasonal",
+    "window": {
+      "from": "02",
+      "to": "02"
+    },
+    "source": "editorial"
+  },
+  "yaoshang": {
+    "type": "variable",
+    "aliases": [
+      "Yaoshang",
+      "Holi"
+    ],
+    "bucket": "B",
+    "occurrences": {
+      "2026": {
+        "start": "2026-03-03",
+        "end": "2026-03-04",
+        "matchedName": "Holika Dahana"
+      },
+      "2027": {
+        "start": "2027-03-22",
+        "end": "2027-03-22",
+        "matchedName": "Holi"
+      },
+      "2028": {
+        "start": "2028-03-11",
+        "end": "2028-03-11",
+        "matchedName": "Holi"
+      },
+      "2029": {
+        "start": "2029-03-01",
+        "end": "2029-03-01",
+        "matchedName": "Holi"
+      },
+      "2030": {
+        "start": "2030-03-20",
+        "end": "2030-03-20",
+        "matchedName": "Holi"
+      },
+      "2031": {
+        "start": "2031-03-09",
+        "end": "2031-03-09",
+        "matchedName": "Holi"
+      },
+      "2032": {
+        "start": "2032-03-27",
+        "end": "2032-03-27",
+        "matchedName": "Holi"
+      },
+      "2033": {
+        "start": "2033-03-16",
+        "end": "2033-03-16",
+        "matchedName": "Holi"
+      },
+      "2034": {
+        "start": "2034-03-05",
+        "end": "2034-03-05",
+        "matchedName": "Holi"
+      },
+      "2035": {
+        "start": "2035-03-24",
+        "end": "2035-03-24",
+        "matchedName": "Holi"
+      },
+      "2036": {
+        "start": "2036-03-12",
+        "end": "2036-03-12",
+        "matchedName": "Holi"
+      },
+      "2037": {
+        "start": "2037-03-02",
+        "end": "2037-03-02",
+        "matchedName": "Holi"
+      },
+      "2038": {
+        "start": "2038-03-21",
+        "end": "2038-03-21",
+        "matchedName": "Holi"
+      },
+      "2039": {
+        "start": "2039-03-11",
+        "end": "2039-03-11",
+        "matchedName": "Holi"
+      },
+      "2040": {
+        "start": "2040-03-29",
+        "end": "2040-03-29",
+        "matchedName": "Holi"
+      },
+      "2041": {
+        "start": "2041-03-18",
+        "end": "2041-03-18",
+        "matchedName": "Holi"
+      },
+      "2042": {
+        "start": "2042-03-07",
+        "end": "2042-03-07",
+        "matchedName": "Holi"
+      },
+      "2043": {
+        "start": "2043-03-26",
+        "end": "2043-03-26",
+        "matchedName": "Holi"
+      },
+      "2044": {
+        "start": "2044-03-14",
+        "end": "2044-03-14",
+        "matchedName": "Holi"
+      },
+      "2045": {
+        "start": "2045-03-03",
+        "end": "2045-03-03",
+        "matchedName": "Holi"
+      },
+      "2046": {
+        "start": "2046-03-22",
+        "end": "2046-03-22",
+        "matchedName": "Holi"
+      },
+      "2047": {
+        "start": "2047-03-12",
+        "end": "2047-03-12",
+        "matchedName": "Holi"
+      },
+      "2048": {
+        "start": "2048-03-01",
+        "end": "2048-03-01",
+        "matchedName": "Holi"
+      },
+      "2049": {
+        "start": "2049-03-20",
+        "end": "2049-03-20",
+        "matchedName": "Holi"
+      },
+      "2050": {
+        "start": "2050-03-09",
+        "end": "2050-03-09",
+        "matchedName": "Holi"
+      }
+    },
+    "source": "fetched-needs-review"
+  },
+  "ningol-chakouba": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "sangai-festival": {
+    "type": "fixed",
+    "rule": {
+      "start": "11-21",
+      "end": "11-30"
+    },
+    "source": "estimated-needs-verification"
+  },
+  "nongkrem-dance": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "wangala": {
+    "type": "seasonal",
+    "window": {
+      "from": "11",
+      "to": "11"
+    },
+    "source": "editorial"
+  },
+  "chapchar-kut": {
+    "type": "seasonal",
+    "window": {
+      "from": "03",
+      "to": "03"
+    },
+    "source": "editorial"
+  },
+  "mim-kut": {
+    "type": "seasonal",
+    "window": {
+      "from": "09",
+      "to": "09"
+    },
+    "source": "editorial"
+  },
+  "saga-dawa": {
+    "type": "variable",
+    "aliases": [
+      "Saga Dawa"
+    ],
+    "bucket": "A",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "pang-lhabsol": {
+    "type": "seasonal",
+    "window": {
+      "from": "09",
+      "to": "09"
+    },
+    "source": "editorial"
+  },
+  "losar-arunachal": {
+    "type": "seasonal",
+    "window": {
+      "from": "04",
+      "to": "04"
+    },
+    "source": "editorial"
+  },
+  "ziro-music-festival": {
+    "type": "seasonal",
+    "window": {
+      "from": "09",
+      "to": "09"
+    },
+    "source": "editorial"
+  },
+  "kharchi-puja": {
+    "type": "seasonal",
+    "window": {
+      "from": "07",
+      "to": "07"
+    },
+    "source": "editorial"
+  },
+  "garia-puja": {
+    "type": "seasonal",
+    "window": {
+      "from": "04",
+      "to": "04"
+    },
+    "source": "editorial"
+  },
+  "khajuraho-dance-festival": {
+    "type": "fixed",
+    "rule": {
+      "start": "02-20",
+      "end": "02-26"
+    },
+    "source": "estimated-needs-verification"
+  },
+  "lokrang-festival": {
+    "type": "fixed",
+    "rule": {
+      "start": "01-26",
+      "end": "01-31"
+    },
+    "source": "estimated-needs-verification"
+  },
+  "haryana-gugga-naumi": {
+    "type": "variable",
+    "aliases": [
+      "Gugga Naumi",
+      "Guga Navami"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "hemis-festival": {
+    "type": "variable",
+    "aliases": [
+      "Hemis Festival",
+      "Hemis"
+    ],
+    "bucket": "A",
+    "occurrences": {},
+    "source": "unresolved"
+  },
+  "losar-ladakh": {
+    "type": "seasonal",
+    "aliases": [
+      "Losar"
+    ],
+    "bucket": "A",
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "12",
+      "to": "12"
+    }
+  },
+  "puducherry-masi-magam": {
+    "type": "variable",
+    "aliases": [
+      "Masi Magam"
+    ],
+    "bucket": "B",
+    "occurrences": {},
+    "source": "unresolved"
+  }
+}
