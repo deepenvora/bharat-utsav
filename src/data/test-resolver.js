@@ -82,6 +82,12 @@ check("seasonal month-markers emitted for 2026", seasonMarkers.length > 0, `got 
 const gnDay = y26.find((e) => e.id === "guru-nanak-jayanti");
 check("guru nanak (anchor yr) is a dated event in 2026, not a marker",
   gnDay && gnDay.role === "event", gnDay ? gnDay.role : "missing");
+const nandaYear = y26.find((e) => e.id === "nanda-devi-raj-jat");
+check("nanda devi raj jat (periodic) appears in eventsForYear with role: season",
+  nandaYear && nandaYear.role === "season", nandaYear ? nandaYear.role : "missing");
+check("nanda devi raj jat has monthMarker: true", nandaYear && nandaYear.monthMarker === true);
+check("nanda devi raj jat has a valid window", !!(nandaYear && nandaYear.window && nandaYear.window.from && nandaYear.window.to),
+  nandaYear ? JSON.stringify(nandaYear.window) : "missing");
 
 console.log("\n== eventsForYear(2030): guru nanak has no anchor -> month marker ==");
 const y30 = eventsForYear(content, dates, 2030);

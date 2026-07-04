@@ -257,8 +257,12 @@ export function eventsForYear(content, dates, year) {
       } else if (rec.window) {
         out.push({ ...base, role: "season", monthMarker: true, window: rec.window });
       }
+    } else if (rec.type === "periodic") {
+      // no exact date any year — same list-only shape as a seasonal marker
+      const monthNum = MONTHS[meta.month];
+      const mm = monthNum ? String(monthNum).padStart(2, "0") : null;
+      out.push({ ...base, role: "season", monthMarker: true, window: mm ? { from: mm, to: mm } : null });
     }
-    // periodic: skipped — no known date for this year
   }
 
   return out;
