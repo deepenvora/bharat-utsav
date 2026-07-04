@@ -306,27 +306,33 @@
     "source": "pending-fetch"
   },
   "diwali-dhanteras": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Dhanteras",
       "Dhantrayodashi"
     ],
     "bucket": "A",
-    "occurrences": {},
     "parent": "diwali",
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "10",
+      "to": "10"
+    }
   },
   "diwali-naraka-chaturdashi": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Naraka Chaturdashi",
       "Choti Diwali",
       "Chhoti Diwali"
     ],
     "bucket": "A",
-    "occurrences": {},
     "parent": "diwali",
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "10",
+      "to": "10"
+    }
   },
   "diwali-lakshmi-puja": {
     "type": "variable",
@@ -3041,13 +3047,16 @@
     "source": "fetched"
   },
   "thaipusam": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Thaipusam"
     ],
     "bucket": "A",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "01",
+      "to": "01"
+    }
   },
   "karthigai-deepam": {
     "type": "seasonal",
@@ -3474,14 +3483,17 @@
     "source": "fetched"
   },
   "pandharpur-wari": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Ashadhi Ekadashi",
       "Pandharpur Wari"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "07",
+      "to": "07"
+    }
   },
   "nag-panchami": {
     "type": "seasonal",
@@ -3543,13 +3555,16 @@
     "source": "dataset"
   },
   "hola-mohalla": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Hola Mohalla"
     ],
     "bucket": "A",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "03",
+      "to": "03"
+    }
   },
   "pushkar-fair": {
     "type": "seasonal",
@@ -3568,52 +3583,67 @@
     "source": "editorial"
   },
   "gangaur": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Gangaur"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "03",
+      "to": "03"
+    }
   },
   "teej-rajasthan": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Teej",
       "Hariyali Teej"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "08",
+      "to": "08"
+    }
   },
   "poila-boishakh": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Poila Boishakh",
       "Pohela Boishakh",
       "Bengali New Year"
     ],
     "bucket": "A",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "04",
+      "to": "04"
+    }
   },
   "kali-puja": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Kali Puja"
     ],
     "bucket": "A",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "10",
+      "to": "10"
+    }
   },
   "jagaddhatri-puja": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Jagaddhatri Puja"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "11",
+      "to": "11"
+    }
   },
   "bihu": {
     "type": "seasonal",
@@ -3786,14 +3816,17 @@
     "source": "fetched"
   },
   "raja-parba": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Raja Parba",
       "Mithuna Sankranti"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "06",
+      "to": "06"
+    }
   },
   "konark-festival": {
     "type": "seasonal",
@@ -3828,14 +3861,17 @@
     "source": "editorial"
   },
   "karma-festival": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Karma Puja",
       "Karma Parab"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "09",
+      "to": "09"
+    }
   },
   "sohrai": {
     "type": "seasonal",
@@ -3856,22 +3892,28 @@
     "source": "editorial"
   },
   "hareli": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Hareli"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "07",
+      "to": "07"
+    }
   },
   "bathukamma": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Bathukamma"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "09",
+      "to": "09"
+    }
   },
   "bonalu": {
     "type": "seasonal",
@@ -3898,13 +3940,16 @@
     "source": "editorial"
   },
   "shigmo": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Shigmo"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "03",
+      "to": "03"
+    }
   },
   "sao-joao": {
     "type": "fixed",
@@ -4442,13 +4487,16 @@
     "source": "editorial"
   },
   "saga-dawa": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Saga Dawa"
     ],
     "bucket": "A",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "05",
+      "to": "05"
+    }
   },
   "pang-lhabsol": {
     "type": "seasonal",
@@ -4507,24 +4555,30 @@
     "source": "estimated-needs-verification"
   },
   "haryana-gugga-naumi": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Gugga Naumi",
       "Guga Navami"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "08",
+      "to": "08"
+    }
   },
   "hemis-festival": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Hemis Festival",
       "Hemis"
     ],
     "bucket": "A",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "06",
+      "to": "06"
+    }
   },
   "losar-ladakh": {
     "type": "seasonal",
@@ -4539,12 +4593,15 @@
     }
   },
   "puducherry-masi-magam": {
-    "type": "variable",
+    "type": "seasonal",
     "aliases": [
       "Masi Magam"
     ],
     "bucket": "B",
-    "occurrences": {},
-    "source": "unresolved"
+    "source": "seasonal-no-match",
+    "window": {
+      "from": "03",
+      "to": "03"
+    }
   }
 }
