@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { getEventsForYear } from '../../data';
 import { usePexels } from '../../hooks/usePexels';
 
 const MONTH_ORDER = [
@@ -8,12 +9,16 @@ const MONTH_ORDER = [
   'July', 'August', 'September', 'October', 'November', 'December',
 ];
 
-function getDay(event) {
-  const day = event.date ? parseInt(event.date.split('-')[2], 10) : NaN;
+// `resolved` is this event's entry from getEventsForYear() — { role, start,
+// end, monthMarker } — not the raw event.date string. `resolved.start` only
+// exists for role 'event'/'span'; seasonal/periodic markers have none.
+function getDay(resolved) {
+  if (!resolved || !resolved.start) return null;
+  const day = parseInt(resolved.start.split('-')[2], 10);
   return Number.isNaN(day) ? null : day;
 }
 
-function groupByMonth(events) {
+function groupByMonth(events, resolvedById) {
   const grouped = {};
   events.forEach((event) => {
     if (!event.month) return;
@@ -23,8 +28,8 @@ function groupByMonth(events) {
 
   Object.keys(grouped).forEach((month) => {
     grouped[month] = [...grouped[month]].sort((a, b) => {
-      const dayA = getDay(a);
-      const dayB = getDay(b);
+      const dayA = getDay(resolvedById[a.id]);
+      const dayB = getDay(resolvedById[b.id]);
       if (dayA === null && dayB === null) return 0;
       if (dayA === null) return 1;
       if (dayB === null) return -1;
@@ -35,17 +40,17 @@ function groupByMonth(events) {
   return grouped;
 }
 
-function formatDateLabel(event) {
-  if (event.date) {
-    const parsed = new Date(`${event.date}T00:00:00`);
+function formatDateLabel(resolved, fallbackMonth) {
+  if (resolved && resolved.start) {
+    const parsed = new Date(`${resolved.start}T00:00:00`);
     if (!Number.isNaN(parsed.getTime())) {
       return parsed.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     }
   }
-  return event.month || '';
+  return fallbackMonth || '';
 }
 
-function CalendarEventRow({ event, onOpenDetail }) {
+function CalendarEventRow({ event, resolved, onOpenDetail }) {
   const navigate = useNavigate();
   const [images, setImages] = useState(event.images || []);
   const [isVisible, setIsVisible] = useState(false);
@@ -113,13 +118,21 @@ function CalendarEventRow({ event, onOpenDetail }) {
           {event.type}
         </span>
       </div>
-      <div className="shrink-0 text-sm text-[var(--color-text-secondary)]">{formatDateLabel(event)}</div>
+      <div className="shrink-0 text-sm text-[var(--color-text-secondary)]">{formatDateLabel(resolved, event.month)}</div>
     </button>
   );
 }
 
 export default function CalendarView({ events, onOpenDetail }) {
-  const grouped = groupByMonth(events);
+  // getEventsForYear() returns the whole unfiltered dataset with no .month
+  // field — used here purely as an id -> { role, start, monthMarker } lookup
+  // for date resolution, not as the source of which rows to show. `events`
+  // (already search/filtered upstream) stays the source of truth for that.
+  const currentYear = useMemo(() => new Date().getFullYear(), []);
+  const yearEvents = useMemo(() => getEventsForYear(currentYear), [currentYear]);
+  const resolvedById = useMemo(() => Object.fromEntries(yearEvents.map((e) => [e.id, e])), [yearEvents]);
+
+  const grouped = groupByMonth(events, resolvedById);
   const months = MONTH_ORDER.filter((month) => grouped[month]?.length);
 
   if (events.length === 0) {
@@ -152,7 +165,7 @@ export default function CalendarView({ events, onOpenDetail }) {
           </div>
           <div>
             {grouped[month].map((event) => (
-              <CalendarEventRow key={event.id} event={event} onOpenDetail={onOpenDetail} />
+              <CalendarEventRow key={event.id} event={event} resolved={resolvedById[event.id]} onOpenDetail={onOpenDetail} />
             ))}
           </div>
         </section>
