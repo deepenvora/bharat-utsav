@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import events from './data';
 import CardGrid from './components/home/CardGrid';
@@ -31,10 +31,14 @@ function getAvailableOptions(items) {
 }
 
 function HomePage() {
-  const [search, setSearch] = useState('');
-  const [activeTab, setActiveTab] = useState('card');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const activeTab = searchParams.get('view') || 'card';
+  const search = searchParams.get('q') || '';
+  const selectedFilters = useMemo(
+    () => Object.fromEntries(FILTER_KEYS.map((key) => [key, searchParams.getAll(key)])),
+    [searchParams],
+  );
   const [showFilters, setShowFilters] = useState(false);
-  const [selectedFilters, setSelectedFilters] = useState({ type: [], month: [], religion: [], state: [] });
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [headerHeight, setHeaderHeight] = useState(0);
   const [bottomBarHeight, setBottomBarHeight] = useState(0);
@@ -47,6 +51,31 @@ function HomePage() {
       return;
     }
     setChatMode(window.innerWidth < 768 ? 'overlay' : 'panel');
+  };
+
+  const setActiveTab = (tab) => {
+    const next = new URLSearchParams(searchParams);
+    if (tab === 'card') {
+      next.delete('view');
+    } else {
+      next.set('view', tab);
+    }
+    setSearchParams(next);
+  };
+
+  const setSearch = (value) => {
+    setSearchParams(
+      (prev) => {
+        const next = new URLSearchParams(prev);
+        if (value) {
+          next.set('q', value);
+        } else {
+          next.delete('q');
+        }
+        return next;
+      },
+      { replace: true },
+    );
   };
 
   useEffect(() => {
@@ -99,17 +128,28 @@ function HomePage() {
   }, [search, selectedFilters]);
 
   const toggleFilterValue = (key, value) => {
-    setSelectedFilters((current) => {
-      const selected = current[key] || [];
-      return {
-        ...current,
-        [key]: selected.includes(value) ? selected.filter((item) => item !== value) : [...selected, value],
-      };
-    });
+    setSearchParams(
+      (prev) => {
+        const next = new URLSearchParams(prev);
+        const current = next.getAll(key);
+        next.delete(key);
+        const updated = current.includes(value) ? current.filter((item) => item !== value) : [...current, value];
+        updated.forEach((item) => next.append(key, item));
+        return next;
+      },
+      { replace: true },
+    );
   };
 
   const clearFilters = () => {
-    setSelectedFilters({ type: [], month: [], religion: [], state: [] });
+    setSearchParams(
+      (prev) => {
+        const next = new URLSearchParams(prev);
+        FILTER_KEYS.forEach((key) => next.delete(key));
+        return next;
+      },
+      { replace: true },
+    );
   };
 
   const filterCount = FILTER_KEYS.reduce((count, key) => count + (selectedFilters[key]?.length || 0), 0);
@@ -128,7 +168,7 @@ function HomePage() {
       />
       <main className="mx-auto max-w-[1140px] px-6 pb-24" style={{ paddingTop: headerHeight + 24 }}>
         {activeTab === 'calendar' ? (
-          <CalendarView events={filteredEvents} onOpenDetail={setSelectedEvent} />
+          <CalendarView events={filteredEvents} onOpenDetail={setSelectedEvent} headerHeight={headerHeight} />
         ) : activeTab === 'map' ? (
           <MapView
             events={filteredEvents}
