@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import events from '../data/india-cultural-calendar.json';
+import events from '../data';
 
 const STOP_WORDS = new Set([
   'a', 'an', 'the', 'is', 'are', 'was', 'were', 'be', 'been',

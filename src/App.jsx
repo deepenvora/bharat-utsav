@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import events from './data/india-cultural-calendar.json';
+import events from './data';
 import CardGrid from './components/home/CardGrid';
 import CalendarView from './components/calendar/CalendarView';
 import MapView from './components/map/MapView';

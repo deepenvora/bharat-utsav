@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { HugeiconsIcon } from '@hugeicons/react';
 import { Cancel01Icon } from '@hugeicons/core-free-icons';
-import events from '../../data/india-cultural-calendar.json';
+import events from '../../data';
 import { usePexels } from '../../hooks/usePexels';
 import { generateSummary } from '../../utils/generateSummary';
 import ImageMosaic from './ImageMosaic';
