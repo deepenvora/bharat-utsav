@@ -39,6 +39,7 @@ function HomePage() {
   const [headerHeight, setHeaderHeight] = useState(0);
   const [bottomBarHeight, setBottomBarHeight] = useState(0);
   const [chatMode, setChatMode] = useState(null); // null | 'panel' | 'overlay'
+  const [mapSheetOpen, setMapSheetOpen] = useState(false);
 
   const handleToggleChat = () => {
     if (chatMode) {
@@ -129,7 +130,14 @@ function HomePage() {
         {activeTab === 'calendar' ? (
           <CalendarView events={filteredEvents} onOpenDetail={setSelectedEvent} />
         ) : activeTab === 'map' ? (
-          <MapView events={filteredEvents} onOpenDetail={setSelectedEvent} headerHeight={headerHeight} bottomBarHeight={bottomBarHeight} />
+          <MapView
+            events={filteredEvents}
+            onOpenDetail={setSelectedEvent}
+            headerHeight={headerHeight}
+            bottomBarHeight={bottomBarHeight}
+            search={search}
+            onSheetVisibilityChange={setMapSheetOpen}
+          />
         ) : (
           <motion.div
             key="card-grid"
@@ -142,7 +150,7 @@ function HomePage() {
         )}
       </main>
       <BottomTabBar activeTab={activeTab} onChange={setActiveTab} />
-      {!chatMode ? <FAB onClick={handleToggleChat} /> : null}
+      {!chatMode && !mapSheetOpen ? <FAB onClick={handleToggleChat} /> : null}
       {chatMode === 'panel' ? <ChatPanel onClose={() => setChatMode(null)} /> : null}
       {chatMode === 'overlay' ? <ChatOverlay onClose={() => setChatMode(null)} /> : null}
       <FiltersPanel
