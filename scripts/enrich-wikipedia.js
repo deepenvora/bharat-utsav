@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const dataPath = path.resolve(__dirname, '../src/data/india-cultural-calendar.json');
+const dataPath = path.resolve(__dirname, '../src/data/content.json');
 
 const DELAY_MS = 1200;
 const SAVE_EVERY = 10;
