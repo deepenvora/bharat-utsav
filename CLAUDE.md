@@ -222,8 +222,12 @@
 ### CALENDAR VIEW
 
 - Reuses Browse shell (same sticky header, same bottom tab)
-- Content: events grouped by month, vertical scroll
-- Each month = section header + list of events (not card grid)
+- Grid-based, not vertical-scroll:
+  - **Web:** left sidebar ("Events this month" + count + info tooltip explaining month-only entries) with stacked event cards, independently scrollable; right side is a sticky Sun–Sat month grid (prev/next nav) bounded to viewport height, dated entries shown as small pill titles inside their day cell, truncated names get a native tooltip, overflow days get a "+N more" popover (portaled to `document.body` to escape cell `overflow-hidden`) listing every event that day, each clickable to its detail page
+  - **Mobile:** month nav header + mini-calendar grid (dot per dated day; count+dot, e.g. "4•", for multi-event days) + "Events on [Month] (count)" heading with the same info tooltip + inline agenda list below (no bottom sheet)
+- Per-month list = dated entries (`role: event`/`span`) first in chronological order, then `monthMarker` entries (seasonal + periodic, no exact date) appended alphabetically after
+- No color-swatch legend
+- Series entries (e.g. Diwali's cluster) render flat/independent — no clustering in the grid or agenda
 - Sort control hidden in Calendar view
 - No hero image in calendar
 
