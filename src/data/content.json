@@ -1278,12 +1278,21 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Dhanteras",
-    "verificationStatus": "pending-enrichment",
-    "aboutLong": null,
+    "verificationStatus": "verified",
+    "aboutLong": "Dhanteras marks the first day of the five-day Diwali festival and is dedicated to wealth and well-being. The name combines 'Dhan' (wealth) and 'Teras' (the thirteenth lunar day). It commemorates the emergence of Goddess Lakshmi and the divine physician Dhanvantari from the churning of the cosmic ocean, and households mark the day by buying gold, silver, or new utensils as a symbol of prosperity for the year ahead.",
     "whyCelebrated": "Worship of Goddess Lakshmi and Kubera for wealth and prosperity; traditionally marked by buying gold, silver, or new utensils.",
-    "howCelebrated": null,
-    "traditions": [],
-    "foods": [],
+    "howCelebrated": "Households clean and light diyas at the entrance, buy gold, silver, or new utensils believing it brings prosperity, and worship Goddess Lakshmi and Lord Kubera in the evening.",
+    "traditions": [
+      "Buying gold or utensils",
+      "Lighting diyas at entrance",
+      "Worshipping Lakshmi and Kubera",
+      "Rangoli at the doorstep"
+    ],
+    "foods": [
+      "Sweets (mithai)",
+      "Dry fruits",
+      "Milk-based desserts like kheer"
+    ],
     "keywords": [
       "lights",
       "diwali",
@@ -1292,8 +1301,7 @@
       "festival of lights"
     ],
     "month": "October",
-    "parent": "diwali",
-    "needsEnrichment": true
+    "parent": "diwali"
   },
   {
     "id": "diwali-naraka-chaturdashi",
@@ -1305,12 +1313,20 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Naraka Chaturdashi (Chhoti Diwali)",
-    "verificationStatus": "pending-enrichment",
-    "aboutLong": null,
+    "verificationStatus": "verified",
+    "aboutLong": "Naraka Chaturdashi, also known as Chhoti Diwali, falls on the second day of the Diwali festival and commemorates Lord Krishna's defeat of the demon king Narakasura, who had imprisoned thousands and terrorized the region. The victory symbolizes the triumph of good over evil, one day ahead of the main Lakshmi Puja. In several regions the day also involves an early ritual oil bath, believed to cleanse the body before the main festivities begin.",
     "whyCelebrated": "Commemorates Krishna's defeat of the demon Narakasura; marked by an early oil bath and small home lighting ahead of the main day.",
-    "howCelebrated": null,
-    "traditions": [],
-    "foods": [],
+    "howCelebrated": "Also called Chhoti Diwali, the day begins with an early oil bath symbolizing purification, followed by lighting a few diyas and bursting small firecrackers to mark Krishna's defeat of the demon Narakasura.",
+    "traditions": [
+      "Early morning oil bath",
+      "Lighting a few diyas",
+      "Small firecrackers",
+      "Narakasura effigy burning in some regions"
+    ],
+    "foods": [
+      "Light breakfast after the ritual bath",
+      "Regional sweets like chakli or shakarpara"
+    ],
     "keywords": [
       "lights",
       "diwali",
@@ -1319,8 +1335,7 @@
       "festival of lights"
     ],
     "month": "October",
-    "parent": "diwali",
-    "needsEnrichment": true
+    "parent": "diwali"
   },
   {
     "id": "diwali-lakshmi-puja",
@@ -1332,12 +1347,22 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Lakshmi Puja",
-    "verificationStatus": "pending-enrichment",
-    "aboutLong": null,
+    "verificationStatus": "verified",
+    "aboutLong": "Lakshmi Puja, Sanskrit: लक्ष्मीपूजा, romanized: Lakṣmīpūjā, Bengali/Assamese: লক্ষ্মী পূজা is a Hindu occasion for the veneration of Lakshmi, the goddess of prosperity and the Supreme Goddess of Vaishnavism. The occasion is celebrated on the amavasya in the Vikram Samvat Hindu calendar month of Ashvin or Kartika, on the third day of Deepavali (Tihar) in Nepal and most parts of India.",
     "whyCelebrated": "The main day of Diwali — worship of Goddess Lakshmi for prosperity, lighting of diyas, fireworks, and family gatherings.",
-    "howCelebrated": null,
-    "traditions": [],
-    "foods": [],
+    "howCelebrated": "The main day of Diwali — homes are decorated with rangoli and rows of diyas, families perform Lakshmi Puja in the evening for wealth and prosperity, followed by fireworks and festive gatherings.",
+    "traditions": [
+      "Lakshmi Puja at home",
+      "Rows of diyas and candles",
+      "Rangoli designs",
+      "Fireworks",
+      "Family gatherings and gift exchange"
+    ],
+    "foods": [
+      "Mithai (ladoo, barfi, jalebi)",
+      "Namkeen snacks",
+      "Festive home-cooked meals"
+    ],
     "keywords": [
       "lights",
       "diwali",
@@ -1346,8 +1371,7 @@
       "festival of lights"
     ],
     "month": "October",
-    "parent": "diwali",
-    "needsEnrichment": true
+    "parent": "diwali"
   },
   {
     "id": "diwali-govardhan-puja",
@@ -1359,12 +1383,19 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Govardhan Puja (Annakut)",
-    "verificationStatus": "pending-enrichment",
-    "aboutLong": null,
+    "verificationStatus": "verified",
+    "aboutLong": "Govardhan Puja or Annakut, is a Hindu festival celebrated on the first lunar day of the bright fortnight of the month of Kartika, on the fourth day of Diwali. Devotees worship an image of Govardhan Hill made out of cow dung and prepare and offer a large variety of vegetarian food to Krishna as a mark of gratitude. For Vaishnavas, this day commemorates the incident in the Bhagavata Purana when Krishna lifted Govardhan Hill to provide the villagers of Vrindavan shelter from torrential rains. Peoples of Vrindavan used to worship Indra for rain. This incident symbolizes God offering protection to devotees who take singular refuge in him. Devotees offer a mountain of food, metaphorically representing the Govardhan Hill, to God as a ritual remembrance and to renew their faith in taking refuge in God. The festival is observed by most Hindu denominations all over India and abroad.",
     "whyCelebrated": "Commemorates Krishna lifting Govardhan Hill to shelter villagers; marked by large food offerings (Annakut) at temples and homes.",
-    "howCelebrated": null,
-    "traditions": [],
-    "foods": [],
+    "howCelebrated": "Commemorates Krishna lifting Govardhan Hill to protect villagers from torrential rain; devotees build small hill-shaped mounds from cow dung or food and perform Annakut, a large offering of many dishes to the deity.",
+    "traditions": [
+      "Annakut (mountain of food offering)",
+      "Building a symbolic Govardhan hill",
+      "Cattle worship in some regions"
+    ],
+    "foods": [
+      "Annakut spread of 56 or 108 dishes",
+      "Rice, dal, sabzis, and sweets offered together"
+    ],
     "keywords": [
       "lights",
       "diwali",
@@ -1373,8 +1404,7 @@
       "festival of lights"
     ],
     "month": "October",
-    "parent": "diwali",
-    "needsEnrichment": true
+    "parent": "diwali"
   },
   {
     "id": "diwali-bhai-dooj",
@@ -1386,12 +1416,20 @@
     "religion": "Hindu",
     "season": "Autumn",
     "imageQuery": "Bhai Dooj",
-    "verificationStatus": "pending-enrichment",
-    "aboutLong": null,
+    "verificationStatus": "verified",
+    "aboutLong": "Bhai Dooj, Bhai Tika, Bhaubeej, Bhai Beej, Bhai Phonta or Bhratri Dwitiya is a festival celebrated by Hindus on the second lunar day of the Shukla Paksha of Kartika, the eighth month of the Vikram Samvat Hindu calendar or the Shalivahana Shaka calendar. It is celebrated during the Diwali or Tihar festival and Holi festival. Bhai Dooj is a Hindu festival celebrating the relationship between brothers and sisters.The celebrations of this day are similar to the festival of Raksha Bandhan.",
     "whyCelebrated": "Celebrates the sibling bond — sisters mark their brothers' foreheads with tilak and pray for their wellbeing, brothers give gifts in return.",
-    "howCelebrated": null,
-    "traditions": [],
-    "foods": [],
+    "howCelebrated": "Marks the sibling bond — sisters perform an aarti and apply tilak on their brothers' foreheads, pray for their long life, and brothers give gifts in return; the day closes the five-day Diwali cycle.",
+    "traditions": [
+      "Tilak ceremony by sisters",
+      "Aarti for brothers",
+      "Exchange of gifts",
+      "Family meal together"
+    ],
+    "foods": [
+      "Sweets shared between siblings",
+      "Festive family lunch"
+    ],
     "keywords": [
       "lights",
       "diwali",
@@ -1400,8 +1438,7 @@
       "festival of lights"
     ],
     "month": "October",
-    "parent": "diwali",
-    "needsEnrichment": true
+    "parent": "diwali"
   },
   {
     "id": "holi",
